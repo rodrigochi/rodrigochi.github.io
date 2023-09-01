@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RChi Personal Website</title>
+    <title>rchi</title>
     <link>https://rodrigochi.github.io/</link>
       <atom:link href="https://rodrigochi.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>RChi Personal Website</description>
+    <description>rchi</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://rodrigochi.github.io/media/icon_hub042159fe2566fc94199bfcf11021272_43484_512x512_fill_lanczos_center_3.png</url>
-      <title>RChi Personal Website</title>
+      <title>rchi</title>
       <link>https://rodrigochi.github.io/</link>
     </image>
     
@@ -298,7 +298,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-689247315&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-512649783&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -308,7 +308,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-689247315&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-512649783&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
