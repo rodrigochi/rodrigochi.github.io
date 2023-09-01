@@ -5,44 +5,12 @@
     <link>https://rodrigochi.github.io/tag/source-themes/</link>
       <atom:link href="https://rodrigochi.github.io/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 31 May 2017 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://rodrigochi.github.io/media/icon_hub042159fe2566fc94199bfcf11021272_43484_512x512_fill_lanczos_center_3.png</url>
       <title>Source Themes</title>
       <link>https://rodrigochi.github.io/tag/source-themes/</link>
     </image>
-    
-    <item>
-      <title>Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition</title>
-      <link>https://rodrigochi.github.io/publication/dmd/</link>
-      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://rodrigochi.github.io/publication/dmd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Signatures of high-latitude waves in observations of geomagnetic acceleration</title>
-      <link>https://rodrigochi.github.io/publication/signatures/</link>
-      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://rodrigochi.github.io/publication/signatures/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Joint Regional Waveform, First‐Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test</title>
-      <link>https://rodrigochi.github.io/publication/dprk1/</link>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://rodrigochi.github.io/publication/dprk1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions</title>
-      <link>https://rodrigochi.github.io/publication/ceof/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://rodrigochi.github.io/publication/ceof/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Automatic detection of P- and S-wave arrival times new strategies based on the modified fractal method and basic matching pursuit</title>
