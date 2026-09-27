@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /legacy/
 
 Sitemap: https://rodrigochi.github.io/sitemap.xml

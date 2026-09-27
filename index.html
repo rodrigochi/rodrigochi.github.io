@@ -1,1942 +1,1135 @@
-<!DOCTYPE html>
-<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: September 1, 2023 --><html lang="en-us" >
-
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-  
-
-  
-  
-
-  
-
-  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-    
-    
-    
-      
-      
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-        
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.042e26407c9e383d96a1f26d6787c686.css" />
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
-  
-
-  
-  
-
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWQTBECR75"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'G-YWQTBECR75', {});
-  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-  <meta name="author" content="Rodrigo Chi-Durán" />
-
-
-
-
-
-  
-
-<meta name="description" content="Rodrigo Personal Website" />
-
-
-
-<link rel="alternate" hreflang="en-us" href="https://rodrigochi.github.io/" />
-<link rel="canonical" href="https://rodrigochi.github.io/" />
-
-
-
-  <link rel="manifest" href="/manifest.webmanifest" />
-
-
-
-<link rel="icon" type="image/png" href="/media/icon_hub042159fe2566fc94199bfcf11021272_43484_32x32_fill_lanczos_center_3.png" />
-<link rel="apple-touch-icon" type="image/png" href="/media/icon_hub042159fe2566fc94199bfcf11021272_43484_180x180_fill_lanczos_center_3.png" />
-
-<meta name="theme-color" content="#1565c0" />
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-<meta property="twitter:card" content="summary" />
-
-  <meta property="twitter:site" content="@wowchemy" />
-  <meta property="twitter:creator" content="@wowchemy" />
-<meta property="twitter:image" content="https://rodrigochi.github.io/media/icon_hub042159fe2566fc94199bfcf11021272_43484_512x512_fill_lanczos_center_3.png" />
-<meta property="og:site_name" content="rchi" />
-<meta property="og:url" content="https://rodrigochi.github.io/" />
-<meta property="og:title" content="rchi" />
-<meta property="og:description" content="Rodrigo Personal Website" /><meta property="og:image" content="https://rodrigochi.github.io/media/icon_hub042159fe2566fc94199bfcf11021272_43484_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
-
-  
-    <meta property="og:updated_time" content="2022-10-24T00:00:00&#43;00:00" />
-  
-
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://rodrigochi.github.io/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://rodrigochi.github.io/"
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodrigo Chi Durán · Seismology &amp; Geodynamics</title>
+<script>try{const t=localStorage.getItem("site-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(_){}</script>
+<meta name="theme-color" content="#F2F5F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1920" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://rodrigochi.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rodrigochi.github.io/">
+<meta property="og:title" content="Rodrigo Chi Durán · Seismology &amp; Geodynamics">
+<meta property="og:description" content="Seismo-Acoustic Officer at the CTBTO. Research on seismic sources, explosion monitoring and waves in Earth's core.">
+<meta property="og:image" content="https://rodrigochi.github.io/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rodrigo Chi Durán — Seismology, geomagnetism and geodynamics">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rodrigo Chi Durán · Seismology &amp; Geodynamics">
+<meta name="twitter:description" content="Seismo-Acoustic Officer at the CTBTO. Seismic sources, explosion monitoring and Earth's core.">
+<meta name="twitter:image" content="https://rodrigochi.github.io/assets/social-card.png">
+<meta name="description" content="Rodrigo Chi Durán. Ph.D. in Earth and Planetary Science, UC Berkeley. Geodynamics, geomagnetism and seismology.">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&text=%E5%BE%90%E6%85%B6%E8%B3%A2%E5%BA%86%E8%B4%A4%E6%97%8F%E8%AD%9C%E6%B0%8F&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F2F5F7; --paper-2:#E6ECF0; --raise:#FAFCFD;
+  --ink:#15212B; --ink-2:#3A4957; --muted:#5E6D7A;
+  --rule:#D4DCE2; --rule-2:#A7B5C0;
+  --seal:#0F7B84; --on-seal:#F1FAFB;
+  --trace:#2A5B8C; --trace-soft:#DEE8F2;
+  --hl:#CDE8EC;
+  --plot-neg:#2A5B8C; --plot-mid:#F4F6F8; --plot-pos:#C0513E;
+  --zupu-paper:#FAF6F0; --zupu-ink:#1A0A00; --zupu-muted:#6B5744; --zupu-red:#8B1A1A; --zupu-seal:#CC2020; --zupu-border:#E8D8C0; --zupu-gold:#8A6516;
+  --f-display:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --f-ui:"Schibsted Grotesk","Helvetica Neue",Arial,system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --f-cjk:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --rail:11rem; --nav-h:72px;
 }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+  color-scheme:dark;
+  --paper:#0F1920; --paper-2:#182630; --raise:#15222B;
+  --ink:#E8EEF2; --ink-2:#C3CFD8; --muted:#97A8B5;
+  --rule:#2B3B47; --rule-2:#5B7080;
+  --seal:#4FC1C9; --on-seal:#062226;
+  --trace:#8DB9E6; --trace-soft:#1E3444;
+  --hl:#1F4750;
+  --plot-neg:#7FB3E0; --plot-mid:#1A2833; --plot-pos:#EE9A84;
+  --zupu-paper:#2B2926; --zupu-ink:#F2E9D8; --zupu-muted:#C8BBA7; --zupu-red:#F0AE97; --zupu-seal:#F0A18A; --zupu-border:#514739; --zupu-gold:#D8BA7E;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0F1920; --paper-2:#182630; --raise:#15222B;
+  --ink:#E8EEF2; --ink-2:#C3CFD8; --muted:#97A8B5;
+  --rule:#2B3B47; --rule-2:#5B7080;
+  --seal:#4FC1C9; --on-seal:#062226;
+  --trace:#8DB9E6; --trace-soft:#1E3444;
+  --hl:#1F4750;
+  --plot-neg:#7FB3E0; --plot-mid:#1A2833; --plot-pos:#EE9A84;
+  --zupu-paper:#2B2926; --zupu-ink:#F2E9D8; --zupu-muted:#C8BBA7; --zupu-red:#F0AE97; --zupu-seal:#F0A18A; --zupu-border:#514739; --zupu-gold:#D8BA7E;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{font-size:16.5px;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 28px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-ui);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--rule-2);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{text-decoration-color:var(--seal)}
+:focus-visible{outline:2px solid var(--trace);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.15;text-wrap:balance}
+p{margin:0}
+button{font:inherit;color:inherit}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:20px}
+.mono{font-family:var(--f-mono);font-size:.78rem}
+
+/* ---------------- nav ---------------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;align-items:center;gap:24px;min-height:72px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.seal{display:inline-grid;place-items:center;width:26px;height:26px;background:var(--seal);color:var(--on-seal);font-family:var(--f-cjk);font-weight:600;font-size:15px;line-height:1;border-radius:3px;box-shadow:inset 0 0 0 2px var(--seal),inset 0 0 0 3px color-mix(in srgb,var(--on-seal) 45%,transparent)}
+.brand .logo{width:28px;height:28px;flex:none;transition:transform .8s ease}
+.brand:hover .logo{transform:rotate(-20deg)}
+.brand b{font-family:var(--f-display);font-weight:500;font-size:1.08rem}
+.menu{display:flex;justify-content:center;gap:0;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{flex:none;position:relative;padding:10px 12px;min-height:44px;color:var(--muted);text-decoration:none;font-size:.9rem;white-space:nowrap}
+.menu a:hover{color:var(--ink)}
+.menu a.on{color:var(--ink)}
+.menu a.on::after{content:"";position:absolute;left:10px;right:10px;bottom:0;height:1.5px;background:var(--seal)}
+.menu .zh{font-family:var(--f-cjk);margin-left:5px;color:var(--seal)}
+.menu .ext{font-size:.7em;margin-left:3px;opacity:.6}
+.tools{display:flex;align-items:center;gap:6px;flex:none}
+.tbtn{display:inline-flex;align-items:center;gap:8px;min-height:44px;min-width:44px;justify-content:center;padding:0 12px;border:1px solid var(--rule-2);border-radius:999px;background:transparent;cursor:pointer;font-size:.8rem;color:var(--muted)}
+.tbtn:hover{color:var(--ink);border-color:var(--ink-2)}
+.tbtn svg{width:14px;height:14px}
+.tbtn kbd{font-family:var(--f-mono);font-size:.7rem}
+.lang{display:inline-flex;border:1px solid var(--rule-2);border-radius:999px;padding:2px;font-family:var(--f-mono);font-size:.72rem}
+.lang button{border:0;background:none;min-width:44px;min-height:44px;padding:4px 10px;border-radius:999px;color:var(--muted);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+@media (max-width:760px){
+  .nav .wrap{flex-wrap:wrap;gap:0 8px;padding-block:8px}
+  .menu{order:3;flex-basis:100%;justify-content:flex-start;margin:4px -8px 0;mask-image:linear-gradient(90deg,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 90%,transparent)}
+  .menu a{padding-inline:8px;font-size:.88rem}
+  .tbtn .lbl,.tbtn kbd{display:none}
+  .tools{margin-left:auto}
+}
+
+/* ---------------- hero ---------------- */
+.hero{display:grid;grid-template-columns:220px minmax(0,1fr);column-gap:56px;padding-block:56px 0;align-items:start}
+.portrait{width:220px;height:220px}
+.portrait img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;background:var(--paper-2)}
+.bio .zh{font-family:var(--f-cjk);font-size:.92em;letter-spacing:.02em}
+.who h1{font-size:clamp(2.4rem,5.5vw,3.6rem);letter-spacing:-.018em;line-height:1.02}
+.who .role{margin-top:12px;font-size:1.05rem;color:var(--ink-2)}
+.who .role a{color:var(--ink)}
+.bio a,.edu a{color:inherit}
+.who .role span{color:var(--muted)}
+.bio{margin-top:22px;max-width:54ch;font-family:var(--f-display);font-size:1.22rem;line-height:1.55;color:var(--ink-2)}
+.links{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:18px;font-size:.92rem}
+.links a,.links button{display:inline-flex;align-items:center;gap:7px;min-height:44px;background:none;border:0;padding:0;cursor:pointer;color:var(--ink);text-decoration:underline;text-decoration-color:var(--rule-2);text-underline-offset:.25em}
+.ico{width:16px;height:16px;flex:none}
+.li-ico{color:#0A66C2}
+:root[data-theme="dark"] .li-ico{color:#70B5F9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .li-ico{color:#70B5F9}}
+.links a:hover,.links button:hover{text-decoration-color:var(--seal)}
+.links .ok{color:var(--seal);font-size:.85rem}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:0;padding-top:24px;border-top:1px solid var(--ink);min-width:0}
+.facts h3{font-family:var(--f-ui);font-size:.8rem;font-weight:500;color:var(--muted);margin-bottom:8px}
+.facts ul{list-style:none;margin:0;padding:0}
+.interests{display:flex;flex-wrap:wrap;gap:4px 0;font-size:.95rem}
+.interests li:not(:last-child)::after{content:"·";margin:0 .55em;color:var(--rule-2)}
+.edu li{font-size:.95rem;line-height:1.45}
+.edu li+li{margin-top:10px}
+.edu span{display:block;color:var(--muted);font-size:.88rem}
+.edu .y{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);margin-right:8px}
+@media (max-width:760px){
+  .hero{grid-template-columns:96px minmax(0,1fr);gap:0 20px;padding-top:32px;align-items:center}
+  .portrait{width:96px;height:96px}
+  .who{display:contents}
+  .intro{min-width:0}
+  .who h1{font-size:clamp(1.85rem,6.5vw,2.6rem)}
+  .who .role{font-size:.86rem;margin-top:8px}
+  .bio,.links,.now{grid-column:1/-1}
+  .bio{font-size:1.16rem;margin-top:24px}
+  .facts{grid-template-columns:1fr;gap:24px}
+}
+@media (max-width:360px){
+  .hero{grid-template-columns:76px minmax(0,1fr);column-gap:16px}
+  .portrait{width:76px;height:76px}
+  .brand b{font-size:.9rem}
+  .menu a{font-size:.8rem;padding-inline:4px}
+  .brand{gap:6px}
+
+}
+
+/* ---------------- trace ---------------- */
+.seis{margin-top:56px}
+.seis-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px 16px;flex-wrap:wrap;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.seis-head .mono{color:var(--muted)}
+.seis-head b{font-weight:500;color:var(--ink)}
+#readout{color:var(--seal);font-variant-numeric:tabular-nums}
+.seis canvas{display:block;width:100%;height:170px;cursor:crosshair;touch-action:pan-y}
+.seis-cap{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);column-gap:48px;margin-top:10px}
+.seis-cap p{grid-column:2;max-width:70ch;font-size:.88rem;color:var(--muted)}
+.seis-cap p a{color:var(--ink-2)}
+@media (max-width:760px){.seis-cap{grid-template-columns:1fr}.seis-cap p{grid-column:1}.seis canvas{height:130px}}
+
+/* ---------------- sections with a sticky rail ---------------- */
+.sec{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);column-gap:48px;padding-block:64px 0}
+.sec>.rail{align-self:start;position:sticky;top:calc(var(--nav-h) + 28px)}
+.sec h2{font-size:1.9rem;letter-spacing:-.01em}
+.rail .sub{margin-top:8px;font-size:.86rem;color:var(--muted)}
+@media (max-width:760px){
+  .sec{grid-template-columns:1fr;row-gap:18px;padding-top:44px}
+  .sec>.rail{position:static}
+}
+
+/* research */
+.areas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.areas li{padding:18px 22px 4px 0;display:grid;gap:8px;align-content:start}
+.areas figure{margin:0 0 6px}
+.areas figure img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#F4F5F2;border-radius:4px}
+.areas figcaption{margin-top:6px;font-family:var(--f-mono);font-size:.68rem;line-height:1.45;color:var(--muted)}
+.areas li+li{padding-left:22px;border-left:1px solid var(--rule)}
+.areas .k{font-family:var(--f-mono);font-size:.74rem;color:var(--seal)}
+.areas h3{font-size:1.3rem}
+.areas p{font-size:.93rem;color:var(--ink-2)}
+.areas button{justify-self:start;background:none;border:0;padding:0;cursor:pointer;font-size:.85rem;color:var(--trace);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--trace) 40%,transparent);text-underline-offset:.22em}
+@media (max-width:860px){.areas{grid-template-columns:1fr}.areas li+li{padding-left:0;border-left:0;border-top:1px solid var(--rule)}.areas li{padding-bottom:18px}}
+
+/* publications */
+.filters{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin-top:18px}
+.filters button{background:none;border:0;padding:8px 0;min-height:44px;cursor:pointer;font-size:.9rem;color:var(--muted);text-align:left;display:flex;gap:8px;align-items:baseline}
+.filters button:hover{color:var(--ink)}
+.filters button[aria-pressed="true"]{color:var(--ink)}
+.filters button[aria-pressed="true"]::before{background:var(--seal)}
+.filters button::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rule-2);flex:none;transform:translateY(-1px)}
+.ptags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.ptag{font-family:var(--f-mono);font-size:.72rem;line-height:1.2;padding:5px 10px;border:1px solid transparent;border-radius:999px;background:var(--trace-soft);color:var(--trace);cursor:pointer}
+.ptag:hover{border-color:var(--trace)}
+.ptag[aria-pressed="true"]{background:var(--trace);color:var(--paper)}
+.filters .tag-on{margin-top:8px;padding:5px 12px;min-height:0;border-radius:999px;background:var(--trace);color:var(--paper);font-family:var(--f-mono);font-size:.74rem}
+.filters .tag-on::before{display:none}
+.filters .n{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+@media (max-width:760px){.filters{flex-direction:row;flex-wrap:wrap;gap:4px 16px}}
+.papers{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.paper{padding-block:24px;border-bottom:1px solid var(--rule);transition:background-color .8s}
+.paper.flash{background:var(--trace-soft)}
+.pmeta{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin-bottom:6px}
+.pmeta .yr{font-family:var(--f-mono);font-size:.8rem;color:var(--ink);font-variant-numeric:tabular-nums}
+.pmeta .venue{font-family:var(--f-display);font-style:italic;color:var(--muted);font-size:.98rem}
+.paper h3{font-size:1.4rem;line-height:1.22;letter-spacing:-.004em;max-width:40ch}
+.paper h3 a{text-decoration:none;background-image:linear-gradient(var(--seal),var(--seal));background-size:0 1px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .35s ease}
+.paper h3 a:hover,.paper h3 a:focus-visible{background-size:100% 1px}
+.authors{margin-top:8px;font-size:.9rem;color:var(--muted)}
+.authors .me{color:var(--ink);font-weight:500}
+.summary{margin-top:10px;max-width:64ch;color:var(--ink-2);font-size:.97rem}
+.pact{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:12px;font-family:var(--f-mono);font-size:.82rem}
+.pact a,.pact button{display:inline-flex;align-items:center;min-height:44px;background:none;border:0;padding:6px 0;cursor:pointer;color:var(--ink-2);border-bottom:1px solid var(--rule-2);line-height:1.5;text-decoration:none;font-family:inherit;font-size:inherit}
+.pact a:hover,.pact button:hover{color:var(--seal);border-color:var(--seal)}
+.pact button[aria-expanded="true"]{color:var(--ink);border-color:var(--ink)}
+.pact .ok{color:var(--seal)}
+.panel{margin-top:12px;padding:14px 16px;background:var(--paper-2);border-radius:4px;max-width:70ch;font-size:.92rem;color:var(--ink-2)}
+.panel pre{margin:0;font-family:var(--f-mono);font-size:.73rem;line-height:1.55;overflow-x:auto}
+.empty{padding:24px 0;color:var(--muted)}
+
+/* projects */
+.projs{border-top:1px solid var(--ink)}
+.proj{display:grid;grid-template-columns:132px minmax(0,1fr);gap:28px;align-items:start;padding-block:24px;border-bottom:1px solid var(--rule);color:inherit;text-decoration:none}
+.proj-img{display:grid;place-items:center;width:132px;aspect-ratio:400/518;border-radius:3px;overflow:hidden;transition:transform .3s ease}
+.proj:hover .proj-img{transform:translateY(-3px)}
+.book-img{box-shadow:0 8px 22px rgba(10,20,30,.2)}
+.book-img img{display:block;width:100%;height:100%;object-fit:cover}
+.zupu-img{background:var(--zupu-paper);border:1px solid var(--zupu-border)}
+.zupu-img svg{width:84px;height:84px}
+.proj-body{display:grid;gap:6px;align-content:start}
+.proj .pk{font-family:var(--f-mono);font-size:.72rem;color:var(--seal)}
+.proj h3{font-size:1.4rem;line-height:1.25}
+.proj h3 .zh{font-family:var(--f-cjk);font-weight:500;letter-spacing:.08em}
+.proj .pd{font-size:.95rem;color:var(--ink-2);max-width:62ch}
+.proj .soon{display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:100%;margin-top:2px;padding:3px 10px;border-radius:999px;background:var(--trace-soft);color:var(--ink);font-size:.84rem}
+.proj .soon::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--seal);flex:none}
+.proj .go{margin-top:4px;font-size:.88rem;color:var(--trace);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--trace) 40%,transparent);text-underline-offset:.22em}
+.proj:hover h3{text-decoration:underline;text-decoration-color:var(--seal);text-decoration-thickness:1px;text-underline-offset:.2em}
+@media (max-width:520px){.proj{grid-template-columns:96px minmax(0,1fr);gap:18px}.proj-img{width:96px}.zupu-img svg{width:64px;height:64px}.proj h3{font-size:1.2rem}}
+.teach h3{font-family:var(--f-ui);font-size:.8rem;font-weight:500;color:var(--muted);margin:0 0 6px}
+.teach h3:not(:first-child){margin-top:28px}
+.teach ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.teach li{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:4px 24px;padding-block:14px;border-bottom:1px solid var(--rule)}
+.teach .when{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);padding-top:.2rem}
+.teach b{display:block;font-family:var(--f-display);font-weight:400;font-size:1.2rem;line-height:1.3}
+.teach li span{font-size:.92rem;color:var(--ink-2)}
+.teach li a{color:inherit}
+.teach .more-link{display:inline-block;margin-top:6px;font-size:.88rem;color:var(--trace)}
+@media (max-width:640px){.teach li{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.contact>div{padding:16px 20px 0 0}
+.contact>div+div{padding-left:20px;border-left:1px solid var(--rule)}
+.contact .k{font-size:.8rem;color:var(--muted);margin-bottom:4px}
+.contact .v{font-family:var(--f-display);font-size:1.1rem;overflow-wrap:anywhere}
+.contact .v>a{display:inline-flex;align-items:center;min-height:44px}
+.contact button{background:none;border:0;padding:8px 0;min-height:44px;margin-left:0;cursor:pointer;font-family:var(--f-mono);font-size:.82rem;color:var(--trace);text-decoration:underline}
+.contact .ok{font-family:var(--f-mono);font-size:.72rem;color:var(--seal);margin-left:6px}
+@media (max-width:760px){.contact{grid-template-columns:1fr}.contact>div+div{padding-left:0;border-left:0;border-top:1px solid var(--rule);margin-top:14px}.contact>div{padding-bottom:4px}}
+
+footer{margin-top:96px;border-top:1px solid var(--rule)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding-block:22px 48px;font-size:.82rem;color:var(--muted)}
+footer kbd{font-family:var(--f-mono);font-size:.72rem;border:1px solid var(--rule-2);border-radius:4px;padding:0 5px}
+
+/* search */
+.pal{position:fixed;inset:0;z-index:50;background:color-mix(in srgb,var(--ink) 30%,transparent);display:flex;justify-content:center;align-items:flex-start;padding:12vh 16px 16px}
+.pal-box{width:100%;max-width:620px;background:var(--raise);border:1px solid var(--rule-2);border-radius:10px;box-shadow:0 30px 70px rgba(0,0,0,.25);overflow:hidden}
+.pal-in{display:flex;align-items:center;gap:10px;padding:0 16px;border-bottom:1px solid var(--rule)}
+.pal-in svg{width:17px;height:17px;color:var(--muted);flex:none}
+.pal-in input{flex:1;min-width:0;height:56px;border:0;background:none;font-family:var(--f-display);font-size:1.2rem;color:var(--ink);outline:none}
+.pal-in kbd{font-family:var(--f-mono);font-size:.7rem;color:var(--muted);border:1px solid var(--rule-2);border-radius:4px;padding:1px 6px}
+.pal-list{list-style:none;margin:0;padding:6px;max-height:min(420px,60vh);overflow-y:auto}
+.pal-list li{padding:9px 12px;border-radius:6px;cursor:pointer;display:grid;gap:1px}
+.pal-list li[aria-selected="true"]{background:var(--paper-2)}
+.pal-list .t{font-family:var(--f-display);font-size:1.02rem;color:var(--ink);line-height:1.3}
+.pal-list .s{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.pal-list .grp{padding:10px 12px 4px;font-size:.76rem;color:var(--muted);cursor:default}
+.pal-list mark{background:var(--hl);color:inherit;border-radius:2px}
+.pal-foot{display:flex;gap:16px;padding:9px 16px;border-top:1px solid var(--rule);font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* research lab */
+.lab{border-top:1px solid var(--ink)}
+.lab-tabs{display:flex;gap:4px 10px;flex-wrap:wrap;padding-top:14px}
+.lab-tabs button{background:none;border:0;min-height:44px;padding:8px 12px;cursor:pointer;font-family:var(--f-ui);font-size:.88rem;color:var(--muted);border-bottom:1.5px solid transparent}
+.lab-tabs button:hover{color:var(--ink)}
+.now-tag{display:inline-block;margin-left:8px;font-family:var(--f-mono);font-size:.64rem;color:var(--seal);border:1px solid currentColor;border-radius:999px;padding:0 7px;vertical-align:3px}
+.now{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px;margin-top:18px;padding:14px 18px 6px;border:1px solid var(--rule);border-left:2px solid var(--seal);border-radius:0 6px 6px 0;background:var(--raise);max-width:680px}
+.now .lbl{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:.72rem;color:var(--seal)}
+.now .lbl::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 3px color-mix(in srgb,var(--seal) 20%,transparent)}
+.now p{flex:1 1 100%;min-width:0;font-size:.92rem;color:var(--ink-2)}
+.now p b{font-weight:500;color:var(--ink)}
+.now a,.now button{display:inline-flex;align-items:center;min-height:44px;font-size:.88rem;color:var(--trace);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--trace) 40%,transparent);text-underline-offset:.22em}
+.lab-tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--seal)}
+.lab-panel{margin-top:14px}
+.lab-fig{position:relative;background:var(--raise);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.lab-fig canvas{display:block;width:100%;touch-action:pan-y}
+#map-cv{cursor:grab}#map-cv.drag{cursor:grabbing}
+#hov-cv,#wf-cv{cursor:crosshair}
+.lab-hud{position:absolute;left:14px;top:12px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2);pointer-events:none;line-height:1.5}
+.lab-hud b{font-weight:500;color:var(--ink);font-size:1rem}
+.lab-hud .v{color:var(--seal)}
+.lab-ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:12px 14px;border-top:1px solid var(--rule);font-family:var(--f-mono);font-size:.76rem;color:var(--muted)}
+.lab-ctrl input[type=range]{flex:1;min-width:140px;accent-color:var(--seal)}
+.lab-ctrl .yr{font-variant-numeric:tabular-nums;color:var(--ink);min-width:3.5em}
+.play{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--rule-2);background:none;cursor:pointer;color:var(--ink)}
+.play:hover{border-color:var(--seal);color:var(--seal)}
+.play svg{width:12px;height:12px}
+.seg{display:inline-flex;border:1px solid var(--rule-2);border-radius:999px;padding:2px}
+.seg button{border:0;background:none;min-height:44px;min-width:44px;padding:4px 12px;border-radius:999px;cursor:pointer;color:var(--muted);font:inherit}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.cbar{display:inline-flex;align-items:center;gap:8px}
+.cbar i{display:block;width:110px;height:8px;border-radius:2px}
+.lab-text{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px;margin-top:18px}
+.lab-text h3{font-size:1.35rem;margin-bottom:6px}
+.lab-text p{color:var(--ink-2);font-size:.95rem;max-width:60ch}
+.lab-text .cap{font-family:var(--f-ui);font-size:.86rem;line-height:1.55;color:var(--muted)}
+.lab-text .cap a{color:var(--ink-2)}
+.lab-text .go{min-height:44px;margin-top:10px;background:none;border:0;padding:0;cursor:pointer;font-size:.88rem;color:var(--trace);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--trace) 40%,transparent);text-underline-offset:.22em}
+@media (max-width:760px){.lab-text{grid-template-columns:1fr;gap:10px}.lab-tabs{gap:4px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.lab-tabs button{font-size:.78rem;padding:8px 3px;overflow-wrap:normal}}
+
+.sec>*,.papers,.paper,.panel{min-width:0}
+::selection{background:var(--trace-soft);color:var(--ink)}
+.skip-link{position:fixed;left:16px;top:8px;z-index:100;padding:10px 16px;background:var(--raise);transform:translateY(-160%)}
+.skip-link:focus{transform:none}
+.lab-intro{margin:24px 0 20px;max-width:64ch}
+.lab-intro h3{font-size:1.5rem;margin-bottom:10px}
+.lab-intro p{color:var(--ink-2);font-size:1.02rem;line-height:1.65}
+.lab-tabs button[aria-selected="true"]{background:var(--trace-soft);border-radius:5px 5px 0 0;border-color:var(--trace)}
+.lab-ctrl{font-size:.82rem}
+.lab-ctrl input[type=range]{min-height:44px}
+#close-search{background:var(--paper-2);border:0;border-radius:50%;min-width:44px;min-height:44px;font-size:1.5rem;cursor:pointer}
+.static-plot{margin:0}
+.static-plot img{display:block;width:100%;height:auto}
+.static-plot figcaption{color:var(--muted);font-size:.9rem}
+html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab-fig,html:not(.enhanced) .pact button,html:not(.enhanced) #lab-go{display:none}
+.contact .copy-mail{display:block}
+@media (max-width:900px){.sec>.rail{top:calc(var(--nav-h) + 20px)}}
+@media (max-width:760px){.lab-intro h3{font-size:1.35rem}.lab-text{gap:20px}.contact .v{font-size:1.15rem}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-t="skip">Skip to content</a>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#about"><img class="logo" src="assets/icon.png" alt="" width="28" height="28"><b>Rodrigo Chi Durán</b></a>
+    <div class="menu" id="menu">
+      <a href="#research" data-t="nav.research">Research</a>
+      <a href="#publications" data-t="nav.pubs">Publications</a>
+      <a href="#teaching" data-t="nav.teaching">Teaching</a>
+      <a href="#projects" data-t="nav.projects">Projects</a>
+      <a href="https://rodrigochi.github.io/uploads/resume.pdf">CV<span class="ext" aria-hidden="true">↗</span></a>
+      <a href="#contact" data-t="nav.contact">Contact</a>
+    </div>
+    <div class="tools">
+      <div class="lang js-only" role="group" aria-label="Language">
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" id="lang-es" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="tbtn" type="button" id="theme" aria-label="Theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" id="theme-ico"></svg></button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" id="main">
+  <section class="hero" id="about">
+    <div class="portrait">
+      <img src="assets/avatar.jpg" alt="Rodrigo Chi Durán" width="270" height="270">
+    </div>
+    <div class="who">
+      <div class="intro"><h1>Rodrigo Chi Durán</h1>
+      <p class="role"><span data-t="role">Seismo-Acoustic Officer</span> · <a href="https://www.ctbto.org/">CTBTO</a> <span data-t="city">· Vienna, Austria</span></p></div>
+      <p class="bio" data-th="bio">Hello, I’m Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). I am a Seismo-Acoustic Officer at the <a href="https://www.ctbto.org/">Comprehensive Nuclear-Test-Ban Treaty Organization (CTBTO)</a> in Vienna, Austria, where I work on the seismic monitoring behind the verification of the Treaty. My work there focuses on improving event characterization methods and supporting the data analysis process. I hold a Ph.D. in Earth and Planetary Science from <a href="https://eps.berkeley.edu/">UC Berkeley</a>, which continued a path that began in Electrical Engineering at the <a href="https://uchile.cl/">Universidad de Chile</a>. My research revolves around seismology, in particular the seismic sources of earthquakes, explosions, and collapses, as well as complex sources related to forensic seismology. I also have previous experience working on Earth’s core dynamics and core waves, using signal processing and data-driven techniques to study them and model the outer core. I’m always happy to discuss research and potential collaborations.</p>
+      <div class="links">
+        <a href="mailto:rodrigo.chi@berkeley.edu"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg><span data-t="email.me">Email me</span></a><button type="button" class="copy-mail js-only" data-t="email.copy">Copy email</button><span class="ok mail-ok" aria-live="polite"></span>
+        <a href="https://www.linkedin.com/in/rodrigo-chi-2ba2a0267/"><span class="li-ico"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></span>LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=bFubaMkAAAAJ&amp;hl=en"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.24 9.4 12 4l6.76 5.4L24 5.2 12 0 0 5.2Z"/><circle cx="12" cy="16" r="7"/></svg>Google Scholar</a>
+        <a href="https://rodrigochi.github.io/uploads/resume.pdf"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>CV</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec" id="background">
+    <div class="rail"><h2 data-t="nav.background">Background</h2></div>
+      <div class="facts">
+        <div>
+          <h3 data-t="interests">Interests</h3>
+          <ul class="interests"><li data-t="i3">Seismic Sources</li><li data-t="i6">Explosion Monitoring</li><li data-t="i2">Earthquakes</li><li data-t="i4">Geomagnetism</li><li data-t="i1">Geodynamics</li><li data-t="i5">Data Science</li></ul>
+        </div>
+        <div>
+          <h3 data-t="education">Education</h3>
+          <ul class="edu">
+            <li><span class="y" style="display:inline">2023</span><span style="display:inline;color:inherit;font-size:inherit" data-t="e1">Ph.D. in Earth and Planetary Science</span><span><a href="https://eps.berkeley.edu/">Dept. of Earth and Planetary Science</a>, <a href="https://www.berkeley.edu/">UC Berkeley</a></span></li>
+            <li><span class="y" style="display:inline">2015</span><span style="display:inline;color:inherit;font-size:inherit" data-t="e2">BSc. in Electrical Engineering</span><span><a href="https://ingenieria.uchile.cl/">Facultad de Ciencias Físicas y Matemáticas</a>, <a href="https://uchile.cl/">Universidad de Chile</a></span></li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="sec" id="research">
+    <div class="rail"><h2 data-t="nav.research">Research</h2><p class="sub" data-t="research.sub">Three lines of work, one toolbox.</p></div>
+    <div class="lab">
+      <div class="lab-tabs js-only" role="tablist" aria-label="Research topics">
+        <button type="button" role="tab" id="tab-src" data-tab="src" aria-selected="true" aria-controls="lab-panel"></button>
+        <button type="button" role="tab" id="tab-geo" data-tab="geo" aria-selected="false" aria-controls="lab-panel"></button>
+        <button type="button" role="tab" id="tab-sig" data-tab="sig" aria-selected="false" aria-controls="lab-panel"></button>
+      </div>
+      <div class="lab-panel" id="lab-panel" role="tabpanel" aria-labelledby="tab-src" tabindex="0">
+        <div class="lab-intro"><h3 id="lab-h">Seismic sources</h3><p id="lab-intro">A seismic recording reveals when waves arrive. These arrivals help us locate an event and understand its source.</p></div>
+        <noscript><figure class="static-plot"><img src="assets/research/mdj_waveform.png" alt="Seismic recording of the 2017 North Korean nuclear test at station MDJ"><figcaption>The marked P arrival helps locate and characterize the seismic source. Interactive views are available with JavaScript.</figcaption></figure></noscript>
+        <div class="lab-fig" id="fig-geo" hidden>
+          <canvas id="map-cv" role="img" aria-label="Interactive north polar map of geomagnetic secular acceleration at the core-mantle boundary"></canvas>
+          <div class="lab-hud"><b id="map-year">2015.0</b><br><span id="map-read"></span></div>
+          <div class="lab-ctrl">
+            <button class="play" type="button" id="map-play" aria-label="Play"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l9 5-9 5z"/></svg></button>
+            <input type="range" id="map-slider" min="0" max="50" step="1" value="30" aria-label="Year">
+            <span class="cbar"><span id="cb-lo"></span><i id="cb-map"></i><span id="cb-hi"></span> µT/yr²</span>
+          </div>
+        </div>
+        <div class="lab-fig" id="fig-src">
+          <canvas id="wf-cv" role="img" aria-label="Seismogram of the 3 September 2017 North Korean nuclear test recorded at station MDJ, with the automatic P pick"></canvas>
+          <div class="lab-hud"><b>IC.MDJ BHZ</b><br><span id="wf-read"></span></div>
+          <div class="lab-ctrl">
+            <button class="play" type="button" id="wf-replay" aria-label="Replay"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l9 5-9 5z"/></svg></button>
+            <span id="wf-lbl"></span>
+          </div>
+        </div>
+        <div class="lab-fig" id="fig-sig" hidden>
+          <canvas id="hov-cv" role="img" aria-label="Interactive longitude-time diagram of geomagnetic secular acceleration at the core-mantle boundary"></canvas>
+          <div class="lab-ctrl">
+            <span class="seg" role="group" aria-label="Latitude" id="hov-lat"><button type="button" data-lat="60" aria-pressed="false">60°N</button><button type="button" data-lat="70" aria-pressed="true">70°N</button><button type="button" data-lat="80" aria-pressed="false">80°N</button></span>
+            <span id="hov-read" style="flex:1;min-width:12em"></span>
+            <span class="cbar"><i id="cb-hov"></i> µT/yr²</span>
+          </div>
+        </div>
+        <div class="lab-text">
+          <div><p id="lab-p">Detecting, locating and characterizing seismic sources, with a focus on explosions. At the CTBTO I work with the seismic data used to verify the Comprehensive Nuclear-Test-Ban Treaty. In research, I combine regional waveforms, first-motion polarities and InSAR surface displacement in a single moment tensor inversion, applied to the declared North Korean nuclear tests.</p><button type="button" class="go" id="lab-go"></button></div>
+          <p class="cap" id="lab-cap">Vertical component at IC.MDJ (Mudanjiang, China), about 370 km from the 3 September 2017 DPRK test. Bandpass 0.8–6 Hz, amplitude compressed for display. P picked automatically with STA/LTA at +50.1 s. Data: EarthScope / IRIS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="publications">
+    <div class="rail">
+      <h2 data-t="nav.pubs">Publications</h2>
+      <div class="filters js-only" id="filters" role="group" aria-label="Topic"></div>
+    </div>
+    <ol class="papers" id="papers">
+    <li class="paper" id="paper-0">
+      <div class="pmeta"><span class="yr">2024</span><span class="venue">Bulletin of the Seismological Society of America</span></div>
+      <h3 lang="en"><a href="https://doi.org/10.1785/0120230237">Joint Inversion of Regional Waveform, First-Motion Polarity, and Synthetic Aperture Radar Surface Displacement for the Fourth and Sixth North Korean Declared Nuclear Explosions</a></h3>
+      <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Douglas S. Dreger, Arthur J. Rodgers</p>
+      <p class="summary" lang="en">Extends our joint seismic and InSAR inversion to the 2016 and 2017 declared North Korean nuclear tests. A layered velocity model with topography improves the location, depth, and seismic moment used to estimate yield.</p>
+      <div class="ptags"><button type="button" class="ptag" data-tag="seismic-source" aria-pressed="false">Seismic sources</button><button type="button" class="ptag" data-tag="moment-tensor" aria-pressed="false">Moment tensor</button><button type="button" class="ptag" data-tag="insar" aria-pressed="false">InSAR</button><button type="button" class="ptag" data-tag="nuclear-explosions" aria-pressed="false">Nuclear explosions</button></div>
+      <div class="pact">
+        
+        <a href="https://doi.org/10.1785/0120230237">DOI</a>
+        <button type="button" data-panel="abs-0" aria-controls="abs-0" aria-expanded="false">Abstract</button>
+        <button type="button" data-panel="bib-0" aria-controls="bib-0" aria-expanded="false">Cite</button>
+      </div>
+      <div class="panel" id="abs-0" lang="en" hidden>This study analyzed the Democratic People’s Republic of Korea’s (DPRK) fourth (DPRK4, 6 January 2016 Mw 4.49) and sixth (DPRK6, 7 September 2017 Mw 5.2) declared nuclear tests, employing a joint seismic and Interferometric Synthetic Aperture Radar (InSAR) inversion to improve understanding of these events and enhance moment tensor (MT) inversion capabilities. The recent efforts have focused on employing seismic waveform and InSAR geodetic deformation data separately to analyze these and the previous nuclear tests (e.g., Chiang et al., 2018; Myers et al., 2018; Wang et al., 2018). Building upon our previous work (Chi-Durán et al., 2021), we performed a joint regional waveform, first-motion (FM) polarity, and surface displacement inversion, which demonstrated improved source-type discrimination, a revised MT solution with reduced scalar moment uncertainty, and an independently constrained location. In this article, we build on the previous results for DPRK6 by including an analysis using a four-layered velocity model with free-surface topography to compute the near-source static deformation Green’s functions. The model consists of a 50 m basalt layer (VP=2.07 km/s, VS=1.2 km/s), a 250 m stratified volcanic deposit layer (VP=1.73 km/s, VS=1.0 km/s), a 700 m weathered granodiorite layer (VP=2.5 km/s, VS=1.3 km/s), and a granodiorite half-space (VP=5.35 km/s, VS=3.09 km/s). The half-space shares the velocity of the regional MDJ2 velocity model (Ford et al., 2010), which has proven effective for waveform inversion in the region. This model considers the range of reported values for various lithologies and weathering effects. Our findings show that using the layered velocity model enhances the recovery of source location and depth for both the explosions by improving fits and reducing uncertainties. The joint inversion also improves source-type discrimination and better constrains the scalar seismic moment necessary for downstream yield estimation.</div>
+      <div class="panel" id="bib-0" hidden><pre>@article{ChiDuran2024Joint,
+  title   = {Joint Inversion of Regional Waveform, First-Motion Polarity, and Synthetic Aperture Radar Surface Displacement for the Fourth and Sixth North Korean Declared Nuclear Explosions},
+  author  = {Rodrigo Chi-Durán and Douglas S. Dreger and Arthur J. Rodgers},
+  journal = {Bulletin of the Seismological Society of America},
+  volume  = {114},
+  year    = {2024},
+  doi     = {10.1785/0120230237}
+}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="0">Copy BibTeX</button><span class="ok" id="ok-0" aria-live="polite"></span></div></div>
+    </li>
+    <li class="paper" id="paper-1">
+      <div class="pmeta"><span class="yr">2023</span><span class="venue">Geophysical Research Letters</span></div>
+      <h3 lang="en"><a href="https://doi.org/10.1029/2022GL101288">Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition</a></h3>
+      <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Bruce Buffett</p>
+      <p class="summary" lang="en">Dynamic mode decomposition of the CHAOS-7 field model at high latitudes finds two waves, with periods of about 19 and 58 years. The 60-year wave matches predictions for zonal waves in a stratified layer at the top of the core.</p>
+      <div class="ptags"><button type="button" class="ptag" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag" data-tag="dmd" aria-pressed="false">DMD</button></div>
+      <div class="pact">
+        
+        <a href="https://doi.org/10.1029/2022GL101288">DOI</a>
+        <button type="button" data-panel="abs-1" aria-controls="abs-1" aria-expanded="false">Abstract</button>
+        <button type="button" data-panel="bib-1" aria-controls="bib-1" aria-expanded="false">Cite</button>
+      </div>
+      <div class="panel" id="abs-1" lang="en" hidden>Rapid growth of magnetic‐field observations through SWARM and other satellite missions motivate new approaches to analyze it. Dynamic mode decomposition (DMD) is a method to recover spatially coherent motion with a periodic time dependence. We use this method to simultaneously analyze the geomagnetic radial field and its secular variation from CHAOS‐7 at high latitudes. A total of five modes are permitted by noise levels in the observations. One mode represents a slowly evolving background state, whereas the other four modes describe a pair of waves; each wave is comprised of a complex DMD mode and its complex conjugate. The waves have periods of T 1 = 19.1 and T 2 = 58.4 years and quality factors of Q 1 = 11.0 and Q 2 = 4.6, respectively. A 60‐year wave is consistent with previous predictions for zonal waves in a stratified fluid. The 20‐year wave is also consistent with previous reports at high latitudes, although its nature is less clear.</div>
+      <div class="panel" id="bib-1" hidden><pre>@article{ChiDuran2023Extracting,
+  title   = {Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition},
+  author  = {Rodrigo Chi-Durán and Bruce Buffett},
+  journal = {Geophysical Research Letters},
+  volume  = {50},
+  year    = {2023},
+  doi     = {10.1029/2022GL101288}
+}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="1">Copy BibTeX</button><span class="ok" id="ok-1" aria-live="polite"></span></div></div>
+    </li>
+    <li class="paper" id="paper-2">
+      <div class="pmeta"><span class="yr">2021</span><span class="venue">Geophysical Research Letters</span></div>
+      <h3 lang="en"><a href="https://doi.org/10.1029/2021GL094692">Signatures of High-Latitude Waves in Observations of Geomagnetic Acceleration</a></h3>
+      <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Margaret S. Avery, Bruce A. Buffett</p>
+      <p class="summary" lang="en">Westward-moving patches of geomagnetic acceleration at high latitudes are best explained by zonal MAC waves. That explanation requires a stratified layer more than 100 km thick at the top of the core.</p>
+      <div class="ptags"><button type="button" class="ptag" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag" data-tag="core-waves" aria-pressed="false">Core waves</button></div>
+      <div class="pact">
+        
+        <a href="https://doi.org/10.1029/2021GL094692">DOI</a>
+        <button type="button" data-panel="abs-2" aria-controls="abs-2" aria-expanded="false">Abstract</button>
+        <button type="button" data-panel="bib-2" aria-controls="bib-2" aria-expanded="false">Cite</button>
+      </div>
+      <div class="panel" id="abs-2" lang="en" hidden>Models for the second time‐derivative of the geomagnetic field reveal prominent activity at high latitudes. Alternating patches of positive and negative geomagnetic acceleration propagate to the west at speeds that exceed nominal fluid velocities in the core. We show that waves are a viable interpretation of these observations. Magnetic Rossby waves produce a high‐latitude response with suitable phase velocities. However, the spatial complexity of the prediction is not compatible with the observations. Our preferred interpretation involves zonal MAC waves. These waves can account for the observed geomagnetic field when a stratified layer exists at the top of the core. The required layer has a thickness in excess of 100 km and a buoyancy frequency comparable to the rotation frequency. We anticipate a gradual reduction in the phase velocity over time, leading to a future change in the propagation direction.</div>
+      <div class="panel" id="bib-2" hidden><pre>@article{ChiDuran2021Signatures,
+  title   = {Signatures of High-Latitude Waves in Observations of Geomagnetic Acceleration},
+  author  = {Rodrigo Chi-Durán and Margaret S. Avery and Bruce A. Buffett},
+  journal = {Geophysical Research Letters},
+  volume  = {48},
+  year    = {2021},
+  doi     = {10.1029/2021GL094692}
+}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="2">Copy BibTeX</button><span class="ok" id="ok-2" aria-live="polite"></span></div></div>
+    </li>
+    <li class="paper" id="paper-3">
+      <div class="pmeta"><span class="yr">2021</span><span class="venue">The Seismic Record</span></div>
+      <h3 lang="en"><a href="https://doi.org/10.1785/0320210022">Joint Regional Waveform, First-Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test</a></h3>
+      <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Douglas S. Dreger, Arthur J. Rodgers, Avinash Nayak</p>
+      <p class="summary" lang="en">A moment tensor inversion that combines regional waveforms, first-motion polarities, and SAR surface displacement for the 2017 North Korean test. It fits all three data sets and narrows the range of possible source types.</p>
+      <div class="ptags"><button type="button" class="ptag" data-tag="seismic-source" aria-pressed="false">Seismic sources</button><button type="button" class="ptag" data-tag="moment-tensor" aria-pressed="false">Moment tensor</button><button type="button" class="ptag" data-tag="insar" aria-pressed="false">InSAR</button><button type="button" class="ptag" data-tag="nuclear-explosions" aria-pressed="false">Nuclear explosions</button></div>
+      <div class="pact">
+        <a href="https://pubs.geoscienceworld.org/ssa/tsr/article-pdf/1/2/107/5389510/tsr-2021022.1.pdf">PDF</a>
+        <a href="https://doi.org/10.1785/0320210022">DOI</a>
+        <button type="button" data-panel="abs-3" aria-controls="abs-3" aria-expanded="false">Abstract</button>
+        <button type="button" data-panel="bib-3" aria-controls="bib-3" aria-expanded="false">Cite</button>
+      </div>
+      <div class="panel" id="abs-3" lang="en" hidden>The 3 September 2017 Mw 5.2 North Korean underground nuclear test (DPRK2017) is the largest man-made explosion with surface displacements observed by Synthetic Aperture Radar (SAR) and showed as much as 3.5 m of horizontal permanent deformation. Although regional distance waveform-based seismic moment tensor (MT) inversion methods successfully identify this event as an explosion, the inverted solutions do not fit the SAR displacement field well. To better constrain the source, we developed an MT source-type inversion method that incorporates surface ground deformation (accounting for free-surface topography), regional seismic waveforms, and first-motion polarities. We applied the source-type inversion over a grid of possible source locations to find the best-fitting location, depth, and point-source MT for the event. Our best-fitting MT solution achieves ∼70% horizontal geodetic fit, ∼80% waveform fit, and 100% fit in the first-motion polarities. The joint inversion narrows the range of acceptable source types improving discrimination, and reduces the uncertainty in scalar moment and estimated yield. The method is transportable and can be applied to other types of events that may have measurable geodetic signals such as underground mine collapses and volcanic events.</div>
+      <div class="panel" id="bib-3" hidden><pre>@article{ChiDuran2021Joint,
+  title   = {Joint Regional Waveform, First-Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test},
+  author  = {Rodrigo Chi-Durán and Douglas S. Dreger and Arthur J. Rodgers and Avinash Nayak},
+  journal = {The Seismic Record},
+  volume  = {1},
+  year    = {2021},
+  doi     = {10.1785/0320210022}
+}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="3">Copy BibTeX</button><span class="ok" id="ok-3" aria-live="polite"></span></div></div>
+    </li>
+    <li class="paper" id="paper-4">
+      <div class="pmeta"><span class="yr">2020</span><span class="venue">Geophysical Research Letters</span></div>
+      <h3 lang="en"><a href="https://doi.org/10.1029/2020GL087940">Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions</a></h3>
+      <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Margaret S. Avery, Nicholas Knezek, Bruce A. Buffett</p>
+      <p class="summary" lang="en">Complex empirical orthogonal functions split the secular acceleration in CHAOS-6 into traveling waves with periods of 7 to 20 years. The waves help constrain the stratification at the top of the core.</p>
+      <div class="ptags"><button type="button" class="ptag" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag" data-tag="ceof" aria-pressed="false">CEOF</button></div>
+      <div class="pact">
+        
+        <a href="https://doi.org/10.1029/2020GL087940">DOI</a>
+        <button type="button" data-panel="abs-4" aria-controls="abs-4" aria-expanded="false">Abstract</button>
+        <button type="button" data-panel="bib-4" aria-controls="bib-4" aria-expanded="false">Cite</button>
+      </div>
+      <div class="panel" id="abs-4" lang="en" hidden>Satellite observations reveal short pulses in the second time derivative of the geomagnetic field. We seek to interpret these signals using complex empirical orthogonal functions (CEOFs). This methodology decomposes the signal into traveling waves, permitting estimates for the period, angular wave number, and phase velocity. We recover CEOFs from the CHAOS‐6 model, focusing on three geographic regions with strong secular acceleration. Two regions are confined to the equator, while the third is located under Alaska. We find evidence for both eastward and westward traveling waves with periods between 7 and 20 years. There is also evidence for weaker standing waves with complex spatial patterns. Two of the three regions have waves that are compatible with predictions for waves in a stratified fluid. Our results yield estimates for the structure of fluid stratification at the top of the core.</div>
+      <div class="panel" id="bib-4" hidden><pre>@article{ChiDuran2020Decomposition,
+  title   = {Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions},
+  author  = {Rodrigo Chi-Durán and Margaret S. Avery and Nicholas Knezek and Bruce A. Buffett},
+  journal = {Geophysical Research Letters},
+  volume  = {47},
+  year    = {2020},
+  doi     = {10.1029/2020GL087940}
+}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="4">Copy BibTeX</button><span class="ok" id="ok-4" aria-live="polite"></span></div></div>
+    </li>
+    <li class="paper" id="paper-5">
+      <div class="pmeta"><span class="yr">2017</span><span class="venue">Journal of Seismology</span></div>
+      <h3 lang="en"><a href="https://doi.org/10.1007/s10950-017-9658-0">Automatic detection of P- and S-wave arrival times: new strategies based on the modified fractal method and basic matching pursuit</a></h3>
+      <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Diana Comte, Marcos Diaz, Jorge F. Silva</p>
+      <p class="summary" lang="en">Two automatic methods for picking P- and S-wave arrival times, one based on a modified fractal method and one on basic matching pursuit.</p>
+      <div class="ptags"><button type="button" class="ptag" data-tag="signal-processing" aria-pressed="false">Signal processing</button><button type="button" class="ptag" data-tag="phase-picking" aria-pressed="false">Phase picking</button></div>
+      <div class="pact">
+        <a href="https://link.springer.com/content/pdf/10.1007/s10950-017-9658-0.pdf">PDF</a>
+        <a href="https://doi.org/10.1007/s10950-017-9658-0">DOI</a>
+        
+        <button type="button" data-panel="bib-5" aria-controls="bib-5" aria-expanded="false">Cite</button>
+      </div>
+      
+      <div class="panel" id="bib-5" hidden><pre>@article{ChiDuran2017Automatic,
+  title   = {Automatic detection of P- and S-wave arrival times: new strategies based on the modified fractal method and basic matching pursuit},
+  author  = {Rodrigo Chi-Durán and Diana Comte and Marcos Diaz and Jorge F. Silva},
+  journal = {Journal of Seismology},
+  volume  = {21},
+  year    = {2017},
+  doi     = {10.1007/s10950-017-9658-0}
+}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="5">Copy BibTeX</button><span class="ok" id="ok-5" aria-live="polite"></span></div></div>
+    </li></ol>
+  </section>
+
+  <section class="sec" id="teaching">
+    <div class="rail"><h2 data-t="nav.teaching">Teaching</h2></div>
+    <div class="teach">
+      <h3 data-t="t.lect">Lecturer</h3>
+      <ul>
+        <li><span class="when" data-t="t.c1w">Spring 2020, 2021, 2022</span><div><b data-t="t.c1">Earth Data Science in Python</b><span><span data-t="t.c1d">Interdisciplinary module</span> · <a href="https://ingenieria.uchile.cl/">FCFM</a>, <a href="https://uchile.cl/">Universidad de Chile</a></span></div></li>
+        <li><span class="when" data-t="t.c2w">Spring 2017, Fall 2018</span><div><b data-t="t.c2">Project I: Project Development</b><span><a href="https://ingenieria.uchile.cl/">FCFM</a>, <a href="https://uchile.cl/">Universidad de Chile</a></span></div></li>
+        <li><span class="when" data-t="t.c3w">Fall 2016, 2017, 2018</span><div><b data-t="t.c3">Project Workshop: Arduino Projects</b><span><a href="https://ingenieria.uchile.cl/">FCFM</a>, <a href="https://uchile.cl/">Universidad de Chile</a></span></div></li>
+      </ul>
+      <h3 data-t="t.ta">Teaching assistant</h3>
+      <ul>
+        <li><span class="when" data-t="t.c4w">Spring 2023</span><div><b data-t="t.c4">Geodynamics</b><span><a href="https://eps.berkeley.edu/">Dept. of Earth and Planetary Science</a>, <a href="https://www.berkeley.edu/">UC Berkeley</a></span></div></li>
+        <li><span class="when">2011–2016</span><div><b data-t="t.c5">Electromagnetism</b><span><span data-t="t.c5d">Dept. of Physics</span>, <a href="https://ingenieria.uchile.cl/">FCFM</a>, <a href="https://uchile.cl/">Universidad de Chile</a></span><a class="more-link" href="#projects" data-t="t.c5l">The problem book grew out of this course →</a></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="projects">
+    <div class="rail"><h2 data-t="nav.projects">Projects</h2><p class="sub" data-t="projects.sub">Teaching material and family history.</p></div>
+    <div class="projs">
+      <a class="proj" href="assets/projects/Problemas_Electromagnetismo_RChi_2017.pdf">
+        <span class="proj-img book-img"><img src="assets/projects/em-notes-2017.jpg" alt="Cover of Problemas Propuestos y Resueltos de Electromagnetismo, 2017" width="400" height="518" loading="lazy"></span>
+        <span class="proj-body">
+          <span class="pk" data-t="b2.k">Course notes · 2017</span>
+          <h3 lang="es">Problemas Propuestos y Resueltos de Electromagnetismo</h3>
+          <span class="pd" data-t="b2.p">Problems I wrote and collected as a teaching assistant for Electromagnetism at the Universidad de Chile: 18 chapters, from Coulomb’s law to Maxwell’s equations, about 200 problems in 385 pages, in Spanish.</span>
+          <span class="soon" data-t="b2.soon">A new edition is coming soon.</span>
+          <span class="go" data-t="b2.go">Download PDF (10 MB) →</span>
+        </span>
+      </a>
+      <a class="proj to-zupu" href="https://rodrigochi.github.io/zupu/">
+        <span class="proj-img zupu-img"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><radialGradient id="zbg" cx="40%" cy="38%" r="70%"><stop offset="0%" stop-color="#a82020"/><stop offset="100%" stop-color="#6e1010"/></radialGradient></defs><rect x="2" y="2" width="96" height="96" rx="8" fill="url(#zbg)"/><rect x="2" y="2" width="96" height="96" rx="8" fill="none" stroke="#e8b830" stroke-width="3"/><rect x="10" y="10" width="80" height="80" rx="4" fill="none" stroke="#c8941a" stroke-width="1.5"/><rect x="10" y="10" width="9" height="9" fill="#c8941a" rx="1"/><rect x="81" y="10" width="9" height="9" fill="#c8941a" rx="1"/><rect x="10" y="81" width="9" height="9" fill="#c8941a" rx="1"/><rect x="81" y="81" width="9" height="9" fill="#c8941a" rx="1"/><text x="50" y="72" font-family="'Noto Serif TC','Songti TC','PMingLiU',serif" font-size="62" font-weight="600" fill="#faf6f0" text-anchor="middle">徐</text></svg></span>
+        <span class="proj-body">
+          <span class="pk" data-t="z.k">Family history · ongoing</span>
+          <h3><span class="zh" lang="zh-Hant">族譜</span> <span data-t="z.h">The Xu / Chi family tree</span></h3>
+          <span class="pd" data-t="z.p">Genealogy of the Xu (Chi) family: 916 people over 30 generations, from Changle and Wuhua in China to Heshan and Chile. An interactive tree with maps and articles.</span>
+          <span class="go" data-t="z.go">Enter →</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="rail"><h2 data-t="nav.contact">Contact</h2></div>
+    <div class="contact">
+      <div><p class="k" style="display:flex;gap:6px;align-items:center"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>Email</p><p class="v"><a href="mailto:rodrigo.chi@berkeley.edu">rodrigo.chi@berkeley.edu</a><button type="button" class="copy-mail js-only" data-t="copy">copy</button><span class="ok mail-ok" aria-live="polite"></span></p></div>
+      <div><p class="k" style="display:flex;gap:6px;align-items:center"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.24 9.4 12 4l6.76 5.4L24 5.2 12 0 0 5.2Z"/><circle cx="12" cy="16" r="7"/></svg>Google Scholar</p><p class="v"><a href="https://scholar.google.com/citations?user=bFubaMkAAAAJ&amp;hl=en" data-t="scholar.profile">View Google Scholar profile</a></p></div>
+      <div><p class="k" style="display:flex;gap:6px;align-items:center"><span class="li-ico" style="display:inline-flex"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></span>LinkedIn</p><p class="v"><a href="https://www.linkedin.com/in/rodrigo-chi-2ba2a0267/">rodrigo-chi</a></p></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Rodrigo Chi Durán</span><span data-t="foot">Press <kbd>/</kbd> to search</span></div></footer>
+
+<div class="pal" id="pal" hidden>
+  <div class="pal-box" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="pal-in">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="pal-q" aria-label="Search papers and sections" role="combobox" aria-expanded="false" aria-autocomplete="list" type="text" autocomplete="off" spellcheck="false" placeholder="Search" aria-controls="pal-list">
+      <button type="button" id="close-search" aria-label="Close search">×</button>
+    </div>
+    <ul class="pal-list" id="pal-list" role="listbox"></ul>
+    <div class="pal-foot"><span>↑↓</span><span>↵</span><span>esc</span></div>
+  </div>
+</div>
+
+<script>
+const ME = "Rodrigo Chi-Durán", EMAIL = "rodrigo.chi@berkeley.edu";
+const PAPERS = [{"year": 2024, "title": "Joint Inversion of Regional Waveform, First-Motion Polarity, and Synthetic Aperture Radar Surface Displacement for the Fourth and Sixth North Korean Declared Nuclear Explosions", "authors": ["Rodrigo Chi-Durán", "Douglas S. Dreger", "Arthur J. Rodgers"], "venue": "Bulletin of the Seismological Society of America", "volume": "114(5), 2409–2423", "doi": "10.1785/0120230237", "tags": ["seismic-source", "moment-tensor", "insar", "nuclear-explosions"], "en": "Extends our joint seismic and InSAR inversion to the 2016 and 2017 declared North Korean nuclear tests. A layered velocity model with topography improves the location, depth, and seismic moment used to estimate yield.", "es": "Extiende nuestra inversión conjunta sísmica e InSAR a los ensayos nucleares norcoreanos de 2016 y 2017. Un modelo de velocidades por capas con topografía mejora la ubicación, la profundidad y el momento sísmico usado para estimar el rendimiento.", "abstract": "This study analyzed the Democratic People’s Republic of Korea’s (DPRK) fourth (DPRK4, 6 January 2016 Mw 4.49) and sixth (DPRK6, 7 September 2017 Mw 5.2) declared nuclear tests, employing a joint seismic and Interferometric Synthetic Aperture Radar (InSAR) inversion to improve understanding of these events and enhance moment tensor (MT) inversion capabilities. The recent efforts have focused on employing seismic waveform and InSAR geodetic deformation data separately to analyze these and the previous nuclear tests (e.g., Chiang et al., 2018; Myers et al., 2018; Wang et al., 2018). Building upon our previous work (Chi-Durán et al., 2021), we performed a joint regional waveform, first-motion (FM) polarity, and surface displacement inversion, which demonstrated improved source-type discrimination, a revised MT solution with reduced scalar moment uncertainty, and an independently constrained location. In this article, we build on the previous results for DPRK6 by including an analysis using a four-layered velocity model with free-surface topography to compute the near-source static deformation Green’s functions. The model consists of a 50 m basalt layer (VP=2.07 km/s, VS=1.2 km/s), a 250 m stratified volcanic deposit layer (VP=1.73 km/s, VS=1.0 km/s), a 700 m weathered granodiorite layer (VP=2.5 km/s, VS=1.3 km/s), and a granodiorite half-space (VP=5.35 km/s, VS=3.09 km/s). The half-space shares the velocity of the regional MDJ2 velocity model (Ford et al., 2010), which has proven effective for waveform inversion in the region. This model considers the range of reported values for various lithologies and weathering effects. Our findings show that using the layered velocity model enhances the recovery of source location and depth for both the explosions by improving fits and reducing uncertainties. The joint inversion also improves source-type discrimination and better constrains the scalar seismic moment necessary for downstream yield estimation."}, {"year": 2023, "title": "Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition", "authors": ["Rodrigo Chi-Durán", "Bruce Buffett"], "venue": "Geophysical Research Letters", "volume": "50(5), e2022GL101288", "doi": "10.1029/2022GL101288", "tags": ["geomagnetism", "dmd"], "en": "Dynamic mode decomposition of the CHAOS-7 field model at high latitudes finds two waves, with periods of about 19 and 58 years. The 60-year wave matches predictions for zonal waves in a stratified layer at the top of the core.", "es": "Al aplicar descomposición en modos dinámicos al modelo CHAOS-7 en latitudes altas encontramos dos ondas, con periodos de unos 19 y 58 años. La de 60 años coincide con lo predicho para ondas zonales en una capa estratificada en el tope del núcleo.", "abstract": "Rapid growth of magnetic‐field observations through SWARM and other satellite missions motivate new approaches to analyze it. Dynamic mode decomposition (DMD) is a method to recover spatially coherent motion with a periodic time dependence. We use this method to simultaneously analyze the geomagnetic radial field and its secular variation from CHAOS‐7 at high latitudes. A total of five modes are permitted by noise levels in the observations. One mode represents a slowly evolving background state, whereas the other four modes describe a pair of waves; each wave is comprised of a complex DMD mode and its complex conjugate. The waves have periods of T 1 = 19.1 and T 2 = 58.4 years and quality factors of Q 1 = 11.0 and Q 2 = 4.6, respectively. A 60‐year wave is consistent with previous predictions for zonal waves in a stratified fluid. The 20‐year wave is also consistent with previous reports at high latitudes, although its nature is less clear."}, {"year": 2021, "title": "Signatures of High-Latitude Waves in Observations of Geomagnetic Acceleration", "authors": ["Rodrigo Chi-Durán", "Margaret S. Avery", "Bruce A. Buffett"], "venue": "Geophysical Research Letters", "volume": "48(20), e2021GL094692", "doi": "10.1029/2021GL094692", "tags": ["geomagnetism", "core-waves"], "en": "Westward-moving patches of geomagnetic acceleration at high latitudes are best explained by zonal MAC waves. That explanation requires a stratified layer more than 100 km thick at the top of the core.", "es": "Las zonas de aceleración geomagnética que viajan hacia el oeste en latitudes altas se explican mejor con ondas MAC zonales. Esa explicación requiere una capa estratificada de más de 100 km en el tope del núcleo.", "abstract": "Models for the second time‐derivative of the geomagnetic field reveal prominent activity at high latitudes. Alternating patches of positive and negative geomagnetic acceleration propagate to the west at speeds that exceed nominal fluid velocities in the core. We show that waves are a viable interpretation of these observations. Magnetic Rossby waves produce a high‐latitude response with suitable phase velocities. However, the spatial complexity of the prediction is not compatible with the observations. Our preferred interpretation involves zonal MAC waves. These waves can account for the observed geomagnetic field when a stratified layer exists at the top of the core. The required layer has a thickness in excess of 100 km and a buoyancy frequency comparable to the rotation frequency. We anticipate a gradual reduction in the phase velocity over time, leading to a future change in the propagation direction."}, {"year": 2021, "title": "Joint Regional Waveform, First-Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test", "authors": ["Rodrigo Chi-Durán", "Douglas S. Dreger", "Arthur J. Rodgers", "Avinash Nayak"], "venue": "The Seismic Record", "volume": "1(2), 107–116", "doi": "10.1785/0320210022", "pdf": "https://pubs.geoscienceworld.org/ssa/tsr/article-pdf/1/2/107/5389510/tsr-2021022.1.pdf", "tags": ["seismic-source", "moment-tensor", "insar", "nuclear-explosions"], "en": "A moment tensor inversion that combines regional waveforms, first-motion polarities, and SAR surface displacement for the 2017 North Korean test. It fits all three data sets and narrows the range of possible source types.", "es": "Una inversión de tensor de momento que combina formas de onda regionales, polaridades de primer arribo y desplazamiento superficial SAR para el ensayo norcoreano de 2017. Ajusta los tres conjuntos de datos y acota los tipos de fuente posibles.", "abstract": "The 3 September 2017 Mw 5.2 North Korean underground nuclear test (DPRK2017) is the largest man-made explosion with surface displacements observed by Synthetic Aperture Radar (SAR) and showed as much as 3.5 m of horizontal permanent deformation. Although regional distance waveform-based seismic moment tensor (MT) inversion methods successfully identify this event as an explosion, the inverted solutions do not fit the SAR displacement field well. To better constrain the source, we developed an MT source-type inversion method that incorporates surface ground deformation (accounting for free-surface topography), regional seismic waveforms, and first-motion polarities. We applied the source-type inversion over a grid of possible source locations to find the best-fitting location, depth, and point-source MT for the event. Our best-fitting MT solution achieves ∼70% horizontal geodetic fit, ∼80% waveform fit, and 100% fit in the first-motion polarities. The joint inversion narrows the range of acceptable source types improving discrimination, and reduces the uncertainty in scalar moment and estimated yield. The method is transportable and can be applied to other types of events that may have measurable geodetic signals such as underground mine collapses and volcanic events."}, {"year": 2020, "title": "Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions", "authors": ["Rodrigo Chi-Durán", "Margaret S. Avery", "Nicholas Knezek", "Bruce A. Buffett"], "venue": "Geophysical Research Letters", "volume": "47(17), e2020GL087940", "doi": "10.1029/2020GL087940", "tags": ["geomagnetism", "ceof"], "en": "Complex empirical orthogonal functions split the secular acceleration in CHAOS-6 into traveling waves with periods of 7 to 20 years. The waves help constrain the stratification at the top of the core.", "es": "Con funciones ortogonales empíricas complejas descomponemos la aceleración secular del modelo CHAOS-6 en ondas viajeras de 7 a 20 años de periodo. Estas ondas ayudan a estimar la estratificación en el tope del núcleo.", "abstract": "Satellite observations reveal short pulses in the second time derivative of the geomagnetic field. We seek to interpret these signals using complex empirical orthogonal functions (CEOFs). This methodology decomposes the signal into traveling waves, permitting estimates for the period, angular wave number, and phase velocity. We recover CEOFs from the CHAOS‐6 model, focusing on three geographic regions with strong secular acceleration. Two regions are confined to the equator, while the third is located under Alaska. We find evidence for both eastward and westward traveling waves with periods between 7 and 20 years. There is also evidence for weaker standing waves with complex spatial patterns. Two of the three regions have waves that are compatible with predictions for waves in a stratified fluid. Our results yield estimates for the structure of fluid stratification at the top of the core."}, {"year": 2017, "title": "Automatic detection of P- and S-wave arrival times: new strategies based on the modified fractal method and basic matching pursuit", "authors": ["Rodrigo Chi-Durán", "Diana Comte", "Marcos Diaz", "Jorge F. Silva"], "venue": "Journal of Seismology", "volume": "21(5), 1171–1184", "doi": "10.1007/s10950-017-9658-0", "pdf": "https://link.springer.com/content/pdf/10.1007/s10950-017-9658-0.pdf", "tags": ["signal-processing", "phase-picking"], "en": "Two automatic methods for picking P- and S-wave arrival times, one based on a modified fractal method and one on basic matching pursuit.", "es": "Dos métodos automáticos para detectar los tiempos de llegada de ondas P y S: uno basado en un método fractal modificado y otro en matching pursuit básico.", "abstract": ""}];
+const TAGS = {
+  en:{"seismic-source":"Seismic sources","moment-tensor":"Moment tensor","insar":"InSAR","nuclear-explosions":"Nuclear explosions","geomagnetism":"Geomagnetism","core-waves":"Core waves","dmd":"DMD","ceof":"CEOF","signal-processing":"Signal processing","phase-picking":"Phase picking"},
+  es:{"seismic-source":"Fuentes sísmicas","moment-tensor":"Tensor de momento","insar":"InSAR","nuclear-explosions":"Explosiones nucleares","geomagnetism":"Geomagnetismo","core-waves":"Ondas del núcleo","dmd":"DMD","ceof":"CEOF","signal-processing":"Procesamiento de señales","phase-picking":"Detección de fases"}
+};
+const TOPIC_OF = {"geomagnetism":"geo","dmd":"geo","ceof":"geo","core-waves":"geo","seismic-source":"src","moment-tensor":"src","insar":"src","signal-processing":"sig","phase-picking":"sig"};
+PAPERS.forEach(p=>{ p.topics=[...new Set((p.tags||[]).map(t=>TOPIC_OF[t]).filter(Boolean))]; });
+
+const T = {
+  en:{
+    "nav.more":"More","nav.background":"Background",skip:"Skip to content","email.me":"Email me","email.copy":"Copy email","scholar.profile":"View Google Scholar profile",close:"Close search",themeLabel:"Color theme",themeNames:{auto:"system",light:"light",dark:"dark"},tabs:{src:"Seismic sources",geo:"Geomagnetism",sig:"Signals & data"},intro:{src:"A seismic recording reveals when waves arrive. These arrivals help us locate an event and understand its source.",geo:"Changes in the magnetic field offer a window into motion at the top of Earth’s core. Explore how their patterns evolve over time.",sig:"Following magnetic patterns across longitude and time reveals drifting structures. Decomposition methods help separate these signals into waves."},
+    "nav.about":"About","nav.research":"Research","nav.pubs":"Publications","nav.projects":"Projects","nav.contact":"Contact",search:"Search",
+    role:"Seismo-Acoustic Officer",city:"· Vienna, Austria",
+    bio:'Hello, I’m Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). I am a Seismo-Acoustic Officer at the <a href="https://www.ctbto.org/">Comprehensive Nuclear-Test-Ban Treaty Organization (CTBTO)</a> in Vienna, Austria, where I work on the seismic monitoring behind the verification of the Treaty. My work there focuses on improving event characterization methods and supporting the data analysis process. I hold a Ph.D. in Earth and Planetary Science from <a href="https://eps.berkeley.edu/">UC Berkeley</a>, which continued a path that began in Electrical Engineering at the <a href="https://uchile.cl/">Universidad de Chile</a>. My research revolves around seismology, in particular the seismic sources of earthquakes, explosions, and collapses, as well as complex sources related to forensic seismology. I also have previous experience working on Earth’s core dynamics and core waves, using signal processing and data-driven techniques to study them and model the outer core. I’m always happy to discuss research and potential collaborations.',
+    interests:"Interests",i1:"Geodynamics",i2:"Earthquakes",i3:"Seismic Sources",i4:"Geomagnetism",i5:"Data Science",i6:"Explosion Monitoring",
+    education:"Education",e1:"Ph.D. in Earth and Planetary Science",e2:"BSc. in Electrical Engineering",
+    seis:"Real vertical-component record of the sixth North Korean declared nuclear test, about 370 km from the site: the event behind my 2021 and 2024 papers. Bandpass 0.8–6 Hz, amplitude compressed for display. The P arrival was picked automatically with an STA/LTA detector. Hover to read the time after origin. Data: EarthScope / IRIS.",
+    "research.sub":"Seismic sources first: it is what I work on now.",nowTag:"now","now.lbl":"Now","now.go":"Seismic sources →","now.p":'Seismic monitoring for the verification of the <b>Comprehensive Nuclear-Test-Ban Treaty</b> at the CTBTO.',
+    "nav.teaching":"Teaching","t.lect":"Lecturer","t.ta":"Teaching assistant",
+    "t.c1":"Earth Data Science in Python","t.c1d":"Interdisciplinary module","t.c1w":"Spring 2020, 2021, 2022",
+    "t.c2":"Project I: Project Development","t.c2w":"Spring 2017, Fall 2018",
+    "t.c3":"Project Workshop: Arduino Projects","t.c3w":"Fall 2016, 2017, 2018",
+    "t.c4":"Geodynamics","t.c4w":"Spring 2023","t.c5":"Electromagnetism","t.c5d":"Dept. of Physics","t.c5l":"The problem book grew out of this course →",
+    "b2.k":"Course notes · 2017","b2.p":"Problems I wrote and collected as a teaching assistant for Electromagnetism at the Universidad de Chile: 18 chapters, from Coulomb’s law to Maxwell’s equations, about 200 problems in 385 pages, in Spanish.","b2.soon":"A new edition is coming soon.","b2.go":"Download PDF (10 MB) →",
+    "projects.sub":"Teaching material and family history.",
+    "z.k":"Family history · ongoing","z.h":"The Xu / Chi family tree","z.p":"Genealogy of the Xu (Chi) family: 916 people over 30 generations, from Changle and Wuhua in China to Heshan and Chile. An interactive tree with maps and articles.","z.go":"Enter →",
+    copy:"copy",copied:"copied",foot:"Press / to search",ph:"Search papers, topics, sections…",gPapers:"Papers",gPages:"Sections",none:"No results",
+    all:"All",abstract:"Abstract",cite:"Cite",copyBib:"Copy BibTeX",sel:"selected",papersN:n=>`${n} paper${n===1?"":"s"} →`,after:"after origin",
+    topics:{geo:["Geomagnetism and the core","Waves at the top of the Earth's core, seen in satellite-era models of the geomagnetic field, and what they tell us about a stratified layer there."],
+            src:["Seismic sources","Detecting, locating and characterizing seismic sources, with a focus on explosions. At the CTBTO I work with the seismic data used to verify the Comprehensive Nuclear-Test-Ban Treaty. In research, I combine regional waveforms, first-motion polarities and InSAR surface displacement in a single moment tensor inversion, applied to the declared North Korean nuclear tests."],
+            sig:["Signal processing and data-driven methods","Automatic detection of P- and S-wave arrivals, and the decomposition methods (DMD, CEOF) used across the rest of the work."]}
+  },
+  es:{
+    "nav.more":"Más","nav.background":"Trayectoria",skip:"Saltar al contenido","email.me":"Escríbeme","email.copy":"Copiar correo","scholar.profile":"Ver perfil en Google Scholar",close:"Cerrar búsqueda",themeLabel:"Tema de color",themeNames:{auto:"sistema",light:"claro",dark:"oscuro"},tabs:{src:"Fuentes sísmicas",geo:"Geomagnetismo",sig:"Señales y datos"},intro:{src:"Un registro sísmico revela cuándo llegan las ondas. Estas llegadas ayudan a localizar un evento y comprender su fuente.",geo:"Los cambios del campo magnético permiten explorar el movimiento en la parte superior del núcleo terrestre. Observa cómo evolucionan sus patrones en el tiempo.",sig:"Seguir los patrones magnéticos en longitud y tiempo revela estructuras que se desplazan. Los métodos de descomposición ayudan a separar estas señales en ondas."},
+    "nav.about":"Sobre mí","nav.research":"Investigación","nav.pubs":"Publicaciones","nav.projects":"Proyectos","nav.contact":"Contacto",search:"Buscar",
+    role:"Seismo-Acoustic Officer",city:"· Viena, Austria",
+    bio:'Hola, soy Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). Trabajo como <i lang="en">Seismo-Acoustic Officer</i> en la <a href="https://www.ctbto.org/">Organización del Tratado de Prohibición Completa de los Ensayos Nucleares (CTBTO)</a>, en Viena, Austria, donde me dedico al monitoreo sísmico que permite verificar el cumplimiento del Tratado. Mi trabajo se centra en mejorar los métodos de caracterización de eventos y en apoyar el proceso de análisis de datos. Me doctoré en <i lang="en">Earth and Planetary Science</i> en <a href="https://eps.berkeley.edu/">UC Berkeley</a>, un camino que empezó en Ingeniería Eléctrica en la <a href="https://uchile.cl/">Universidad de Chile</a>. Mi investigación está en la sismología, sobre todo en las fuentes sísmicas de terremotos, explosiones y colapsos, y en las fuentes complejas que estudia la <i lang="en">forensic seismology</i>. Antes trabajé en la dinámica del núcleo terrestre y sus ondas geomagnéticas (<i lang="en">core waves</i>), usando <i lang="en">signal processing</i> y métodos <i lang="en">data-driven</i> para estudiarlas y modelar el núcleo externo. Si quieres conversar sobre investigación o colaborar, escríbeme.',
+    interests:"Intereses",i1:"Geodinámica",i2:"Terremotos",i3:"Fuentes sísmicas",i4:"Geomagnetismo",i5:"Ciencia de datos",i6:"Monitoreo de explosiones",
+    education:"Formación",e1:"Ph.D. en Ciencias de la Tierra y Planetarias",e2:"Licenciatura en Ciencias de la Ingeniería, mención Eléctrica",
+    seis:"Registro real, componente vertical, del sexto ensayo nuclear declarado de Corea del Norte, a unos 370 km del sitio: el evento detrás de mis papers de 2021 y 2024. Filtro pasabanda 0,8–6 Hz, amplitud comprimida para visualizar. La llegada P se detectó automáticamente con un detector STA/LTA. Toca el registro para leer el tiempo desde el origen. Datos: EarthScope / IRIS.",
+    "research.sub":"Primero las fuentes sísmicas: es en lo que trabajo hoy.",nowTag:"ahora","now.lbl":"Ahora","now.go":"Fuentes sísmicas →","now.p":'Monitoreo sísmico para la verificación del <b>Tratado de Prohibición Completa de los Ensayos Nucleares</b> en la CTBTO.',
+    "nav.teaching":"Docencia","t.lect":"Profesor","t.ta":"Profesor auxiliar",
+    "t.c1":"Ciencia de Datos de la Tierra en Python","t.c1d":"Módulo interdisciplinario","t.c1w":"Primavera 2020, 2021, 2022",
+    "t.c2":"Proyecto I: Desarrollo de Proyectos","t.c2w":"Primavera 2017, Otoño 2018",
+    "t.c3":"Taller de Proyectos: Proyectos en Arduino","t.c3w":"Otoño 2016, 2017, 2018",
+    "t.c4":"Geodinámica","t.c4w":"Primavera 2023","t.c5":"Electromagnetismo","t.c5d":"Departamento de Física","t.c5l":"De este curso nació el libro de problemas →",
+    "b2.k":"Apunte · 2017","b2.p":"Problemas que escribí y reuní como profesor auxiliar de Electromagnetismo en la Universidad de Chile: 18 capítulos, de la ley de Coulomb a las ecuaciones de Maxwell, con unos 200 problemas en 385 páginas.","b2.soon":"Pronto habrá una nueva edición.","b2.go":"Descargar PDF (10 MB) →",
+    "projects.sub":"Material docente e historia familiar.",
+    "z.k":"Historia familiar · en curso","z.h":"El árbol de la familia Xu / Chi","z.p":"Genealogía de la familia Xu (Chi): 916 personas en 30 generaciones, desde Changle y Wuhua en China hasta Heshan y Chile. Un árbol interactivo con mapas y artículos.","z.go":"Entrar →",
+    copy:"copiar",copied:"copiado",foot:"Presiona / para buscar",ph:"Busca papers, temas, secciones…",gPapers:"Papers",gPages:"Secciones",none:"Sin resultados",
+    all:"Todos",abstract:"Abstract",cite:"Citar",copyBib:"Copiar BibTeX",sel:"destacado",papersN:n=>`${n} paper${n===1?"":"s"} →`,after:"desde el origen",
+    topics:{geo:["Geomagnetismo y núcleo","Ondas en el tope del núcleo terrestre, observadas en modelos del campo geomagnético de la era satelital, y lo que dicen sobre una capa estratificada."],
+            src:["Fuentes sísmicas","Detectar, localizar y caracterizar fuentes sísmicas, en especial explosiones. En la CTBTO trabajo con los datos sísmicos que se usan para verificar el Tratado de Prohibición Completa de los Ensayos Nucleares. En investigación, combino formas de onda regionales, polaridades de primer arribo y desplazamiento superficial InSAR en una sola inversión de tensor de momento, aplicada a los ensayos nucleares declarados de Corea del Norte."],
+            sig:["Procesamiento de señales y métodos basados en datos","Detección automática de llegadas de ondas P y S, y los métodos de descomposición (DMD, CEOF) que uso en el resto del trabajo."]}
+  }
+};
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const store = { get(k){ try{return localStorage.getItem(k)}catch(_){return null} }, set(k,v){ try{localStorage.setItem(k,v)}catch(_){} } };
+let lang = "en", topic = "all", open = {};
+
+function bib(p){
+  const key = "ChiDuran" + p.year + p.title.split(/\s+/)[0].replace(/\W/g,"");
+  return `@article{${key},\n  title   = {${p.title}},\n  author  = {${p.authors.join(" and ")}},\n  journal = {${p.venue}},\n  volume  = {${p.volume.split(/[(,]/)[0].trim()}},\n  year    = {${p.year}},\n  doi     = {${p.doi}}\n}`;
+}
+function renderFilters(){
+  const t = T[lang];
+  const opts = [["all",t.all,PAPERS.length], ...Object.entries(t.topics).map(([k,[h]])=>[k,t.tabs[k],PAPERS.filter(x=>x.topics.includes(k)).length])];
+  const tg = topic.startsWith("tag:") ? topic.slice(4) : null;
+  $("#filters").innerHTML = opts.map(([k,l,n])=>`<button type="button" data-topic="${k}" aria-pressed="${k===topic}">${l} <span class="n">${n}</span></button>`).join("")
+    + (tg ? `<button type="button" class="tag-on" data-topic="all" aria-label="${lang==="es"?"Quitar filtro":"Clear filter"}">${TAGS[lang][tg]||tg} <span aria-hidden="true">×</span></button>` : "");
+}
+function renderPapers(){
+  const t = T[lang];
+  const tagOn = topic.startsWith("tag:") ? topic.slice(4) : null;
+  const list = PAPERS.map((p,i)=>[p,i]).filter(([p])=>topic==="all" || (tagOn ? p.tags.includes(tagOn) : p.topics.includes(topic)));
+  $("#papers").innerHTML = list.length ? list.map(([p,i])=>`
+    <li class="paper" id="paper-${i}">
+      <div class="pmeta"><span class="yr">${p.year}</span><span class="venue">${esc(p.venue)}</span></div>
+      <h3 lang="en"><a href="https://doi.org/${p.doi}">${esc(p.title)}</a></h3>
+      <p class="authors">${p.authors.map(a=>a===ME?`<span class="me">${a}</span>`:esc(a)).join(", ")}</p>
+      <p class="summary" lang="${lang}">${esc(p[lang])}</p>
+      <div class="ptags">${p.tags.map(g=>`<button type="button" class="ptag" data-tag="${g}" aria-pressed="${g===tagOn}">${TAGS[lang][g]||g}</button>`).join("")}</div>
+      <div class="pact">
+        ${p.pdf?`<a href="${p.pdf}">PDF</a>`:""}
+        <a href="https://doi.org/${p.doi}">DOI</a>
+        ${p.abstract?`<button type="button" data-panel="abs-${i}" aria-controls="abs-${i}" aria-expanded="${!!open["abs-"+i]}">${t.abstract}</button>`:""}
+        <button type="button" data-panel="bib-${i}" aria-controls="bib-${i}" aria-expanded="${!!open["bib-"+i]}">${t.cite}</button>
+      </div>
+      ${p.abstract?`<div class="panel" id="abs-${i}" lang="en" ${open["abs-"+i]?"":"hidden"}>${esc(p.abstract)}</div>`:""}
+      <div class="panel" id="bib-${i}" ${open["bib-"+i]?"":"hidden"}><pre>${esc(bib(p))}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="${i}">${t.copyBib}</button><span class="ok" id="ok-${i}" aria-live="polite"></span></div></div>
+    </li>`).join("") : `<li class="empty">${t.none}</li>`;
+}
+function render(){
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-t]").forEach(el=>{ const v = t[el.dataset.t]; if(typeof v==="string") el.textContent = v; });
+  document.querySelectorAll("[data-th]").forEach(el=>{ el.innerHTML = t[el.dataset.th]; });
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.lang===lang)));
+  $("#pal-q").placeholder = t.ph;
+  $("#pal-q").setAttribute("aria-label", t.ph);
+  
+  $("#close-search").setAttribute("aria-label", t.close);
+  $(".pal-box").setAttribute("aria-label", t.search);
+  $(".nav").setAttribute("aria-label", lang==="es" ? "Navegación principal" : "Main navigation");
+  $(".lab-tabs").setAttribute("aria-label", t["nav.research"]);
+  $("#filters").setAttribute("aria-label", lang==="es" ? "Temas" : "Topics");
+  $(".lang").setAttribute("aria-label", lang==="es" ? "Idioma" : "Language");
+  $("#map-slider").setAttribute("aria-label", LAB[lang].year);
+  $("#map-play").setAttribute("aria-label", lang==="es" ? (map.playing ? "Pausar" : "Reproducir") : (map.playing ? "Pause" : "Play"));
+  $("#wf-replay").setAttribute("aria-label", lang==="es" ? "Repetir registro" : "Replay waveform");
+  applyTheme();
+  renderLab(); renderFilters(); renderPapers();
+}
+function setTopic(k){ topic = k; renderFilters(); renderPapers(); }
+function flashOk(el, text){ if(!el) return; el.textContent = text; setTimeout(()=>el.textContent="",1600); }
+function copy(text, els){
+  const ok = () => els.forEach(e=>flashOk(e," "+T[lang].copied));
+  const no = () => els.forEach(e=>flashOk(e," "+text));
+  try{ navigator.clipboard.writeText(text).then(ok,no); }catch(_){ no(); }
+}
+
+/* theme */
+const ICONS = {
+  auto:'<circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/>',
+  light:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  dark:'<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/>'
+};
+let theme = store.get("site-theme") || "auto";
+function applyTheme(){
+  if(theme==="auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme", theme);
+  $("#theme-ico").innerHTML = ICONS[theme];
+  const label = T[lang].themeLabel + ": " + T[lang].themeNames[theme];
+  $("#theme").title = label;
+  $("#theme").setAttribute("aria-label", label);
+}
+
+/* search palette */
+let items = [], cursor = 0, lastFocus = null;
+const norm = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+function pages(){
+  const t = T[lang];
+  return [["#about",t["nav.about"]],["#research",t["nav.research"]],["#publications",t["nav.pubs"]],["#teaching",t["nav.teaching"]],["#background",t["nav.background"]],["#projects",t["nav.projects"]],["#contact",t["nav.contact"]],
+          ["https://rodrigochi.github.io/zupu/","Zupu 族譜"],["https://rodrigochi.github.io/uploads/resume.pdf","CV (PDF)"]].map(([href,label])=>({kind:"page",href,label}));
+}
+function hi(text,q){
+  const w = q.split(/\s+/)[0]; if(!w) return esc(text);
+  const i = norm(text).indexOf(w); if(i<0) return esc(text);
+  return esc(text.slice(0,i))+"<mark>"+esc(text.slice(i,i+w.length))+"</mark>"+esc(text.slice(i+w.length));
+}
+function runSearch(){
+  const t = T[lang], q = norm($("#pal-q").value.trim()), ws = q.split(/\s+/).filter(Boolean);
+  const ps = PAPERS.map((p,i)=>({p,i,hay:norm([p.title,p.authors.join(" "),p.venue,p.year,p[lang],p.abstract||"",(p.tags||[]).join(" ")].join(" "))})).filter(x=>ws.every(w=>x.hay.includes(w)));
+  const pg = pages().filter(x=>ws.every(w=>norm(x.label).includes(w)));
+  items = [...ps.map(x=>({kind:"paper",i:x.i})), ...pg];
+  cursor = Math.min(cursor, Math.max(items.length-1,0));
+  let html = "", k = 0;
+  if(ps.length){ html += `<li class="grp" role="presentation">${t.gPapers}</li>`; ps.forEach(x=>{ html += `<li role="option" id="result-${k}" data-k="${k}" aria-selected="${k===cursor}"><span class="t" lang="en">${hi(x.p.title,q)}</span><span class="s">${x.p.year} · ${esc(x.p.venue)}</span></li>`; k++; }); }
+  if(pg.length){ html += `<li class="grp" role="presentation">${t.gPages}</li>`; pg.forEach(x=>{ html += `<li role="option" id="result-${k}" data-k="${k}" aria-selected="${k===cursor}"><span class="t">${esc(x.label)}</span></li>`; k++; }); }
+  $("#pal-list").innerHTML = html || `<li class="grp">${t.none}</li>`;
+  if(items.length) $("#pal-q").setAttribute("aria-activedescendant","result-"+cursor); else $("#pal-q").removeAttribute("aria-activedescendant");
+  const cur = $("#pal-list [aria-selected=true]"); if(cur) cur.scrollIntoView({block:"nearest"});
+}
+function openPal(){ lastFocus = document.activeElement; $("#pal").hidden = false; $("#pal-q").setAttribute("aria-expanded","true"); document.body.style.overflow="hidden"; document.querySelectorAll("nav,main,footer").forEach(el=>el.inert=true); $("#pal-q").value = ""; cursor = 0; runSearch(); $("#pal-q").focus(); }
+function closePal(){ $("#pal").hidden = true; $("#pal-q").setAttribute("aria-expanded","false"); document.body.style.overflow=""; document.querySelectorAll("nav,main,footer").forEach(el=>el.inert=false); if(lastFocus && lastFocus.offsetParent) lastFocus.focus(); }
+function choose(k){
+  const it = items[k]; if(!it) return; closePal();
+  if(it.kind==="page"){ if(it.href.startsWith("#")) document.querySelector(it.href).scrollIntoView(); else { crossToZupu(); location.href = it.href; } return; }
+  if(topic!=="all" && !PAPERS[it.i].topics.includes(topic)) setTopic("all");
+  const el = document.getElementById("paper-"+it.i);
+  el.scrollIntoView({block:"center"}); el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"),1400);
+}
+$("#pal-q").addEventListener("input", ()=>{ cursor = 0; runSearch(); });
+$("#pal").addEventListener("keydown", e=>{
+  if(e.key==="Escape"){ e.preventDefault(); closePal(); }
+  else if(e.key==="ArrowDown"){ e.preventDefault(); cursor = Math.min(cursor+1, items.length-1); runSearch(); }
+  else if(e.key==="ArrowUp"){ e.preventDefault(); cursor = Math.max(cursor-1, 0); runSearch(); }
+  else if(e.key==="Enter"){ e.preventDefault(); choose(cursor); }
+  else if(e.key==="Tab"){ e.preventDefault(); (document.activeElement.id==="pal-q" ? $("#close-search") : $("#pal-q")).focus(); }
+});
+$("#pal").addEventListener("click", e=>{ const li = e.target.closest("[data-k]"); if(li) return choose(+li.dataset.k); if(e.target.id==="pal") closePal(); });
+document.addEventListener("keydown", e=>{
+  if(!$("#pal").hidden) return;
+  const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
+  if((e.key==="/" && !typing) || (e.key.toLowerCase()==="k" && (e.metaKey||e.ctrlKey))){ e.preventDefault(); openPal(); }
+});
+
+/* Zupu shares this origin: hand over the current language */
+function crossToZupu(){ store.set("zupu-lang", lang); }
+
+document.addEventListener("click", e=>{
+  const el = e.target.closest("button,a"); if(!el) return;
+  if(el.classList.contains("to-zupu")) return crossToZupu();
+  if(el.id==="now-go"){ setTab("src"); replayWf(); return; }
+  if(el.id==="open-search") return openPal();
+  if(el.id==="close-search") return closePal();
+  if(el.id==="theme"){ theme = {auto:"light",light:"dark",dark:"auto"}[theme]; store.set("site-theme",theme); applyTheme(); return drawAll(); }
+  if(el.dataset.lang){ lang = el.dataset.lang; store.set("site-lang",lang); return render(); }
+  if(el.dataset.tag){ const k = "tag:"+el.dataset.tag; setTopic(topic===k ? "all" : k); return $("#publications").scrollIntoView(); }
+  if(el.dataset.topic) return setTopic(el.dataset.topic);
+  if(el.dataset.goto){ setTopic(el.dataset.goto); return $("#publications").scrollIntoView(); }
+  if(el.dataset.panel){ const id = el.dataset.panel; open[id] = !open[id]; $("#"+id).hidden = !open[id]; el.setAttribute("aria-expanded", String(!!open[id])); return; }
+  if(el.dataset.copy!==undefined) return copy(bib(PAPERS[+el.dataset.copy]), [$("#ok-"+el.dataset.copy)]);
+  if(el.classList.contains("copy-mail")) return copy(EMAIL, [...document.querySelectorAll(".mail-ok")]);
+});
+
+new ResizeObserver(()=>document.documentElement.style.setProperty("--nav-h", $(".nav").getBoundingClientRect().height+"px")).observe($(".nav"));
+
+/* scroll spy */
+const navLinks = [...document.querySelectorAll('#menu a[href^="#"]')];
+const spy = new IntersectionObserver(es=>{ es.forEach(en=>{ if(en.isIntersecting) navLinks.forEach(a=>{ const active = a.hash==="#"+en.target.id; a.classList.toggle("on", active); if(active) a.setAttribute("aria-current","location"); else a.removeAttribute("aria-current"); }); }); },{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("main section[id]").forEach(s=>spy.observe(s));
+
+/* ================= research lab ================= */
+const SEIS = {"station":"IC.MDJ.00.BHZ","start":"2017-09-03T03:30:36.66","dur":140.0,"pick":15.0,"t_origin":35.07,"y":[0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,0.0,0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,0.0,-0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,0.0,-0.0,0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,-0.0,0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,0.0,-0.0,-0.0,0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,0.0,-0.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,-0.0,0.0,-0.0,0.0,-0.0,0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,-0.0,0.0,0.0,0.0,-0.0,0.0,-0.0,0.0,-0.0,-0.0,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,-0.0,0.0,-0.0,0.0,0.0,0.0,-0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,0.0,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.001,-0.001,-0.001,-0.001,-0.0,0.001,0.001,0.002,0.002,0.002,0.001,-0.001,-0.003,-0.005,-0.006,-0.006,-0.005,-0.002,0.006,0.011,0.015,0.017,0.016,0.01,-0.01,-0.027,-0.046,-0.059,-0.067,-0.069,-0.043,0.151,0.927,0.56,-0.644,-0.748,-0.35,0.29,0.622,0.263,0.254,-0.508,-0.273,0.096,0.263,-0.331,-0.282,0.092,0.169,-0.052,-0.102,-0.21,-0.053,0.339,0.329,-0.272,-0.267,0.222,-0.102,-0.228,-0.087,-0.078,0.053,0.302,0.335,0.143,-0.304,-0.329,-0.183,-0.159,0.299,0.314,0.151,-0.136,-0.214,-0.038,0.067,-0.113,-0.16,-0.131,0.266,0.289,0.162,-0.1,-0.299,-0.338,-0.098,0.145,0.15,0.12,0.149,-0.092,-0.087,-0.087,-0.04,-0.143,-0.136,-0.098,0.306,0.392,0.177,0.092,-0.348,-0.405,-0.3,0.414,0.413,-0.098,0.157,0.391,-0.33,-0.58,-0.336,0.095,0.264,0.471,0.823,-0.644,-0.703,-0.211,-0.044,0.065,-0.123,-0.218,0.835,1.0,-0.505,-0.975,-0.598,-0.061,0.325,0.764,0.508,-0.565,-0.559,-0.17,0.481,0.332,0.189,-0.42,-0.38,-0.406,0.213,0.368,0.454,0.298,0.23,-0.484,-0.649,-0.527,0.51,0.448,0.163,0.288,0.2,-0.707,-0.717,0.325,0.524,0.434,0.162,-0.025,-0.486,-0.54,-0.247,0.286,0.355,0.454,0.232,-0.27,-0.476,-0.634,0.157,0.299,0.558,0.527,0.094,-0.323,-0.531,-0.411,0.221,0.256,-0.068,0.116,0.233,-0.049,-0.071,-0.062,-0.069,0.106,0.127,-0.223,-0.106,0.055,0.027,0.058,0.134,0.206,-0.054,0.024,-0.054,-0.283,-0.349,-0.075,0.188,0.249,0.147,0.145,-0.102,-0.105,-0.284,-0.278,0.182,0.357,0.117,0.16,-0.187,-0.221,-0.132,0.05,0.273,0.211,-0.13,-0.161,-0.07,0.052,0.12,0.09,0.049,-0.264,-0.219,0.146,0.174,0.094,0.039,-0.035,0.004,-0.086,-0.197,-0.082,0.053,0.083,0.212,-0.124,-0.138,0.085,0.074,-0.126,-0.055,0.063,0.068,-0.152,-0.16,-0.113,0.194,0.215,0.113,0.039,-0.072,-0.214,-0.203,-0.139,0.189,0.222,0.118,0.072,-0.139,-0.102,0.069,-0.098,-0.079,0.024,0.023,0.045,0.048,0.064,-0.072,0.048,-0.049,-0.031,-0.031,-0.034,-0.045,0.231,0.154,-0.16,-0.139,-0.056,-0.045,0.18,0.136,-0.017,-0.072,-0.166,-0.073,0.084,0.022,0.008,0.06,0.079,-0.187,-0.153,0.191,0.138,-0.066,0.031,-0.028,0.015,-0.021,-0.066,-0.072,0.034,-0.027,0.066,0.097,0.095,-0.038,-0.061,-0.083,-0.079,0.044,0.082,-0.028,0.056,0.047,0.04,0.097,-0.049,-0.125,-0.094,-0.011,0.088,0.04,0.145,0.126,-0.152,-0.142,-0.054,0.08,0.11,-0.076,0.04,0.063,0.026,0.009,-0.143,-0.162,-0.058,0.152,0.207,0.084,-0.004,-0.06,-0.133,-0.16,0.108,0.153,-0.044,-0.057,-0.008,-0.092,0.068,0.256,0.217,-0.194,-0.302,-0.186,0.06,0.158,0.163,0.097,-0.14,-0.105,0.006,0.082,-0.059,-0.085,-0.015,-0.01,-0.014,0.106,0.094,-0.037,-0.088,-0.033,-0.052,-0.1,0.12,0.19,0.069,-0.125,-0.187,-0.111,0.161,0.175,0.033,-0.118,-0.115,0.146,0.069,-0.096,-0.054,0.052,-0.13,-0.135,0.112,0.154,0.076,0.063,0.103,-0.192,-0.215,-0.136,0.095,0.118,0.189,0.18,0.05,-0.236,-0.317,-0.149,0.119,0.12,0.236,0.21,-0.06,-0.233,-0.208,-0.011,-0.097,-0.09,0.205,0.25,0.119,-0.094,-0.176,-0.09,-0.025,-0.009,-0.044,-0.058,0.131,0.147,0.112,-0.155,-0.183,0.046,0.118,0.105,-0.12,-0.177,-0.103,0.065,0.084,0.071,0.067,0.077,0.075,-0.163,-0.196,-0.139,0.084,0.147,0.102,-0.078,-0.082,0.14,0.15,-0.06,-0.115,-0.039,-0.153,-0.133,0.117,0.112,0.113,-0.048,-0.079,-0.06,0.069,-0.082,-0.089,0.025,0.028,0.012,-0.007,-0.044,0.061,0.105,0.01,0.008,-0.037,-0.131,-0.101,0.094,0.063,-0.033,-0.027,0.069,-0.036,-0.037,0.031,-0.087,-0.125,0.044,0.096,0.043,0.05,-0.057,-0.085,-0.019,-0.026,0.073,0.055,0.031,0.022,-0.131,-0.15,-0.098,0.179,0.189,0.072,-0.082,-0.077,-0.053,-0.091,-0.05,0.112,0.183,0.118,-0.092,-0.08,-0.087,-0.086,-0.081,0.14,0.134,0.061,0.026,0.028,-0.045,-0.065,-0.091,-0.046,-0.021,0.055,0.07,0.021,-0.078,0.105,0.146,0.086,-0.133,-0.158,-0.142,0.1,0.346,0.3,-0.175,-0.238,-0.212,-0.121,0.107,0.298,0.278,-0.081,-0.121,-0.194,-0.19,0.08,0.128,0.193,0.203,0.133,-0.254,-0.321,-0.256,0.051,0.183,0.188,0.074,0.09,0.084,-0.046,-0.052,0.091,0.065,-0.156,-0.136,-0.194,-0.165,0.23,0.35,0.314,0.123,-0.24,-0.305,-0.255,0.071,0.08,0.083,0.161,0.163,0.132,-0.13,-0.131,-0.159,-0.08,0.078,0.033,-0.076,-0.044,0.095,0.109,0.107,-0.019,-0.043,-0.049,0.031,-0.12,-0.152,-0.069,0.081,0.139,0.126,-0.105,-0.098,-0.014,0.047,0.051,0.063,0.093,-0.17,-0.227,-0.18,0.138,0.255,0.225,0.089,-0.086,-0.258,-0.227,-0.092,0.026,0.089,0.096,0.08,0.045,0.065,0.099,0.129,-0.071,-0.314,-0.343,-0.254,0.146,0.232,0.25,0.236,0.119,-0.139,-0.282,-0.285,-0.157,0.076,0.157,0.21,0.212,0.175,-0.08,-0.197,-0.292,-0.266,-0.116,0.096,0.219,0.233,0.166,0.064,-0.059,-0.059,-0.096,-0.111,-0.081,-0.111,-0.067,0.118,0.215,0.224,0.12,-0.169,-0.252,-0.21,-0.045,0.015,0.096,0.206,0.216,0.15,-0.071,-0.17,-0.193,-0.172,-0.137,0.051,0.086,0.129,0.141,0.184,0.174,-0.08,-0.196,-0.223,-0.144,-0.041,0.056,0.024,0.024,0.076,0.091,0.095,0.063,-0.034,-0.027,-0.045,-0.095,-0.097,-0.066,0.024,0.152,0.164,-0.032,-0.131,-0.143,-0.064,0.074,0.086,0.059,0.082,0.061,0.03,-0.062,-0.071,-0.109,-0.122,-0.102,-0.082,0.081,0.123,0.146,0.126,0.116,0.088,-0.057,-0.1,-0.211,-0.258,-0.207,0.061,0.085,0.131,0.2,0.216,0.154,-0.036,-0.145,-0.167,-0.155,-0.126,-0.103,0.058,0.123,0.186,0.188,0.096,-0.093,-0.157,-0.17,-0.09,0.077,0.086,0.074,0.039,-0.05,-0.034,0.003,-0.025,-0.048,-0.035,0.049,0.044,-0.007,0.026,0.07,0.071,-0.074,-0.096,-0.059,-0.03,-0.037,0.026,0.064,0.071,0.075,0.062,0.02,-0.063,-0.097,-0.081,-0.038,0.017,0.029,0.082,0.06,0.011,-0.046,-0.042,-0.014,0.04,0.037,0.021,0.017,0.021,-0.069,-0.101,-0.078,0.013,0.068,0.063,0.006,0.021,0.064,0.071,0.045,-0.073,-0.07,-0.064,-0.069,-0.044,0.095,0.109,0.06,-0.028,-0.053,-0.059,-0.038,0.024,0.029,0.052,0.048,-0.012,-0.063,-0.073,-0.053,0.023,0.072,0.106,0.092,-0.028,-0.082,-0.096,-0.112,-0.071,0.065,0.071,0.1,0.088,0.046,-0.069,-0.098,-0.087,-0.025,0.043,0.03,0.014,0.031,0.032,-0.016,-0.051,-0.062,-0.053,-0.022,0.037,0.084,0.082,0.062,-0.023,-0.064,-0.062,-0.029,-0.018,-0.019,0.039,0.044,-0.015,-0.027,-0.03,-0.005,0.007,0.053,0.064,0.05,-0.018,-0.036,-0.049,-0.075,-0.072,-0.025,0.068,0.085,0.047,0.037,0.027,-0.048,-0.079,-0.06,0.019,0.027,0.007,0.037,0.043,0.009,-0.018,-0.03,-0.041,-0.049,-0.016,0.051,0.052,0.032,0.023,0.02,0.005,-0.036,-0.073,-0.063,-0.021,-0.01,0.014,0.038,0.036,0.05,0.047,0.026,0.003,-0.014,-0.052,-0.072,-0.077,-0.042,-0.021,0.028,0.089,0.093,0.045,0.041,0.046,-0.049,-0.105,-0.107,-0.045,0.023,0.059,0.085,0.073,-0.026,-0.073,-0.076,-0.051,-0.015,0.016,0.05,0.065,0.061,0.033,-0.026,-0.017,-0.026,-0.04,-0.03,-0.025,0.011,0.053,0.049,-0.029,-0.042,-0.026,0.009,0.027,0.038,0.038,0.018,-0.035,-0.035,-0.021,-0.033,0.02,0.036,0.022,-0.007,0.015,0.02,0.014,-0.012,-0.018,-0.019,-0.013,-0.017,-0.043,-0.04,0.03,0.054,0.05,0.019,0.018,0.017,-0.016,-0.034,-0.038,-0.027,0.011,0.013,0.03,0.029,-0.012,-0.036,-0.032,-0.012,0.03,0.029,0.012,0.007,-0.018,-0.017,-0.009,0.013,0.007,-0.01,-0.018,-0.015,-0.003,0.003,0.005,0.021,0.027,0.032,-0.012,-0.025,-0.023,0.008,0.01,-0.022,-0.032,-0.011,0.014,-0.014,0.015,0.031,0.022,0.005,-0.019,-0.011,0.009,0.009,-0.026,-0.03,0.019,0.04,0.036,0.016,-0.015,-0.025,-0.026,-0.009,-0.009,-0.045,-0.049,0.022,0.056,0.057,0.028,0.008,-0.01,-0.018,-0.008,-0.015,-0.04,-0.035,0.009,0.039,0.041,0.027,0.023,-0.026,-0.031,-0.031,-0.042,-0.031,-0.006,-0.012,0.043,0.088,0.083,0.018,-0.029,-0.022,-0.021,-0.036,-0.034,-0.013,0.007,0.014,0.013,0.004,-0.004,0.002,0.0,0.014,0.009,0.006,0.009,0.013,-0.008,-0.008,0.005,-0.026,-0.034,-0.025,0.009,0.033,0.041,0.029,0.007,-0.022,-0.033,-0.035,-0.016,0.01,0.005,0.018,0.023,0.004,0.012,0.029,0.023,-0.031,-0.036,-0.015,0.003,0.005,-0.003,-0.006,0.015,0.014,-0.016,-0.02,-0.01,0.014,0.016,0.012,0.004,-0.008,0.005,0.016,0.015,0.005,-0.028,-0.041,-0.037,0.014,0.044,0.044,0.022,-0.021,-0.015,0.012,-0.012,-0.034,-0.036,0.016,0.023,0.003,0.015,0.042,0.043,0.028,-0.016,-0.037,-0.057,-0.061,-0.044,0.026,0.044,0.045,0.039,0.039,0.012,-0.024,-0.031,-0.034,-0.021,0.01,0.007,-0.027,-0.016,0.025,0.024,0.014,0.027,0.026,-0.006,-0.025,-0.021,0.012,-0.025,-0.038,-0.04,-0.024,0.03,0.033,0.021,0.009,0.012,0.029,0.027,0.017,-0.013,-0.049,-0.059,-0.046,-0.009,0.023,0.029,0.026,0.008,0.015,0.014,-0.006,-0.006,-0.013,-0.042,-0.046,-0.018,0.057,0.064,0.04,-0.026]};
+const LAB = {
+  en:{
+    geo:{cap:"Radial secular acceleration (second time derivative of B<sub>r</sub>) at the core–mantle boundary, r = 3485 km, spherical-harmonic degree ≤ 16. Model: <a href=\"https://www.spacecenter.dk/files/magnetic-models/CHAOS-8/\">CHAOS-8.1</a>. Drag to rotate, press play to run 2000–2025.",go:"papers"},
+    src:{cap:"Vertical component at IC.MDJ (Mudanjiang, China), about 370 km from the 3 September 2017 DPRK test. Bandpass 0.8–6 Hz, amplitude compressed for display. P picked automatically with STA/LTA at +50.1 s. Data: EarthScope / IRIS.",lbl:"Point or tap to read time after origin"},
+    sig:{cap:"Longitude–time section of the same field at a fixed latitude on the core–mantle boundary, CHAOS-8.1. Tilted bands are patterns drifting in longitude, the signal that CEOF and DMD pull apart into waves. Click to open that year on the map."},
+    read:(la,lo,v)=>`${la.toFixed(0)}°N ${lo.toFixed(0)}°E · <span class="v">${v>=0?"+":""}${v.toFixed(2)}</span> µT/yr²`,
+    hov:(lo,y,v)=>`${lo.toFixed(0)}°E · ${y.toFixed(2)} · <span style="color:var(--seal)">${v>=0?"+":""}${v.toFixed(2)}</span>`,
+    after:"s after origin", lon:"Longitude (°E)", year:"Year", sec:"Seconds after origin", loading:"Loading CHAOS-8.1…", fail:"Could not load the model data."
+  },
+  es:{
+    geo:{cap:"Aceleración secular radial (segunda derivada temporal de B<sub>r</sub>) en el límite núcleo–manto, r = 3485 km, grado armónico ≤ 16. Modelo: <a href=\"https://www.spacecenter.dk/files/magnetic-models/CHAOS-8/\">CHAOS-8.1</a>. Arrastra para rotar, presiona play para recorrer 2000–2025.",go:"papers"},
+    src:{cap:"Componente vertical en IC.MDJ (Mudanjiang, China), a unos 370 km del ensayo norcoreano del 3 de septiembre de 2017. Pasabanda 0,8–6 Hz, amplitud comprimida para visualizar. P detectada automáticamente con STA/LTA a +50,1 s. Datos: EarthScope / IRIS.",lbl:"Toca el registro para leer el tiempo desde el origen"},
+    sig:{cap:"Corte longitud–tiempo del mismo campo a latitud fija sobre el límite núcleo–manto, CHAOS-8.1. Las bandas inclinadas son patrones que se desplazan en longitud: la señal que CEOF y DMD separan en ondas. Haz clic para abrir ese año en el mapa."},
+    read:(la,lo,v)=>`${la.toFixed(0)}°N ${lo.toFixed(0)}°E · <span class="v">${v>=0?"+":""}${v.toFixed(2).replace(".",",")}</span> µT/yr²`,
+    hov:(lo,y,v)=>`${lo.toFixed(0)}°E · ${y.toFixed(2).replace(".",",")} · <span style="color:var(--seal)">${v>=0?"+":""}${v.toFixed(2).replace(".",",")}</span>`,
+    after:"s desde el origen", lon:"Longitud (°E)", year:"Año", sec:"Segundos desde el origen", loading:"Cargando CHAOS-8.1…", fail:"No se pudieron cargar los datos del modelo."
+  }
+};
+let tab = "src";
+function renderLab(){
+  const t = T[lang], L = LAB[lang];
+  ["src","geo","sig"].forEach(k=>{ const b = $("#tab-"+k); b.innerHTML = esc(t.tabs[k]); b.setAttribute("aria-selected", String(k===tab)); b.tabIndex = k===tab ? 0 : -1; $("#fig-"+k).hidden = k!==tab; });
+  $("#lab-panel").setAttribute("aria-labelledby", "tab-"+tab);
+  $("#lab-intro").textContent = t.intro[tab];
+  $("#lab-h").textContent = t.topics[tab][0];
+  $("#lab-p").textContent = t.topics[tab][1];
+  $("#lab-cap").innerHTML = L[tab].cap;
+  const n = PAPERS.filter(x=>x.topics.includes(tab)).length;
+  $("#lab-go").textContent = t.papersN(n); $("#lab-go").dataset.goto = tab;
+  $("#wf-lbl").textContent = L.src.lbl;
+  drawAll();
+}
+function setTab(k){ if(map.playing) playMap(false); tab = k; renderLab(); }
+
+/* ---------- shared color scale, built from theme tokens ---------- */
+function hex2rgb(h){ h = h.replace("#",""); if(h.length===3) h = h.split("").map(c=>c+c).join(""); return [0,2,4].map(i=>parseInt(h.slice(i,i+2),16)); }
+const mix = (a,b,f) => a.map((v,i)=>Math.round(v+(b[i]-v)*f));
+let RAMP = [];
+function buildRamp(){
+  const stops = [hex2rgb(tok("--plot-neg")), hex2rgb(tok("--plot-mid")), hex2rgb(tok("--plot-pos"))];
+  RAMP = [];
+  const LEVELS = 15;                        // banded, like filled contours
+  for(let b=0;b<LEVELS;b++){
+    const u = b/(LEVELS-1)*(stops.length-1), i = Math.min(Math.floor(u), stops.length-2);
+    RAMP.push(mix(stops[i], stops[i+1], u-i));
+  }
+  const css = "linear-gradient(90deg," + RAMP.map(c=>`rgb(${c})`).join(",") + ")";
+  ["#cb-map","#cb-hov"].forEach(s=>{ const el = $(s); if(el) el.style.background = css; });
+}
+function colorOf(v){ const b = Math.max(0, Math.min(RAMP.length-1, Math.round((v+1)/2*(RAMP.length-1)))); return RAMP[b]; }
+function tok(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+function fitCanvas(cv, cssH){
+  const r = Math.min(devicePixelRatio||1, 2), w = cv.clientWidth || cv.parentElement.clientWidth;
+  cv.style.height = cssH + "px";
+  const W = Math.round(w*r), H = Math.round(cssH*r);
+  if(cv.width!==W || cv.height!==H){ cv.width = W; cv.height = H; }
+  return {r, w, h:cssH};
+}
+const b64i8 = s => { const bin = atob(s), a = new Int8Array(bin.length); for(let i=0;i<bin.length;i++) a[i] = bin.charCodeAt(i)<<24>>24; return a; };
+
+/* ---------- CHAOS-8.1 data ---------- */
+let CH = null, MAP = null, HOV = {};
+fetch("assets/research/chaos81_cmb.json").then(r=>r.ok?r.json():Promise.reject()).then(d=>{
+  CH = d; MAP = b64i8(d.map.data); d.hov.lats.forEach(la=>HOV[la] = b64i8(d.hov.data[la]));
+  $("#map-slider").max = d.map.years.length-1;
+  $("#cb-lo").textContent = "−" + d.map.vmax.toFixed(1); $("#cb-hi").textContent = "+" + d.map.vmax.toFixed(1);
+  drawAll();
+}).catch(()=>{ $("#map-read").textContent = LAB[lang].fail; });
+
+/* ---------- polar map ---------- */
+const map = { cv: $("#map-cv"), yi: 30, lon0: -150, hover: null, drag: null, playing: false, timer: null };
+const COLMAX = 60;                                    // show 90°N → 30°N
+function mapSample(yi, colat, lon){
+  const nc = CH.map.colat.length, nl = CH.map.lon.length, dc = CH.map.colat[1]-CH.map.colat[0], dl = CH.map.lon[1]-CH.map.lon[0];
+  const c = colat/dc, l = (((lon%360)+360)%360)/dl;
+  const c0 = Math.min(Math.floor(c), nc-2), l0 = Math.floor(l)%nl, l1 = (l0+1)%nl, fc = c-c0, fl = l-Math.floor(l);
+  const base = yi*nc*nl, g = (ci,li) => MAP[base+ci*nl+li]/127;
+  return (g(c0,l0)*(1-fl)+g(c0,l1)*fl)*(1-fc) + (g(c0+1,l0)*(1-fl)+g(c0+1,l1)*fl)*fc;
+}
+function mapGeom(w,h){ const R = Math.min(w, h)/2 - 18; return {cx: w/2, cy: h/2, R}; }
+function project(lat, lon, g){ const rho = (90-lat)/COLMAX, a = (lon-map.lon0)*Math.PI/180; return [g.cx + g.R*rho*Math.sin(a), g.cy + g.R*rho*Math.cos(a)]; }
+function unproject(x, y, g){ const dx = x-g.cx, dy = y-g.cy, rho = Math.hypot(dx,dy)/g.R; if(rho>1) return null; return [90-rho*COLMAX, map.lon0 + Math.atan2(dx,dy)*180/Math.PI]; }
+function drawMap(){
+  if(tab!=="geo") return;
+  const cv = map.cv, ctx = cv.getContext("2d"), {r, w, h} = fitCanvas(cv, Math.min(460, Math.max(300, cv.clientWidth*0.62)));
+  ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,cv.width,cv.height);
+  const g = mapGeom(w,h);
+  $("#map-year").textContent = CH ? CH.map.years[map.yi].toFixed(1) : "";
+  if(!CH){ ctx.setTransform(r,0,0,r,0,0); ctx.fillStyle = tok("--muted"); ctx.font = "12px 'IBM Plex Mono', monospace"; ctx.fillText(LAB[lang].loading, g.cx-60, g.cy); return; }
+  // raster
+  const x0 = Math.floor((g.cx-g.R)*r), y0 = Math.floor((g.cy-g.R)*r), S = Math.ceil(2*g.R*r)+1;
+  const img = ctx.createImageData(S, S), D = img.data;
+  for(let j=0;j<S;j++) for(let i=0;i<S;i++){
+    const p = unproject((x0+i)/r, (y0+j)/r, g); if(!p) continue;
+    const c = colorOf(mapSample(map.yi, 90-p[0], p[1])), k = (j*S+i)*4;
+    D[k]=c[0]; D[k+1]=c[1]; D[k+2]=c[2]; D[k+3]=255;
+  }
+  ctx.putImageData(img, x0, y0);
+  ctx.setTransform(r,0,0,r,0,0);
+  // graticule
+  ctx.strokeStyle = tok("--muted"); ctx.globalAlpha = .35; ctx.lineWidth = .6;
+  [30,50,70].forEach(la=>{ ctx.beginPath(); ctx.arc(g.cx, g.cy, g.R*(90-la)/COLMAX, 0, 7); ctx.stroke(); });
+  for(let lo=0; lo<360; lo+=30){ const [x,y] = project(30, lo, g); ctx.beginPath(); ctx.moveTo(g.cx,g.cy); ctx.lineTo(x,y); ctx.stroke(); }
+  ctx.globalAlpha = 1;
+  // coastlines
+  ctx.strokeStyle = tok("--ink"); ctx.globalAlpha = .55; ctx.lineWidth = .7; ctx.lineJoin = "round";
+  CH.coast.forEach(seg=>{ ctx.beginPath(); let pen = false;
+    seg.forEach(([lo,la])=>{ if(la<30){ pen = false; return; } const [x,y] = project(la, lo, g); pen ? ctx.lineTo(x,y) : ctx.moveTo(x,y); pen = true; }); ctx.stroke(); });
+  ctx.globalAlpha = 1;
+  // section used in the longitude-time tab
+  ctx.strokeStyle = tok("--ink"); ctx.setLineDash([3,3]); ctx.lineWidth = 1; ctx.beginPath();
+  const la = hov.lat, L0 = CH.hov.lon[0], L1 = CH.hov.lon[CH.hov.lon.length-1];
+  for(let lo=L0; lo<=L1; lo+=2){ const [x,y] = project(la, lo, g); lo===L0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y); } ctx.stroke(); ctx.setLineDash([]);
+  // rim + longitude labels
+  ctx.strokeStyle = tok("--rule-2"); ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(g.cx, g.cy, g.R, 0, 7); ctx.stroke();
+  ctx.fillStyle = tok("--muted"); ctx.font = "10px 'IBM Plex Mono', monospace"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  for(let lo=0; lo<360; lo+=60){ const a = (lo-map.lon0)*Math.PI/180; ctx.fillText((((lo+180)%360)-180)+"°", g.cx+(g.R+10)*Math.sin(a), g.cy+(g.R+10)*Math.cos(a)); }
+  ctx.textAlign = "start"; ctx.textBaseline = "alphabetic";
+  // hover
+  if(map.hover){ const p = unproject(map.hover[0], map.hover[1], g);
+    if(p){ const v = mapSample(map.yi, 90-p[0], p[1])*CH.map.vmax, lo = ((p[1]%360)+360)%360;
+      $("#map-read").innerHTML = LAB[lang].read(p[0], lo>180?lo-360:lo, v);
+      ctx.strokeStyle = tok("--ink"); ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(map.hover[0], map.hover[1], 4, 0, 7); ctx.stroke();
+    } else $("#map-read").textContent = "";
+  } else $("#map-read").textContent = "";
+}
+function setYear(i){ map.yi = Math.max(0, Math.min(CH ? CH.map.years.length-1 : 50, i)); $("#map-slider").value = map.yi; drawMap(); }
+$("#map-slider").addEventListener("input", e=>setYear(+e.target.value));
+function playMap(on){
+  map.playing = on; clearInterval(map.timer);
+  $("#map-play").innerHTML = on ? '<svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg>' : '<svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l9 5-9 5z"/></svg>';
+  $("#map-play").setAttribute("aria-label", lang==="es" ? (on ? "Pausar" : "Reproducir") : (on ? "Pause" : "Play"));
+  if(on){ if(CH && map.yi>=CH.map.years.length-1) setYear(0); map.timer = setInterval(()=>{ if(!CH) return; if(map.yi>=CH.map.years.length-1) return playMap(false); setYear(map.yi+1); }, 260); }
+}
+$("#map-play").addEventListener("click", ()=>playMap(!map.playing));
+map.cv.addEventListener("pointerdown", e=>{ map.drag = {x:e.clientX, lon0:map.lon0}; map.cv.setPointerCapture(e.pointerId); map.cv.classList.add("drag"); });
+map.cv.addEventListener("pointermove", e=>{
+  const b = map.cv.getBoundingClientRect();
+  if(map.drag){ map.lon0 = map.drag.lon0 - (e.clientX-map.drag.x)*0.5; map.hover = null; }
+  else map.hover = [e.clientX-b.left, e.clientY-b.top];
+  drawMap();
+});
+const endDrag = ()=>{ map.drag = null; map.cv.classList.remove("drag"); };
+map.cv.addEventListener("pointerup", endDrag); map.cv.addEventListener("pointercancel", endDrag);
+map.cv.addEventListener("pointerleave", ()=>{ map.hover = null; drawMap(); });
+
+/* ---------- longitude–time ---------- */
+const hov = { cv: $("#hov-cv"), lat: 70, hover: null, pad: {l:46, r:14, t:14, b:34} };
+function hovSample(lat, yf, lf){                       // fractional indices
+  const ny = CH.hov.years.length, nl = CH.hov.lon.length, A = HOV[lat];
+  const y0 = Math.min(Math.floor(yf), ny-2), l0 = Math.min(Math.floor(lf), nl-2), fy = yf-y0, fl = lf-l0;
+  const g = (a,b) => A[a*nl+b]/127;
+  return (g(y0,l0)*(1-fl)+g(y0,l0+1)*fl)*(1-fy) + (g(y0+1,l0)*(1-fl)+g(y0+1,l0+1)*fl)*fy;
+}
+function drawHov(){
+  if(tab!=="sig") return;
+  const cv = hov.cv, ctx = cv.getContext("2d"), {r, w, h} = fitCanvas(cv, Math.min(420, Math.max(260, cv.clientWidth*0.5)));
+  ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,cv.width,cv.height);
+  if(!CH) return;
+  const P = hov.pad, pw = w-P.l-P.r, ph = h-P.t-P.b, ny = CH.hov.years.length, nl = CH.hov.lon.length;
+  const X0 = Math.round(P.l*r), Y0 = Math.round(P.t*r), Wp = Math.round(pw*r), Hp = Math.round(ph*r);
+  const img = ctx.createImageData(Wp, Hp), D = img.data;
+  for(let j=0;j<Hp;j++){ const yf = (1 - j/(Hp-1))*(ny-1);
+    for(let i=0;i<Wp;i++){ const c = colorOf(hovSample(hov.lat, yf, i/(Wp-1)*(nl-1))), k = (j*Wp+i)*4; D[k]=c[0]; D[k+1]=c[1]; D[k+2]=c[2]; D[k+3]=255; } }
+  ctx.putImageData(img, X0, Y0);
+  ctx.setTransform(r,0,0,r,0,0);
+  const L0 = CH.hov.lon[0], L1 = CH.hov.lon[nl-1], Ya = CH.hov.years[0], Yb = CH.hov.years[ny-1];
+  const xOf = lo => P.l + (lo-L0)/(L1-L0)*pw, yOf = y => P.t + (1-(y-Ya)/(Yb-Ya))*ph;
+  ctx.strokeStyle = tok("--rule-2"); ctx.lineWidth = 1; ctx.strokeRect(P.l+.5, P.t+.5, pw-1, ph-1);
+  ctx.fillStyle = tok("--muted"); ctx.font = "10px 'IBM Plex Mono', monospace";
+  ctx.textAlign = "center"; for(let lo=Math.ceil(L0/30)*30; lo<=L1; lo+=30){ const x = xOf(lo); ctx.fillRect(x, P.t+ph, 1, 4); ctx.fillText(lo+"°", x, P.t+ph+15); }
+  ctx.fillText(LAB[lang].lon, P.l+pw/2, h-4);
+  ctx.textAlign = "right"; ctx.textBaseline = "middle"; for(let y=2000; y<=2025; y+=5){ const yy = yOf(y); ctx.fillRect(P.l-4, yy, 4, 1); ctx.fillText(String(y), P.l-7, yy); }
+  ctx.textAlign = "start"; ctx.textBaseline = "alphabetic";
+  // current map year
+  const ym = yOf(CH.map.years[map.yi]); ctx.strokeStyle = tok("--ink"); ctx.setLineDash([3,3]); ctx.beginPath(); ctx.moveTo(P.l, ym); ctx.lineTo(P.l+pw, ym); ctx.stroke(); ctx.setLineDash([]);
+  if(hov.hover){ const [hx, hy] = hov.hover;
+    if(hx>=P.l && hx<=P.l+pw && hy>=P.t && hy<=P.t+ph){
+      const lo = L0 + (hx-P.l)/pw*(L1-L0), yr = Ya + (1-(hy-P.t)/ph)*(Yb-Ya), v = hovSample(hov.lat, (yr-Ya)/(Yb-Ya)*(ny-1), (lo-L0)/(L1-L0)*(nl-1))*CH.hov.vmax;
+      ctx.strokeStyle = tok("--ink"); ctx.globalAlpha = .6; ctx.beginPath(); ctx.moveTo(hx, P.t); ctx.lineTo(hx, P.t+ph); ctx.moveTo(P.l, hy); ctx.lineTo(P.l+pw, hy); ctx.stroke(); ctx.globalAlpha = 1;
+      $("#hov-read").innerHTML = LAB[lang].hov(lo, yr, v); return { yr };
+    }
+  }
+  $("#hov-read").textContent = "";
+}
+hov.cv.addEventListener("pointermove", e=>{ const b = hov.cv.getBoundingClientRect(); hov.hover = [e.clientX-b.left, e.clientY-b.top]; drawHov(); });
+hov.cv.addEventListener("pointerleave", ()=>{ hov.hover = null; drawHov(); });
+hov.cv.addEventListener("click", e=>{
+  if(!CH) return; const b = hov.cv.getBoundingClientRect(), P = hov.pad, ph = b.height-P.t-P.b, y = e.clientY-b.top;
+  if(y<P.t || y>P.t+ph) return;
+  const Ya = CH.map.years[0], Yb = CH.map.years[CH.map.years.length-1], yr = Ya + (1-(y-P.t)/ph)*(Yb-Ya);
+  map.yi = Math.round((yr-Ya)/(Yb-Ya)*(CH.map.years.length-1)); $("#map-slider").value = map.yi; setTab("geo");
+});
+$("#hov-lat").addEventListener("click", e=>{ const b = e.target.closest("[data-lat]"); if(!b) return; hov.lat = +b.dataset.lat;
+  document.querySelectorAll("#hov-lat button").forEach(x=>x.setAttribute("aria-pressed", String(x===b))); drawHov(); });
+
+/* ---------- waveform ---------- */
+const wf = { cv: $("#wf-cv"), prog: 1, hover: null };
+const WY = SEIS.y.map(v=>Math.sign(v)*Math.pow(Math.abs(v),0.55));
+function drawWf(){
+  if(tab!=="src") return;
+  const cv = wf.cv, ctx = cv.getContext("2d"), {r, w, h} = fitCanvas(cv, Math.min(340, Math.max(220, cv.clientWidth*0.38)));
+  ctx.setTransform(r,0,0,r,0,0); ctx.clearRect(0,0,w,h);
+  const top = 46, bot = h-30, mid = (top+bot)/2, amp = (bot-top)/2, N = WY.length, dur = SEIS.dur, L = 14, pw = w-2*L;
+  const xOf = s => L + s/dur*pw;
+  ctx.strokeStyle = tok("--rule-2"); ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(L,bot+.5); ctx.lineTo(w-L,bot+.5); ctx.stroke();
+  ctx.fillStyle = tok("--muted"); ctx.font = "10px 'IBM Plex Mono', monospace"; ctx.textAlign = "center";
+  for(let s=Math.ceil(SEIS.t_origin/20)*20; s<=SEIS.t_origin+dur; s+=20){ const x = Math.round(xOf(s-SEIS.t_origin))+.5; ctx.fillRect(x-.5,bot,1,4); ctx.fillText(s+" s", x, bot+15); }
+  ctx.fillText(LAB[lang].sec, w/2, h-3); ctx.textAlign = "start";
+  const px = xOf(SEIS.pick), seal = tok("--seal");
+  if(wf.prog*dur >= SEIS.pick){ ctx.strokeStyle = seal; ctx.setLineDash([2,3]); ctx.beginPath(); ctx.moveTo(Math.round(px)+.5, top-8); ctx.lineTo(Math.round(px)+.5, bot); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = seal; ctx.font = "500 11px 'IBM Plex Mono', monospace"; ctx.fillText("P", px+5, top); }
+  const n = Math.floor(N*wf.prog); ctx.strokeStyle = tok("--ink"); ctx.lineWidth = 1; ctx.lineJoin = "round"; ctx.beginPath();
+  for(let i=0;i<n;i++){ const x = L + i/(N-1)*pw, y = mid - WY[i]*amp*.95; i ? ctx.lineTo(x,y) : ctx.moveTo(x,y); } ctx.stroke();
+  if(wf.prog<1 && n>0){ ctx.fillStyle = seal; ctx.beginPath(); ctx.arc(L+(n-1)/(N-1)*pw, mid-WY[n-1]*amp*.95, 2.4, 0, 7); ctx.fill(); }
+  if(wf.hover!==null && wf.prog>=1){ const x = Math.max(L, Math.min(w-L, wf.hover)); ctx.strokeStyle = tok("--trace"); ctx.beginPath(); ctx.moveTo(Math.round(x)+.5, top-8); ctx.lineTo(Math.round(x)+.5, bot); ctx.stroke();
+    $("#wf-read").textContent = `t = +${(SEIS.t_origin + (x-L)/pw*dur).toFixed(1)} ${LAB[lang].after}`; }
+  else $("#wf-read").textContent = `P +${(SEIS.t_origin+SEIS.pick).toFixed(1)} s`;
+}
+function replayWf(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){ wf.prog = 1; return drawWf(); }
+  let st = null; wf.prog = 0; const step = ts => { if(st===null) st = ts; wf.prog = Math.min(1,(ts-st)/1800); drawWf(); if(wf.prog<1 && tab==="src") requestAnimationFrame(step); else { wf.prog = 1; drawWf(); } }; requestAnimationFrame(step);
+}
+$("#wf-replay").addEventListener("click", replayWf);
+wf.cv.addEventListener("pointermove", e=>{ wf.hover = e.clientX - wf.cv.getBoundingClientRect().left; drawWf(); });
+wf.cv.addEventListener("pointerleave", ()=>{ wf.hover = null; drawWf(); });
+
+/* ---------- tabs + redraw ---------- */
+document.querySelector(".lab-tabs").addEventListener("click", e=>{ const b = e.target.closest("[data-tab]"); if(!b) return; if(map.playing) playMap(false); setTab(b.dataset.tab); if(tab==="src") replayWf(); });
+document.querySelector(".lab-tabs").addEventListener("keydown", e=>{
+  if(!["ArrowRight","ArrowLeft","Home","End"].includes(e.key)) return; e.preventDefault(); const ks = ["src","geo","sig"], i = ks.indexOf(tab);
+  const k = e.key==="Home" ? ks[0] : e.key==="End" ? ks[2] : ks[(i + (e.key==="ArrowRight"?1:2)) % 3]; setTab(k); $("#tab-"+k).focus();
+});
+function drawAll(){ buildRamp(); drawMap(); drawHov(); drawWf(); }
+if("IntersectionObserver" in window){ const io = new IntersectionObserver(es=>{ if(es.some(e=>e.isIntersecting)){ io.disconnect(); if(tab==="src") replayWf(); } }, {threshold:.4}); io.observe($("#fig-src")); }
+let rz; addEventListener("resize", ()=>{ clearTimeout(rz); rz = setTimeout(drawAll, 80); });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", drawAll);
+if(document.fonts) document.fonts.ready.then(drawAll);
+
+/* boot */
+const saved = store.get("site-lang");
+if(saved==="en"||saved==="es") lang = saved; else if((navigator.language||"").toLowerCase().startsWith("es")) lang = "es";
+applyTheme(); render();
+document.documentElement.classList.add("enhanced");
 </script>
 
-
-  
-
-
-
-
-  
-  
-  
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
-
-  
-  
-    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="rchi" />
-  
-
-  
-
-
-  
-  <title>rchi</title>
-
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-</head>
-
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   " data-wc-page-id="3976528693a0108357f4928017600865" >
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header header--fixed">
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-    <div class="container-xl">
-
-      
-      <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="/">rchi</a>
-      </div>
-      
-
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-      
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="/">rchi</a>
-      </div>
-      
-
-      
-      
-      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-        
-        <ul class="navbar-nav d-md-inline-flex">
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#featured" data-target="#featured"><span>Publications</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/uploads/resume.pdf"><span>CV</span></a>
-          </li>
-
-          
-          
-
-        
-
-          
-        </ul>
-      </div>
-
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-        
-        
-          
-            
-            <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="/"  aria-label="">
-                <i class="fas fa-" aria-hidden="true"></i>
-              </a>
-            </li>
-          
-        
-
-        
-        
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-        
-        
-        <li class="nav-item dropdown theme-dropdown">
-          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item js-set-theme-light">
-              <span>Light</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>Dark</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-auto">
-              <span>Automatic</span>
-            </a>
-          </div>
-        </li>
-        
-
-        
-        
-
-      </ul>
-
-    </div>
-  </nav>
-</header>
-
-
-  </div>
-
-  <div class="page-body">
-    
-    
-    
-
-    
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-
-<span class="js-widget-page d-none"></span>
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="about" class="home-section wg-about-biography  "  >
- <div class="home-section-bg " >
-   
- </div>
-  <div class="container">
-
-  
-
-    
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="avatar avatar-circle"
-           width="270" height="270"
-           src="/authors/admin/avatar_hu83961a34c00871482c301dc26c52e3b8_2997540_270x270_fill_q75_lanczos_center.jpg" alt="Rodrigo Chi-Durán">
-      
-
-      <div class="portrait-title">
-
-        <h2>Rodrigo Chi-Durán</h2>
-
-        <h3>Ph.D. in Earth and Planetary Science</h3>
-
-        
-        <h3>
-          <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">
-          <span>University of California, Berkeley</span>
-          </a>
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="/#contact"  aria-label="envelope">
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="/"  aria-label="">
-            <i class="fas fa- big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.com/citations?user=bFubaMkAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="graduation-cap">
-            <i class="fas fa-graduation-cap big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.linkedin.com/in/rodrigo-chi-2ba2a0267/" target="_blank" rel="noopener" aria-label="linkedin">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="/uploads/resume_sept23.pdf"  aria-label="cv">
-            <i class="ai ai-cv big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    <h1>About me</h1>
-
-    
-    <div class="article-style">
-      <p>Hello, I&rsquo;m Rodrigo Chi Durán. I hold a Ph.D. in Earth and Planetary Sciences at UC Berkeley, which is an extension of my journey that began in Electrical Engineering at the Universidad de Chile. My research revolves around geodynamics, with a particular emphasis on geomagnetism and seismology. I employ signal processing and data-driven techniques to gain insights into these areas. I&rsquo;m looking forward to the opportunity to discuss and share more about my work.</p>
-
-    </div>
-    
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <div class="section-subheading">Interests</div>
-        <ul class="ul-interests fa-ul mb-0">
-          
-          <li>
-            <i class="fa-li fa-solid fa-book"></i>
-            Geodynamics
-          </li>
-          
-          <li>
-            <i class="fa-li fa-solid fa-book"></i>
-            Earthquakes
-          </li>
-          
-          <li>
-            <i class="fa-li fa-solid fa-book"></i>
-            Seismic Sources
-          </li>
-          
-          <li>
-            <i class="fa-li fa-solid fa-book"></i>
-            Geomagnetism
-          </li>
-          
-          <li>
-            <i class="fa-li fa-solid fa-book"></i>
-            Data Science
-          </li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <div class="section-subheading">Education</div>
-        <ul class="ul-edu fa-ul mb-0">
-          
-          <li>
-            <i class="fa-li fa-solid fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Ph.D. in Earth and Planetary Science, 2023</p>
-              <p class="institution">University of California, Berkeley</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa-solid fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc. in Electrical Engineering, 2015</p>
-              <p class="institution">Universidad de Chile</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-
-  
-
-  </div>
-</section>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="featured" class="home-section wg-collection  "  >
- <div class="home-section-bg " >
-   
- </div>
-  <div class="container">
-
-  
-    <div class="row  ">
-    
-      
-        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-          <h1 class="mb-0">Publications</h1>
-          
-        </div>
-      
-    
-  
-
-    
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  <div class="alert alert-note">
-  <div>
-    Quickly discover relevant content by <a href="./publication/">filtering publications</a>.
-  </div>
-</div>
-
-
-  
-    
-
-
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted">
-      Rodrigo Chi-Durán</span>, <span >
-      Bruce Buffett</span>
-  </span>
-  (2023).
-  <a href="/publication/dmd/">Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition</a>.
-  <em>Geophysical Research Letters, 50, e2022GL101288</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022GL101288?download=true" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/dmd/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1029/2022GL101288" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-  
-    
-
-
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted">
-      Rodrigo Chi-Durán</span>, <span >
-      Margaret S. Avery</span>, <span >
-      Bruce A. Buffett</span>
-  </span>
-  (2021).
-  <a href="/publication/signatures/">Signatures of high-latitude waves in observations of geomagnetic acceleration</a>.
-  <em>Geophysical Research Letters, 48, e2021GL094692</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022GL101288?download=true" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/signatures/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1029/2022GL101288" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-  
-    
-
-
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted">
-      Rodrigo Chi-Durán</span>, <span >
-      Douglas S. Dreger</span>, <span >
-      Arthur J. Rodgers</span>, <span >
-      Avinash Nayak</span>
-  </span>
-  (2021).
-  <a href="/publication/dprk1/">Joint Regional Waveform, First‐Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test</a>.
-  <em>The Seismic Record 2021; 1 (2): 107–116</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://pubs.geoscienceworld.org/ssa/tsr/article-pdf/1/2/107/5389510/tsr-2021022.1.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/dprk1/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1785/0320210022" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-  
-    
-
-
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted">
-      Rodrigo Chi-Durán</span>, <span >
-      Margaret S. Avery</span>, <span >
-      Nicholas Knezek</span>, <span >
-      Bruce A. Buffett</span>
-  </span>
-  (2020).
-  <a href="/publication/ceof/">Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions</a>.
-  <em>Geophysical Research Letters, 47, e2020GL087940</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020GL087940?download=true" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/ceof/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1029/2020GL087940" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-  
-    
-
-
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted">
-      Rodrigo Chi-Durán</span>, <span >
-      Diana Comte</span>, <span >
-      Marcos Diaz</span>, <span >
-      Jorge F. Silva</span>
-  </span>
-  (2017).
-  <a href="/publication/picker/">Automatic detection of P- and S-wave arrival times new strategies based on the modified fractal method and basic matching pursuit</a>.
-  <em>Journal of Seismology, 21, 1171–1184 (2017)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://link.springer.com/content/pdf/10.1007/s10950-017-9658-0.pdf?pdf=button" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/picker/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/s10950-017-9658-0" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-  
-
-  
-  
-  
-
-</div>
-
-
-  
-    </div>
-  
-
-  </div>
-</section>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="contact" class="home-section wg-contact  "  >
- <div class="home-section-bg " >
-   
- </div>
-  <div class="container">
-
-  
-    <div class="row  ">
-    
-      
-        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-          <h1 class="mb-0">Contact</h1>
-          
-        </div>
-      
-    
-  
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-12 col-lg-8">
-  
-
-  
-
-  <ul class="fa-ul">
-
-    
-    <li>
-      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-      <span id="person-email"><a href="mailto:rodrigo.chi%20[at]%20berkeley.edu">rodrigo.chi [at] berkeley.edu</a></span>
-    </li>
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-  </ul>
-
-  
-
-</div>
-
-
-  
-    </div>
-  
-
-  </div>
-</section>
-
-
-
-
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-
-
-<p class="powered-by">
-  
-  <a href="/privacy/">Privacy Policy</a>
-  
-  
-   &middot; 
-  <a href="/terms/">Terms</a>
-  
-</p>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-    
-  
-  
-    
-  
-
-  
-
-  
-  <p class="powered-by copyright-license-text">
-    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
-  </p>
-  
-
-  <p class="powered-by footer-license-icons">
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
-      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
-      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
-      
-        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
-      
-      
-        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
-      
-    </a>
-  </p>
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-  
-
-
-<script src="/js/vendor-bundle.min.cfd0bd77579e85418adb6eae6349dd9b.js"></script>
-
-
-
-
-  
-
-  
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script id="search-hit-fuse-template" type="text/x-template">
-    <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-    </div>
-  </script>
-  
-    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-<script id="page-data" type="application/json">{"use_headroom":false}</script>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-<script src="/en/js/wowchemy.min.ead4a376bcf2c4714888c770ea9b0040.js"></script>
-
-
-
-
-
-
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-        <pre><code></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Visit statistics: GoatCounter (no cookies) -->
+<script data-goatcounter="https://rodrigochi.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
