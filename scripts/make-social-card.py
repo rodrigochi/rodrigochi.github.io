@@ -23,7 +23,7 @@ m = Image.new('L', av.size, 0); ImageDraw.Draw(m).ellipse([0, 0, av.size[0] - 1,
 py = 128 * S; im.paste(av, (P, py), m)
 x = P + 230 * S + 56 * S
 d.text((x, py + 22 * S), 'Rodrigo Chi Durán', font=name, fill=INK)
-d.text((x, py + 118 * S), 'Seismo-Acoustic Officer · CTBTO, Vienna', font=sub, fill=INK2)
+d.text((x, py + 118 * S), 'Seismic-Acoustic Officer · CTBTO, Vienna', font=sub, fill=INK2)
 d.text((x, py + 164 * S), 'Seismic sources · explosion monitoring · Earth’s core', font=small, fill=MUTED)
 tr = json.load(open(os.path.join(ROOT, 'assets/mdj_2017-09-03_BHZ.json'))); y = tr['y']; n = len(y)
 top, bot = 412 * S, 530 * S; mid = (top + bot) / 2; amp = (bot - top) / 2 * 0.95; x0, x1 = P, W - P
