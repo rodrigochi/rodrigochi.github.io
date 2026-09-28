@@ -26,4 +26,4 @@ Theme tokens are at the beginning of the CSS. Keep the system-dark and explicit-
 
 ## Visit statistics
 
-Both this site and Zupu (`~/website_zupu/index.html`) load GoatCounter just before `</body>` (account `rodrigochi`, dashboard at https://rodrigochi.goatcounter.com). It sets no cookies, so no consent banner is needed. Visits from `localhost` are not counted.
+This site also loads Google Analytics 4 (property `G-YWQTBECR75`, the same one the Wowchemy site used) in `<head>`. Both this site and Zupu (`~/website_zupu/index.html`) load GoatCounter just before `</body>` (account `rodrigochi`, dashboard at https://rodrigochi.goatcounter.com). It sets no cookies, so no consent banner is needed. Visits from `localhost` are not counted.

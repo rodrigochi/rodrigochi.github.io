@@ -135,8 +135,7 @@ button{font:inherit;color:inherit}
 .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:0;padding-top:24px;border-top:1px solid var(--ink);min-width:0}
 .facts h3{font-family:var(--f-ui);font-size:.8rem;font-weight:500;color:var(--muted);margin-bottom:8px}
 .facts ul{list-style:none;margin:0;padding:0}
-.interests{display:flex;flex-wrap:wrap;gap:4px 0;font-size:.95rem}
-.interests li:not(:last-child)::after{content:"·";margin:0 .55em;color:var(--rule-2)}
+.interests{display:flex;flex-wrap:wrap;gap:7px}
 .edu li{font-size:.95rem;line-height:1.45}
 .edu li+li{margin-top:10px}
 .edu span{display:block;color:var(--muted);font-size:.88rem}
@@ -227,6 +226,34 @@ button{font:inherit;color:inherit}
 .pact a,.pact button{display:inline-flex;align-items:center;min-height:44px;background:none;border:0;padding:6px 0;cursor:pointer;color:var(--ink-2);border-bottom:1px solid var(--rule-2);line-height:1.5;text-decoration:none;font-family:inherit;font-size:inherit}
 .pact a:hover,.pact button:hover{color:var(--seal);border-color:var(--seal)}
 .pact button[aria-expanded="true"]{color:var(--ink);border-color:var(--ink)}
+
+/* publications: cards with topic colors */
+.t-src{--c:var(--seal)} .t-geo{--c:var(--trace)} .t-sig{--c:var(--plot-pos)} .t-all{--c:var(--ink)}
+.pubs-count{margin-top:8px;font-family:var(--f-mono);font-size:.76rem;color:var(--muted)}
+.pubs .filters button::before{background:var(--c);opacity:.35}
+.pubs .filters button[aria-pressed="true"]::before{background:var(--c);opacity:1}
+.pubs .filters .tag-on{background:var(--c)}
+.pubs .papers{border-top:1px solid var(--ink);display:grid;gap:4px;padding-top:12px}
+.pubs .paper{position:relative;padding:20px 24px 22px 26px;border:1px solid transparent;border-radius:12px;transition:background-color .25s,border-color .25s}
+.pubs .paper::before{content:"";position:absolute;left:0;top:24px;bottom:24px;width:3px;border-radius:3px;background:var(--c);opacity:.55;transition:opacity .25s}
+.pubs .paper:hover{background:var(--raise);border-color:var(--rule)}
+.pubs .paper:hover::before{opacity:1}
+.pubs .paper.flash{background:var(--trace-soft)}
+.pubs .pmeta{margin:0 0 6px;gap:4px 12px}
+.pubs .pmeta .venue{font-size:1rem}
+.pubs .paper h3{font-size:clamp(1.25rem,2.3vw,1.5rem);line-height:1.22;max-width:46ch}
+.pubs .summary{margin-top:10px;font-size:.96rem;max-width:66ch}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:3px 11px;border-radius:999px;background:color-mix(in srgb,var(--seal) 13%,transparent);color:var(--seal);font-family:var(--f-mono);font-size:.72rem}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.p-group{display:flex;align-items:center;gap:14px;margin:22px 0 2px;font-family:var(--f-mono);font-size:.74rem;color:var(--muted)}
+.p-group::after{content:"";flex:1;height:1px;background:var(--rule)}
+.pubs .ptags{gap:7px;margin-top:14px}
+.pubs .ptag,.interests .ptag{display:inline-flex;align-items:center;gap:7px;padding:5px 11px;border:1px solid color-mix(in srgb,var(--c) 35%,transparent);background:color-mix(in srgb,var(--c) 9%,transparent);color:var(--ink-2)}
+.pubs .ptag::before,.interests .ptag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--c);flex:none}
+.pubs .ptag:hover,.interests .ptag:hover{border-color:var(--c);color:var(--ink)}
+.pubs .ptag[aria-pressed="true"],.interests .ptag[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:var(--paper)}
+.pubs .ptag[aria-pressed="true"]::before,.interests .ptag[aria-pressed="true"]::before{background:var(--paper)}
+@media (max-width:640px){.pubs .paper{padding:16px 10px 18px 18px}.pubs .paper::before{top:18px;bottom:18px}}
 .pact .ok{color:var(--seal)}
 .panel{margin-top:12px;padding:14px 16px;background:var(--paper-2);border-radius:4px;max-width:70ch;font-size:.92rem;color:var(--ink-2)}
 .panel pre{margin:0;font-family:var(--f-mono);font-size:.73rem;line-height:1.55;overflow-x:auto}
@@ -353,6 +380,14 @@ html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab
 @media (max-width:900px){.sec>.rail{top:calc(var(--nav-h) + 20px)}}
 @media (max-width:760px){.lab-intro h3{font-size:1.35rem}.lab-text{gap:20px}.contact .v{font-size:1.15rem}}
 </style>
+<!-- Google Analytics (same property as the previous site) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWQTBECR75"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YWQTBECR75');
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main" data-t="skip">Skip to content</a>
@@ -386,9 +421,9 @@ html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab
     <div class="who">
       <div class="intro"><h1>Rodrigo Chi Durán</h1>
       <p class="role"><span data-t="role">Seismo-Acoustic Officer</span> · <a href="https://www.ctbto.org/">CTBTO</a> <span data-t="city">· Vienna, Austria</span></p></div>
-      <p class="bio" data-th="bio">Hello, I’m Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). I am a Seismo-Acoustic Officer at the <a href="https://www.ctbto.org/">Comprehensive Nuclear-Test-Ban Treaty Organization (CTBTO)</a> in Vienna, Austria, where I work on the seismic monitoring behind the verification of the Treaty. My work there focuses on improving event characterization methods and supporting the data analysis process. I hold a Ph.D. in Earth and Planetary Science from <a href="https://eps.berkeley.edu/">UC Berkeley</a>, which continued a path that began in Electrical Engineering at the <a href="https://uchile.cl/">Universidad de Chile</a>. My research revolves around seismology, in particular the seismic sources of earthquakes, explosions, and collapses, as well as complex sources related to forensic seismology. I also have previous experience working on Earth’s core dynamics and core waves, using signal processing and data-driven techniques to study them and model the outer core. I’m always happy to discuss research and potential collaborations.</p>
+      <p class="bio" data-th="bio">Hello, I’m Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). I am a Seismo-Acoustic Officer at the <a href="https://www.ctbto.org/">Comprehensive Nuclear-Test-Ban Treaty Organization (CTBTO)</a> in Vienna, Austria. I hold a Ph.D. in Earth and Planetary Science from <a href="https://eps.berkeley.edu/">UC Berkeley</a> and trained in Electrical Engineering at the <a href="https://uchile.cl/">Universidad de Chile</a>. My research focuses on seismic sources, forensic seismology and outer core dynamics. I’m always happy to discuss research and potential collaborations.</p>
       <div class="links">
-        <a href="mailto:rodrigo.chi@berkeley.edu"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg><span data-t="email.me">Email me</span></a><button type="button" class="copy-mail js-only" data-t="email.copy">Copy email</button><span class="ok mail-ok" aria-live="polite"></span>
+        <a href="mailto:rodrigo.chi@ctbto.org"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg><span data-t="email.me">Email me</span></a><button type="button" class="copy-mail js-only" data-t="email.copy">Copy email</button><span class="ok mail-ok" aria-live="polite"></span>
         <a href="https://www.linkedin.com/in/rodrigo-chi-2ba2a0267/"><span class="li-ico"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></span>LinkedIn</a>
         <a href="https://scholar.google.com/citations?user=bFubaMkAAAAJ&amp;hl=en"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.24 9.4 12 4l6.76 5.4L24 5.2 12 0 0 5.2Z"/><circle cx="12" cy="16" r="7"/></svg>Google Scholar</a>
         <a href="https://rodrigochi.github.io/uploads/resume.pdf"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>CV</a>
@@ -400,23 +435,23 @@ html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab
   <section class="sec" id="background">
     <div class="rail"><h2 data-t="nav.background">Background</h2></div>
       <div class="facts">
-        <div>
-          <h3 data-t="interests">Interests</h3>
-          <ul class="interests"><li data-t="i3">Seismic Sources</li><li data-t="i6">Explosion Monitoring</li><li data-t="i2">Earthquakes</li><li data-t="i4">Geomagnetism</li><li data-t="i1">Geodynamics</li><li data-t="i5">Data Science</li></ul>
-        </div>
-        <div>
+        <div class="edu-col">
           <h3 data-t="education">Education</h3>
           <ul class="edu">
             <li><span class="y" style="display:inline">2023</span><span style="display:inline;color:inherit;font-size:inherit" data-t="e1">Ph.D. in Earth and Planetary Science</span><span><a href="https://eps.berkeley.edu/">Dept. of Earth and Planetary Science</a>, <a href="https://www.berkeley.edu/">UC Berkeley</a></span></li>
             <li><span class="y" style="display:inline">2015</span><span style="display:inline;color:inherit;font-size:inherit" data-t="e2">BSc. in Electrical Engineering</span><span><a href="https://ingenieria.uchile.cl/">Facultad de Ciencias Físicas y Matemáticas</a>, <a href="https://uchile.cl/">Universidad de Chile</a></span></li>
           </ul>
         </div>
+        <div class="int-col">
+          <h3 data-t="interests">Interests</h3>
+          <ul class="interests"><li><button type="button" class="ptag t-src" data-goto="src" data-t="i3">Seismic Sources</button></li><li><button type="button" class="ptag t-src" data-goto="src" data-t="i6">Explosion Monitoring</button></li><li><button type="button" class="ptag t-src" data-goto="src" data-t="i2">Earthquakes</button></li><li><button type="button" class="ptag t-geo" data-goto="geo" data-t="i4">Geomagnetism</button></li><li><button type="button" class="ptag t-geo" data-goto="geo" data-t="i1">Geodynamics</button></li><li><button type="button" class="ptag t-sig" data-goto="sig" data-t="i5">Data Science</button></li></ul>
+        </div>
       </div>
   </section>
 
 
   <section class="sec" id="research">
-    <div class="rail"><h2 data-t="nav.research">Research</h2><p class="sub" data-t="research.sub">Three lines of work, one toolbox.</p></div>
+    <div class="rail"><h2 data-t="nav.research">Research</h2></div>
     <div class="lab">
       <div class="lab-tabs js-only" role="tablist" aria-label="Research topics">
         <button type="button" role="tab" id="tab-src" data-tab="src" aria-selected="true" aria-controls="lab-panel"></button>
@@ -424,7 +459,7 @@ html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab
         <button type="button" role="tab" id="tab-sig" data-tab="sig" aria-selected="false" aria-controls="lab-panel"></button>
       </div>
       <div class="lab-panel" id="lab-panel" role="tabpanel" aria-labelledby="tab-src" tabindex="0">
-        <div class="lab-intro"><h3 id="lab-h">Seismic sources</h3><p id="lab-intro">A seismic recording reveals when waves arrive. These arrivals help us locate an event and understand its source.</p></div>
+        <div class="lab-intro"><h3 id="lab-h">Seismic sources and forensic seismology</h3><p id="lab-intro">My research focuses on the seismic sources of earthquakes, explosions, and collapses. At the CTBTO, I work on the seismic monitoring behind the verification of the Comprehensive Nuclear-Test-Ban Treaty, improving event characterization methods and supporting the data analysis process.</p></div>
         <noscript><figure class="static-plot"><img src="assets/research/mdj_waveform.png" alt="Seismic recording of the 2017 North Korean nuclear test at station MDJ"><figcaption>The marked P arrival helps locate and characterize the seismic source. Interactive views are available with JavaScript.</figcaption></figure></noscript>
         <div class="lab-fig" id="fig-geo" hidden>
           <canvas id="map-cv" role="img" aria-label="Interactive north polar map of geomagnetic secular acceleration at the core-mantle boundary"></canvas>
@@ -452,150 +487,75 @@ html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab
           </div>
         </div>
         <div class="lab-text">
-          <div><p id="lab-p">Detecting, locating and characterizing seismic sources, with a focus on explosions. At the CTBTO I work with the seismic data used to verify the Comprehensive Nuclear-Test-Ban Treaty. In research, I combine regional waveforms, first-motion polarities and InSAR surface displacement in a single moment tensor inversion, applied to the declared North Korean nuclear tests.</p><button type="button" class="go" id="lab-go"></button></div>
+          <div><p id="lab-p"></p><button type="button" class="go" id="lab-go"></button></div>
           <p class="cap" id="lab-cap">Vertical component at IC.MDJ (Mudanjiang, China), about 370 km from the 3 September 2017 DPRK test. Bandpass 0.8–6 Hz, amplitude compressed for display. P picked automatically with STA/LTA at +50.1 s. Data: EarthScope / IRIS.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="publications">
+  <section class="sec pubs" id="publications">
     <div class="rail">
       <h2 data-t="nav.pubs">Publications</h2>
+      <p class="pubs-count" id="pubs-count">6 papers · 2 in review</p>
       <div class="filters js-only" id="filters" role="group" aria-label="Topic"></div>
     </div>
     <ol class="papers" id="papers">
-    <li class="paper" id="paper-0">
-      <div class="pmeta"><span class="yr">2024</span><span class="venue">Bulletin of the Seismological Society of America</span></div>
+    <li class="paper t-src" id="paper-0">
+      <p class="pmeta"><span class="yr">2024</span><span class="venue">Bulletin of the Seismological Society of America</span></p>
       <h3 lang="en"><a href="https://doi.org/10.1785/0120230237">Joint Inversion of Regional Waveform, First-Motion Polarity, and Synthetic Aperture Radar Surface Displacement for the Fourth and Sixth North Korean Declared Nuclear Explosions</a></h3>
       <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Douglas S. Dreger, Arthur J. Rodgers</p>
       <p class="summary" lang="en">Extends our joint seismic and InSAR inversion to the 2016 and 2017 declared North Korean nuclear tests. A layered velocity model with topography improves the location, depth, and seismic moment used to estimate yield.</p>
-      <div class="ptags"><button type="button" class="ptag" data-tag="seismic-source" aria-pressed="false">Seismic sources</button><button type="button" class="ptag" data-tag="moment-tensor" aria-pressed="false">Moment tensor</button><button type="button" class="ptag" data-tag="insar" aria-pressed="false">InSAR</button><button type="button" class="ptag" data-tag="nuclear-explosions" aria-pressed="false">Nuclear explosions</button></div>
-      <div class="pact">
-        
-        <a href="https://doi.org/10.1785/0120230237">DOI</a>
-        <button type="button" data-panel="abs-0" aria-controls="abs-0" aria-expanded="false">Abstract</button>
-        <button type="button" data-panel="bib-0" aria-controls="bib-0" aria-expanded="false">Cite</button>
-      </div>
-      <div class="panel" id="abs-0" lang="en" hidden>This study analyzed the Democratic People’s Republic of Korea’s (DPRK) fourth (DPRK4, 6 January 2016 Mw 4.49) and sixth (DPRK6, 7 September 2017 Mw 5.2) declared nuclear tests, employing a joint seismic and Interferometric Synthetic Aperture Radar (InSAR) inversion to improve understanding of these events and enhance moment tensor (MT) inversion capabilities. The recent efforts have focused on employing seismic waveform and InSAR geodetic deformation data separately to analyze these and the previous nuclear tests (e.g., Chiang et al., 2018; Myers et al., 2018; Wang et al., 2018). Building upon our previous work (Chi-Durán et al., 2021), we performed a joint regional waveform, first-motion (FM) polarity, and surface displacement inversion, which demonstrated improved source-type discrimination, a revised MT solution with reduced scalar moment uncertainty, and an independently constrained location. In this article, we build on the previous results for DPRK6 by including an analysis using a four-layered velocity model with free-surface topography to compute the near-source static deformation Green’s functions. The model consists of a 50 m basalt layer (VP=2.07 km/s, VS=1.2 km/s), a 250 m stratified volcanic deposit layer (VP=1.73 km/s, VS=1.0 km/s), a 700 m weathered granodiorite layer (VP=2.5 km/s, VS=1.3 km/s), and a granodiorite half-space (VP=5.35 km/s, VS=3.09 km/s). The half-space shares the velocity of the regional MDJ2 velocity model (Ford et al., 2010), which has proven effective for waveform inversion in the region. This model considers the range of reported values for various lithologies and weathering effects. Our findings show that using the layered velocity model enhances the recovery of source location and depth for both the explosions by improving fits and reducing uncertainties. The joint inversion also improves source-type discrimination and better constrains the scalar seismic moment necessary for downstream yield estimation.</div>
-      <div class="panel" id="bib-0" hidden><pre>@article{ChiDuran2024Joint,
-  title   = {Joint Inversion of Regional Waveform, First-Motion Polarity, and Synthetic Aperture Radar Surface Displacement for the Fourth and Sixth North Korean Declared Nuclear Explosions},
-  author  = {Rodrigo Chi-Durán and Douglas S. Dreger and Arthur J. Rodgers},
-  journal = {Bulletin of the Seismological Society of America},
-  volume  = {114},
-  year    = {2024},
-  doi     = {10.1785/0120230237}
-}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="0">Copy BibTeX</button><span class="ok" id="ok-0" aria-live="polite"></span></div></div>
+      <div class="ptags"><button type="button" class="ptag t-src" data-tag="seismic-source" aria-pressed="false">Seismic sources</button><button type="button" class="ptag t-src" data-tag="forensic-seismology" aria-pressed="false">Forensic seismology</button><button type="button" class="ptag t-src" data-tag="moment-tensor" aria-pressed="false">Moment tensor</button><button type="button" class="ptag t-src" data-tag="insar" aria-pressed="false">InSAR</button><button type="button" class="ptag t-src" data-tag="nuclear-explosions" aria-pressed="false">Nuclear explosions</button></div>
     </li>
-    <li class="paper" id="paper-1">
-      <div class="pmeta"><span class="yr">2023</span><span class="venue">Geophysical Research Letters</span></div>
+    <li class="paper t-geo" id="paper-1">
+      <p class="pmeta"><span class="yr">2023</span><span class="venue">Geophysical Research Letters</span></p>
       <h3 lang="en"><a href="https://doi.org/10.1029/2022GL101288">Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition</a></h3>
       <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Bruce Buffett</p>
       <p class="summary" lang="en">Dynamic mode decomposition of the CHAOS-7 field model at high latitudes finds two waves, with periods of about 19 and 58 years. The 60-year wave matches predictions for zonal waves in a stratified layer at the top of the core.</p>
-      <div class="ptags"><button type="button" class="ptag" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag" data-tag="dmd" aria-pressed="false">DMD</button></div>
-      <div class="pact">
-        
-        <a href="https://doi.org/10.1029/2022GL101288">DOI</a>
-        <button type="button" data-panel="abs-1" aria-controls="abs-1" aria-expanded="false">Abstract</button>
-        <button type="button" data-panel="bib-1" aria-controls="bib-1" aria-expanded="false">Cite</button>
-      </div>
-      <div class="panel" id="abs-1" lang="en" hidden>Rapid growth of magnetic‐field observations through SWARM and other satellite missions motivate new approaches to analyze it. Dynamic mode decomposition (DMD) is a method to recover spatially coherent motion with a periodic time dependence. We use this method to simultaneously analyze the geomagnetic radial field and its secular variation from CHAOS‐7 at high latitudes. A total of five modes are permitted by noise levels in the observations. One mode represents a slowly evolving background state, whereas the other four modes describe a pair of waves; each wave is comprised of a complex DMD mode and its complex conjugate. The waves have periods of T 1 = 19.1 and T 2 = 58.4 years and quality factors of Q 1 = 11.0 and Q 2 = 4.6, respectively. A 60‐year wave is consistent with previous predictions for zonal waves in a stratified fluid. The 20‐year wave is also consistent with previous reports at high latitudes, although its nature is less clear.</div>
-      <div class="panel" id="bib-1" hidden><pre>@article{ChiDuran2023Extracting,
-  title   = {Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition},
-  author  = {Rodrigo Chi-Durán and Bruce Buffett},
-  journal = {Geophysical Research Letters},
-  volume  = {50},
-  year    = {2023},
-  doi     = {10.1029/2022GL101288}
-}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="1">Copy BibTeX</button><span class="ok" id="ok-1" aria-live="polite"></span></div></div>
+      <div class="ptags"><button type="button" class="ptag t-geo" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag t-geo" data-tag="dmd" aria-pressed="false">DMD</button></div>
     </li>
-    <li class="paper" id="paper-2">
-      <div class="pmeta"><span class="yr">2021</span><span class="venue">Geophysical Research Letters</span></div>
+    <li class="paper t-geo" id="paper-2">
+      <p class="pmeta"><span class="yr">2021</span><span class="venue">Geophysical Research Letters</span></p>
       <h3 lang="en"><a href="https://doi.org/10.1029/2021GL094692">Signatures of High-Latitude Waves in Observations of Geomagnetic Acceleration</a></h3>
       <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Margaret S. Avery, Bruce A. Buffett</p>
       <p class="summary" lang="en">Westward-moving patches of geomagnetic acceleration at high latitudes are best explained by zonal MAC waves. That explanation requires a stratified layer more than 100 km thick at the top of the core.</p>
-      <div class="ptags"><button type="button" class="ptag" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag" data-tag="core-waves" aria-pressed="false">Core waves</button></div>
-      <div class="pact">
-        
-        <a href="https://doi.org/10.1029/2021GL094692">DOI</a>
-        <button type="button" data-panel="abs-2" aria-controls="abs-2" aria-expanded="false">Abstract</button>
-        <button type="button" data-panel="bib-2" aria-controls="bib-2" aria-expanded="false">Cite</button>
-      </div>
-      <div class="panel" id="abs-2" lang="en" hidden>Models for the second time‐derivative of the geomagnetic field reveal prominent activity at high latitudes. Alternating patches of positive and negative geomagnetic acceleration propagate to the west at speeds that exceed nominal fluid velocities in the core. We show that waves are a viable interpretation of these observations. Magnetic Rossby waves produce a high‐latitude response with suitable phase velocities. However, the spatial complexity of the prediction is not compatible with the observations. Our preferred interpretation involves zonal MAC waves. These waves can account for the observed geomagnetic field when a stratified layer exists at the top of the core. The required layer has a thickness in excess of 100 km and a buoyancy frequency comparable to the rotation frequency. We anticipate a gradual reduction in the phase velocity over time, leading to a future change in the propagation direction.</div>
-      <div class="panel" id="bib-2" hidden><pre>@article{ChiDuran2021Signatures,
-  title   = {Signatures of High-Latitude Waves in Observations of Geomagnetic Acceleration},
-  author  = {Rodrigo Chi-Durán and Margaret S. Avery and Bruce A. Buffett},
-  journal = {Geophysical Research Letters},
-  volume  = {48},
-  year    = {2021},
-  doi     = {10.1029/2021GL094692}
-}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="2">Copy BibTeX</button><span class="ok" id="ok-2" aria-live="polite"></span></div></div>
+      <div class="ptags"><button type="button" class="ptag t-geo" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag t-geo" data-tag="core-waves" aria-pressed="false">Core waves</button></div>
     </li>
-    <li class="paper" id="paper-3">
-      <div class="pmeta"><span class="yr">2021</span><span class="venue">The Seismic Record</span></div>
+    <li class="paper t-src" id="paper-3">
+      <p class="pmeta"><span class="yr">2021</span><span class="venue">The Seismic Record</span></p>
       <h3 lang="en"><a href="https://doi.org/10.1785/0320210022">Joint Regional Waveform, First-Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test</a></h3>
       <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Douglas S. Dreger, Arthur J. Rodgers, Avinash Nayak</p>
       <p class="summary" lang="en">A moment tensor inversion that combines regional waveforms, first-motion polarities, and SAR surface displacement for the 2017 North Korean test. It fits all three data sets and narrows the range of possible source types.</p>
-      <div class="ptags"><button type="button" class="ptag" data-tag="seismic-source" aria-pressed="false">Seismic sources</button><button type="button" class="ptag" data-tag="moment-tensor" aria-pressed="false">Moment tensor</button><button type="button" class="ptag" data-tag="insar" aria-pressed="false">InSAR</button><button type="button" class="ptag" data-tag="nuclear-explosions" aria-pressed="false">Nuclear explosions</button></div>
-      <div class="pact">
-        <a href="https://pubs.geoscienceworld.org/ssa/tsr/article-pdf/1/2/107/5389510/tsr-2021022.1.pdf">PDF</a>
-        <a href="https://doi.org/10.1785/0320210022">DOI</a>
-        <button type="button" data-panel="abs-3" aria-controls="abs-3" aria-expanded="false">Abstract</button>
-        <button type="button" data-panel="bib-3" aria-controls="bib-3" aria-expanded="false">Cite</button>
-      </div>
-      <div class="panel" id="abs-3" lang="en" hidden>The 3 September 2017 Mw 5.2 North Korean underground nuclear test (DPRK2017) is the largest man-made explosion with surface displacements observed by Synthetic Aperture Radar (SAR) and showed as much as 3.5 m of horizontal permanent deformation. Although regional distance waveform-based seismic moment tensor (MT) inversion methods successfully identify this event as an explosion, the inverted solutions do not fit the SAR displacement field well. To better constrain the source, we developed an MT source-type inversion method that incorporates surface ground deformation (accounting for free-surface topography), regional seismic waveforms, and first-motion polarities. We applied the source-type inversion over a grid of possible source locations to find the best-fitting location, depth, and point-source MT for the event. Our best-fitting MT solution achieves ∼70% horizontal geodetic fit, ∼80% waveform fit, and 100% fit in the first-motion polarities. The joint inversion narrows the range of acceptable source types improving discrimination, and reduces the uncertainty in scalar moment and estimated yield. The method is transportable and can be applied to other types of events that may have measurable geodetic signals such as underground mine collapses and volcanic events.</div>
-      <div class="panel" id="bib-3" hidden><pre>@article{ChiDuran2021Joint,
-  title   = {Joint Regional Waveform, First-Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test},
-  author  = {Rodrigo Chi-Durán and Douglas S. Dreger and Arthur J. Rodgers and Avinash Nayak},
-  journal = {The Seismic Record},
-  volume  = {1},
-  year    = {2021},
-  doi     = {10.1785/0320210022}
-}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="3">Copy BibTeX</button><span class="ok" id="ok-3" aria-live="polite"></span></div></div>
+      <div class="ptags"><button type="button" class="ptag t-src" data-tag="seismic-source" aria-pressed="false">Seismic sources</button><button type="button" class="ptag t-src" data-tag="forensic-seismology" aria-pressed="false">Forensic seismology</button><button type="button" class="ptag t-src" data-tag="moment-tensor" aria-pressed="false">Moment tensor</button><button type="button" class="ptag t-src" data-tag="insar" aria-pressed="false">InSAR</button><button type="button" class="ptag t-src" data-tag="nuclear-explosions" aria-pressed="false">Nuclear explosions</button></div>
     </li>
-    <li class="paper" id="paper-4">
-      <div class="pmeta"><span class="yr">2020</span><span class="venue">Geophysical Research Letters</span></div>
+    <li class="paper t-geo" id="paper-4">
+      <p class="pmeta"><span class="yr">2020</span><span class="venue">Geophysical Research Letters</span></p>
       <h3 lang="en"><a href="https://doi.org/10.1029/2020GL087940">Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions</a></h3>
       <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Margaret S. Avery, Nicholas Knezek, Bruce A. Buffett</p>
       <p class="summary" lang="en">Complex empirical orthogonal functions split the secular acceleration in CHAOS-6 into traveling waves with periods of 7 to 20 years. The waves help constrain the stratification at the top of the core.</p>
-      <div class="ptags"><button type="button" class="ptag" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag" data-tag="ceof" aria-pressed="false">CEOF</button></div>
-      <div class="pact">
-        
-        <a href="https://doi.org/10.1029/2020GL087940">DOI</a>
-        <button type="button" data-panel="abs-4" aria-controls="abs-4" aria-expanded="false">Abstract</button>
-        <button type="button" data-panel="bib-4" aria-controls="bib-4" aria-expanded="false">Cite</button>
-      </div>
-      <div class="panel" id="abs-4" lang="en" hidden>Satellite observations reveal short pulses in the second time derivative of the geomagnetic field. We seek to interpret these signals using complex empirical orthogonal functions (CEOFs). This methodology decomposes the signal into traveling waves, permitting estimates for the period, angular wave number, and phase velocity. We recover CEOFs from the CHAOS‐6 model, focusing on three geographic regions with strong secular acceleration. Two regions are confined to the equator, while the third is located under Alaska. We find evidence for both eastward and westward traveling waves with periods between 7 and 20 years. There is also evidence for weaker standing waves with complex spatial patterns. Two of the three regions have waves that are compatible with predictions for waves in a stratified fluid. Our results yield estimates for the structure of fluid stratification at the top of the core.</div>
-      <div class="panel" id="bib-4" hidden><pre>@article{ChiDuran2020Decomposition,
-  title   = {Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions},
-  author  = {Rodrigo Chi-Durán and Margaret S. Avery and Nicholas Knezek and Bruce A. Buffett},
-  journal = {Geophysical Research Letters},
-  volume  = {47},
-  year    = {2020},
-  doi     = {10.1029/2020GL087940}
-}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="4">Copy BibTeX</button><span class="ok" id="ok-4" aria-live="polite"></span></div></div>
+      <div class="ptags"><button type="button" class="ptag t-geo" data-tag="geomagnetism" aria-pressed="false">Geomagnetism</button><button type="button" class="ptag t-geo" data-tag="ceof" aria-pressed="false">CEOF</button></div>
     </li>
-    <li class="paper" id="paper-5">
-      <div class="pmeta"><span class="yr">2017</span><span class="venue">Journal of Seismology</span></div>
+    <li class="paper t-sig" id="paper-5">
+      <p class="pmeta"><span class="yr">2017</span><span class="venue">Journal of Seismology</span></p>
       <h3 lang="en"><a href="https://doi.org/10.1007/s10950-017-9658-0">Automatic detection of P- and S-wave arrival times: new strategies based on the modified fractal method and basic matching pursuit</a></h3>
       <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Diana Comte, Marcos Diaz, Jorge F. Silva</p>
       <p class="summary" lang="en">Two automatic methods for picking P- and S-wave arrival times, one based on a modified fractal method and one on basic matching pursuit.</p>
-      <div class="ptags"><button type="button" class="ptag" data-tag="signal-processing" aria-pressed="false">Signal processing</button><button type="button" class="ptag" data-tag="phase-picking" aria-pressed="false">Phase picking</button></div>
-      <div class="pact">
-        <a href="https://link.springer.com/content/pdf/10.1007/s10950-017-9658-0.pdf">PDF</a>
-        <a href="https://doi.org/10.1007/s10950-017-9658-0">DOI</a>
-        
-        <button type="button" data-panel="bib-5" aria-controls="bib-5" aria-expanded="false">Cite</button>
-      </div>
-      
-      <div class="panel" id="bib-5" hidden><pre>@article{ChiDuran2017Automatic,
-  title   = {Automatic detection of P- and S-wave arrival times: new strategies based on the modified fractal method and basic matching pursuit},
-  author  = {Rodrigo Chi-Durán and Diana Comte and Marcos Diaz and Jorge F. Silva},
-  journal = {Journal of Seismology},
-  volume  = {21},
-  year    = {2017},
-  doi     = {10.1007/s10950-017-9658-0}
-}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="5">Copy BibTeX</button><span class="ok" id="ok-5" aria-live="polite"></span></div></div>
+      <div class="ptags"><button type="button" class="ptag t-sig" data-tag="signal-processing" aria-pressed="false">Signal processing</button><button type="button" class="ptag t-sig" data-tag="phase-picking" aria-pressed="false">Phase picking</button></div>
+    </li><li class="p-group" aria-hidden="true">In review</li>
+    <li class="paper t-src is-review" id="paper-6">
+      <p class="pmeta"><span class="pill">In review</span></p>
+      <h3 lang="en">Joint Moment-Tensor and Cross-Correlation Analysis of the 31 July 2025 El Teniente Mine Seismic Event, Chile</h3>
+      <p class="authors"><span class="me">Rodrigo Chi-Durán</span>, Douglas S. Dreger, Sergio Barrientos</p>
+      <p class="summary" lang="en">Characterizes the 31 July 2025 seismic event at the El Teniente mine in Chile by combining a moment tensor inversion with waveform cross-correlation.</p>
+      <div class="ptags"><button type="button" class="ptag t-src" data-tag="seismic-source" aria-pressed="false">Seismic sources</button><button type="button" class="ptag t-src" data-tag="forensic-seismology" aria-pressed="false">Forensic seismology</button><button type="button" class="ptag t-src" data-tag="moment-tensor" aria-pressed="false">Moment tensor</button><button type="button" class="ptag t-sig" data-tag="cross-correlation" aria-pressed="false">Cross-correlation</button><button type="button" class="ptag t-src" data-tag="mine-collapse" aria-pressed="false">Mine collapse</button></div>
+    </li>
+    <li class="paper t-src is-review" id="paper-7">
+      <p class="pmeta"><span class="pill">In review</span></p>
+      <h3 lang="en">Time residuals of T-phases from subduction zone earthquakes in the Pacific Ocean</h3>
+      <p class="authors">Tiago C. A. Oliveira, <span class="me">Rodrigo Chi-Durán</span>, Urtnasan Khukhuudei</p>
+      <p class="summary" lang="en">Studies the travel-time residuals of hydroacoustic T-phases generated by subduction zone earthquakes around the Pacific Ocean.</p>
+      <div class="ptags"><button type="button" class="ptag t-src" data-tag="t-phases" aria-pressed="false">T-phases</button><button type="button" class="ptag t-src" data-tag="hydroacoustics" aria-pressed="false">Hydroacoustics</button><button type="button" class="ptag t-src" data-tag="subduction-earthquakes" aria-pressed="false">Subduction earthquakes</button><button type="button" class="ptag t-sig" data-tag="travel-time-residuals" aria-pressed="false">Travel-time residuals</button></div>
     </li></ol>
   </section>
 
@@ -644,7 +604,7 @@ html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab
   <section class="sec" id="contact">
     <div class="rail"><h2 data-t="nav.contact">Contact</h2></div>
     <div class="contact">
-      <div><p class="k" style="display:flex;gap:6px;align-items:center"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>Email</p><p class="v"><a href="mailto:rodrigo.chi@berkeley.edu">rodrigo.chi@berkeley.edu</a><button type="button" class="copy-mail js-only" data-t="copy">copy</button><span class="ok mail-ok" aria-live="polite"></span></p></div>
+      <div><p class="k" style="display:flex;gap:6px;align-items:center"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>Email</p><p class="v"><a href="mailto:rodrigo.chi@ctbto.org">rodrigo.chi@ctbto.org</a><button type="button" class="copy-mail js-only" data-t="copy">copy</button><span class="ok mail-ok" aria-live="polite"></span></p></div>
       <div><p class="k" style="display:flex;gap:6px;align-items:center"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.24 9.4 12 4l6.76 5.4L24 5.2 12 0 0 5.2Z"/><circle cx="12" cy="16" r="7"/></svg>Google Scholar</p><p class="v"><a href="https://scholar.google.com/citations?user=bFubaMkAAAAJ&amp;hl=en" data-t="scholar.profile">View Google Scholar profile</a></p></div>
       <div><p class="k" style="display:flex;gap:6px;align-items:center"><span class="li-ico" style="display:inline-flex"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></span>LinkedIn</p><p class="v"><a href="https://www.linkedin.com/in/rodrigo-chi-2ba2a0267/">rodrigo-chi</a></p></div>
     </div>
@@ -666,25 +626,35 @@ html:not(.enhanced) .js-only,html:not(.enhanced) #theme,html:not(.enhanced) .lab
 </div>
 
 <script>
-const ME = "Rodrigo Chi-Durán", EMAIL = "rodrigo.chi@berkeley.edu";
+const ME = "Rodrigo Chi-Durán", EMAIL = "rodrigo.chi@ctbto.org";
 const PAPERS = [{"year": 2024, "title": "Joint Inversion of Regional Waveform, First-Motion Polarity, and Synthetic Aperture Radar Surface Displacement for the Fourth and Sixth North Korean Declared Nuclear Explosions", "authors": ["Rodrigo Chi-Durán", "Douglas S. Dreger", "Arthur J. Rodgers"], "venue": "Bulletin of the Seismological Society of America", "volume": "114(5), 2409–2423", "doi": "10.1785/0120230237", "tags": ["seismic-source", "moment-tensor", "insar", "nuclear-explosions"], "en": "Extends our joint seismic and InSAR inversion to the 2016 and 2017 declared North Korean nuclear tests. A layered velocity model with topography improves the location, depth, and seismic moment used to estimate yield.", "es": "Extiende nuestra inversión conjunta sísmica e InSAR a los ensayos nucleares norcoreanos de 2016 y 2017. Un modelo de velocidades por capas con topografía mejora la ubicación, la profundidad y el momento sísmico usado para estimar el rendimiento.", "abstract": "This study analyzed the Democratic People’s Republic of Korea’s (DPRK) fourth (DPRK4, 6 January 2016 Mw 4.49) and sixth (DPRK6, 7 September 2017 Mw 5.2) declared nuclear tests, employing a joint seismic and Interferometric Synthetic Aperture Radar (InSAR) inversion to improve understanding of these events and enhance moment tensor (MT) inversion capabilities. The recent efforts have focused on employing seismic waveform and InSAR geodetic deformation data separately to analyze these and the previous nuclear tests (e.g., Chiang et al., 2018; Myers et al., 2018; Wang et al., 2018). Building upon our previous work (Chi-Durán et al., 2021), we performed a joint regional waveform, first-motion (FM) polarity, and surface displacement inversion, which demonstrated improved source-type discrimination, a revised MT solution with reduced scalar moment uncertainty, and an independently constrained location. In this article, we build on the previous results for DPRK6 by including an analysis using a four-layered velocity model with free-surface topography to compute the near-source static deformation Green’s functions. The model consists of a 50 m basalt layer (VP=2.07 km/s, VS=1.2 km/s), a 250 m stratified volcanic deposit layer (VP=1.73 km/s, VS=1.0 km/s), a 700 m weathered granodiorite layer (VP=2.5 km/s, VS=1.3 km/s), and a granodiorite half-space (VP=5.35 km/s, VS=3.09 km/s). The half-space shares the velocity of the regional MDJ2 velocity model (Ford et al., 2010), which has proven effective for waveform inversion in the region. This model considers the range of reported values for various lithologies and weathering effects. Our findings show that using the layered velocity model enhances the recovery of source location and depth for both the explosions by improving fits and reducing uncertainties. The joint inversion also improves source-type discrimination and better constrains the scalar seismic moment necessary for downstream yield estimation."}, {"year": 2023, "title": "Extracting Spatial–Temporal Coherent Patterns in Geomagnetic Secular Variation Using Dynamic Mode Decomposition", "authors": ["Rodrigo Chi-Durán", "Bruce Buffett"], "venue": "Geophysical Research Letters", "volume": "50(5), e2022GL101288", "doi": "10.1029/2022GL101288", "tags": ["geomagnetism", "dmd"], "en": "Dynamic mode decomposition of the CHAOS-7 field model at high latitudes finds two waves, with periods of about 19 and 58 years. The 60-year wave matches predictions for zonal waves in a stratified layer at the top of the core.", "es": "Al aplicar descomposición en modos dinámicos al modelo CHAOS-7 en latitudes altas encontramos dos ondas, con periodos de unos 19 y 58 años. La de 60 años coincide con lo predicho para ondas zonales en una capa estratificada en el tope del núcleo.", "abstract": "Rapid growth of magnetic‐field observations through SWARM and other satellite missions motivate new approaches to analyze it. Dynamic mode decomposition (DMD) is a method to recover spatially coherent motion with a periodic time dependence. We use this method to simultaneously analyze the geomagnetic radial field and its secular variation from CHAOS‐7 at high latitudes. A total of five modes are permitted by noise levels in the observations. One mode represents a slowly evolving background state, whereas the other four modes describe a pair of waves; each wave is comprised of a complex DMD mode and its complex conjugate. The waves have periods of T 1 = 19.1 and T 2 = 58.4 years and quality factors of Q 1 = 11.0 and Q 2 = 4.6, respectively. A 60‐year wave is consistent with previous predictions for zonal waves in a stratified fluid. The 20‐year wave is also consistent with previous reports at high latitudes, although its nature is less clear."}, {"year": 2021, "title": "Signatures of High-Latitude Waves in Observations of Geomagnetic Acceleration", "authors": ["Rodrigo Chi-Durán", "Margaret S. Avery", "Bruce A. Buffett"], "venue": "Geophysical Research Letters", "volume": "48(20), e2021GL094692", "doi": "10.1029/2021GL094692", "tags": ["geomagnetism", "core-waves"], "en": "Westward-moving patches of geomagnetic acceleration at high latitudes are best explained by zonal MAC waves. That explanation requires a stratified layer more than 100 km thick at the top of the core.", "es": "Las zonas de aceleración geomagnética que viajan hacia el oeste en latitudes altas se explican mejor con ondas MAC zonales. Esa explicación requiere una capa estratificada de más de 100 km en el tope del núcleo.", "abstract": "Models for the second time‐derivative of the geomagnetic field reveal prominent activity at high latitudes. Alternating patches of positive and negative geomagnetic acceleration propagate to the west at speeds that exceed nominal fluid velocities in the core. We show that waves are a viable interpretation of these observations. Magnetic Rossby waves produce a high‐latitude response with suitable phase velocities. However, the spatial complexity of the prediction is not compatible with the observations. Our preferred interpretation involves zonal MAC waves. These waves can account for the observed geomagnetic field when a stratified layer exists at the top of the core. The required layer has a thickness in excess of 100 km and a buoyancy frequency comparable to the rotation frequency. We anticipate a gradual reduction in the phase velocity over time, leading to a future change in the propagation direction."}, {"year": 2021, "title": "Joint Regional Waveform, First-Motion Polarity, and Surface Displacement Moment Tensor Inversion of the 3 September 2017 North Korean Nuclear Test", "authors": ["Rodrigo Chi-Durán", "Douglas S. Dreger", "Arthur J. Rodgers", "Avinash Nayak"], "venue": "The Seismic Record", "volume": "1(2), 107–116", "doi": "10.1785/0320210022", "pdf": "https://pubs.geoscienceworld.org/ssa/tsr/article-pdf/1/2/107/5389510/tsr-2021022.1.pdf", "tags": ["seismic-source", "moment-tensor", "insar", "nuclear-explosions"], "en": "A moment tensor inversion that combines regional waveforms, first-motion polarities, and SAR surface displacement for the 2017 North Korean test. It fits all three data sets and narrows the range of possible source types.", "es": "Una inversión de tensor de momento que combina formas de onda regionales, polaridades de primer arribo y desplazamiento superficial SAR para el ensayo norcoreano de 2017. Ajusta los tres conjuntos de datos y acota los tipos de fuente posibles.", "abstract": "The 3 September 2017 Mw 5.2 North Korean underground nuclear test (DPRK2017) is the largest man-made explosion with surface displacements observed by Synthetic Aperture Radar (SAR) and showed as much as 3.5 m of horizontal permanent deformation. Although regional distance waveform-based seismic moment tensor (MT) inversion methods successfully identify this event as an explosion, the inverted solutions do not fit the SAR displacement field well. To better constrain the source, we developed an MT source-type inversion method that incorporates surface ground deformation (accounting for free-surface topography), regional seismic waveforms, and first-motion polarities. We applied the source-type inversion over a grid of possible source locations to find the best-fitting location, depth, and point-source MT for the event. Our best-fitting MT solution achieves ∼70% horizontal geodetic fit, ∼80% waveform fit, and 100% fit in the first-motion polarities. The joint inversion narrows the range of acceptable source types improving discrimination, and reduces the uncertainty in scalar moment and estimated yield. The method is transportable and can be applied to other types of events that may have measurable geodetic signals such as underground mine collapses and volcanic events."}, {"year": 2020, "title": "Decomposition of Geomagnetic Secular Acceleration Into Traveling Waves Using Complex Empirical Orthogonal Functions", "authors": ["Rodrigo Chi-Durán", "Margaret S. Avery", "Nicholas Knezek", "Bruce A. Buffett"], "venue": "Geophysical Research Letters", "volume": "47(17), e2020GL087940", "doi": "10.1029/2020GL087940", "tags": ["geomagnetism", "ceof"], "en": "Complex empirical orthogonal functions split the secular acceleration in CHAOS-6 into traveling waves with periods of 7 to 20 years. The waves help constrain the stratification at the top of the core.", "es": "Con funciones ortogonales empíricas complejas descomponemos la aceleración secular del modelo CHAOS-6 en ondas viajeras de 7 a 20 años de periodo. Estas ondas ayudan a estimar la estratificación en el tope del núcleo.", "abstract": "Satellite observations reveal short pulses in the second time derivative of the geomagnetic field. We seek to interpret these signals using complex empirical orthogonal functions (CEOFs). This methodology decomposes the signal into traveling waves, permitting estimates for the period, angular wave number, and phase velocity. We recover CEOFs from the CHAOS‐6 model, focusing on three geographic regions with strong secular acceleration. Two regions are confined to the equator, while the third is located under Alaska. We find evidence for both eastward and westward traveling waves with periods between 7 and 20 years. There is also evidence for weaker standing waves with complex spatial patterns. Two of the three regions have waves that are compatible with predictions for waves in a stratified fluid. Our results yield estimates for the structure of fluid stratification at the top of the core."}, {"year": 2017, "title": "Automatic detection of P- and S-wave arrival times: new strategies based on the modified fractal method and basic matching pursuit", "authors": ["Rodrigo Chi-Durán", "Diana Comte", "Marcos Diaz", "Jorge F. Silva"], "venue": "Journal of Seismology", "volume": "21(5), 1171–1184", "doi": "10.1007/s10950-017-9658-0", "pdf": "https://link.springer.com/content/pdf/10.1007/s10950-017-9658-0.pdf", "tags": ["signal-processing", "phase-picking"], "en": "Two automatic methods for picking P- and S-wave arrival times, one based on a modified fractal method and one on basic matching pursuit.", "es": "Dos métodos automáticos para detectar los tiempos de llegada de ondas P y S: uno basado en un método fractal modificado y otro en matching pursuit básico.", "abstract": ""}];
 const TAGS = {
-  en:{"seismic-source":"Seismic sources","moment-tensor":"Moment tensor","insar":"InSAR","nuclear-explosions":"Nuclear explosions","geomagnetism":"Geomagnetism","core-waves":"Core waves","dmd":"DMD","ceof":"CEOF","signal-processing":"Signal processing","phase-picking":"Phase picking"},
-  es:{"seismic-source":"Fuentes sísmicas","moment-tensor":"Tensor de momento","insar":"InSAR","nuclear-explosions":"Explosiones nucleares","geomagnetism":"Geomagnetismo","core-waves":"Ondas del núcleo","dmd":"DMD","ceof":"CEOF","signal-processing":"Procesamiento de señales","phase-picking":"Detección de fases"}
+  en:{"seismic-source":"Seismic sources","forensic-seismology":"Forensic seismology","moment-tensor":"Moment tensor","insar":"InSAR","nuclear-explosions":"Nuclear explosions","mine-collapse":"Mine collapse","cross-correlation":"Cross-correlation","t-phases":"T-phases","hydroacoustics":"Hydroacoustics","subduction-earthquakes":"Subduction earthquakes","travel-time-residuals":"Travel-time residuals","geomagnetism":"Geomagnetism","core-waves":"Core waves","dmd":"DMD","ceof":"CEOF","signal-processing":"Signal processing","phase-picking":"Phase picking"},
+  es:{"seismic-source":"Fuentes sísmicas","forensic-seismology":"Sismología forense","moment-tensor":"Tensor de momento","insar":"InSAR","nuclear-explosions":"Explosiones nucleares","mine-collapse":"Colapso minero","cross-correlation":"Correlación cruzada","t-phases":"Fases T","hydroacoustics":"Hidroacústica","subduction-earthquakes":"Terremotos de subducción","travel-time-residuals":"Residuos de tiempo de viaje","geomagnetism":"Geomagnetismo","core-waves":"Ondas del núcleo","dmd":"DMD","ceof":"CEOF","signal-processing":"Procesamiento de señales","phase-picking":"Detección de fases"}
 };
-const TOPIC_OF = {"geomagnetism":"geo","dmd":"geo","ceof":"geo","core-waves":"geo","seismic-source":"src","moment-tensor":"src","insar":"src","signal-processing":"sig","phase-picking":"sig"};
+const TOPIC_OF = {"geomagnetism":"geo","dmd":"geo","ceof":"geo","core-waves":"geo","seismic-source":"src","forensic-seismology":"src","moment-tensor":"src","insar":"src","nuclear-explosions":"src","mine-collapse":"src","t-phases":"src","hydroacoustics":"src","subduction-earthquakes":"src","signal-processing":"sig","phase-picking":"sig","cross-correlation":"sig","travel-time-residuals":"sig"};
+const PAPERS_REVIEW = [
+  {"status":"review","title":"Joint Moment-Tensor and Cross-Correlation Analysis of the 31 July 2025 El Teniente Mine Seismic Event, Chile","authors":["Rodrigo Chi-Durán","Douglas S. Dreger","Sergio Barrientos"],"tags":["seismic-source","forensic-seismology","moment-tensor","cross-correlation","mine-collapse"],
+   "en":"Characterizes the 31 July 2025 seismic event at the El Teniente mine in Chile by combining a moment tensor inversion with waveform cross-correlation.",
+   "es":"Caracteriza el evento sísmico del 31 de julio de 2025 en la mina El Teniente, en Chile, combinando una inversión de tensor de momento con correlación cruzada de formas de onda."},
+  {"status":"review","title":"Time residuals of T-phases from subduction zone earthquakes in the Pacific Ocean","authors":["Tiago C. A. Oliveira","Rodrigo Chi-Durán","Urtnasan Khukhuudei"],"tags":["t-phases","hydroacoustics","subduction-earthquakes","travel-time-residuals"],
+   "en":"Studies the travel-time residuals of hydroacoustic T-phases generated by subduction zone earthquakes around the Pacific Ocean.",
+   "es":"Estudia los residuos de tiempo de viaje de las fases T hidroacústicas generadas por terremotos de subducción en el océano Pacífico."}
+];
+PAPERS.forEach(p=>{ if(p.doi==="10.1785/0120230237"||p.doi==="10.1785/0320210022") p.tags.splice(1,0,"forensic-seismology"); });
+PAPERS.push(...PAPERS_REVIEW);
 PAPERS.forEach(p=>{ p.topics=[...new Set((p.tags||[]).map(t=>TOPIC_OF[t]).filter(Boolean))]; });
 
 const T = {
   en:{
-    "nav.more":"More","nav.background":"Background",skip:"Skip to content","email.me":"Email me","email.copy":"Copy email","scholar.profile":"View Google Scholar profile",close:"Close search",themeLabel:"Color theme",themeNames:{auto:"system",light:"light",dark:"dark"},tabs:{src:"Seismic sources",geo:"Geomagnetism",sig:"Signals & data"},intro:{src:"A seismic recording reveals when waves arrive. These arrivals help us locate an event and understand its source.",geo:"Changes in the magnetic field offer a window into motion at the top of Earth’s core. Explore how their patterns evolve over time.",sig:"Following magnetic patterns across longitude and time reveals drifting structures. Decomposition methods help separate these signals into waves."},
+    "nav.more":"More","nav.background":"Background",skip:"Skip to content","email.me":"Email me","email.copy":"Copy email","scholar.profile":"View Google Scholar profile",close:"Close search",themeLabel:"Color theme",themeNames:{auto:"system",light:"light",dark:"dark"},tabs:{src:"Sources & forensics",geo:"Geomagnetism",sig:"Signals & data"},intro:{src:"My research focuses on the seismic sources of earthquakes, explosions, and collapses. At the CTBTO, I work on the seismic monitoring behind the verification of the Comprehensive Nuclear-Test-Ban Treaty, improving event characterization methods and supporting the data analysis process.",geo:"Changes in the magnetic field offer a window into motion at the top of Earth’s core. Explore how their patterns evolve over time.",sig:"Following magnetic patterns across longitude and time reveals drifting structures. Decomposition methods help separate these signals into waves."},
     "nav.about":"About","nav.research":"Research","nav.pubs":"Publications","nav.projects":"Projects","nav.contact":"Contact",search:"Search",
     role:"Seismo-Acoustic Officer",city:"· Vienna, Austria",
-    bio:'Hello, I’m Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). I am a Seismo-Acoustic Officer at the <a href="https://www.ctbto.org/">Comprehensive Nuclear-Test-Ban Treaty Organization (CTBTO)</a> in Vienna, Austria, where I work on the seismic monitoring behind the verification of the Treaty. My work there focuses on improving event characterization methods and supporting the data analysis process. I hold a Ph.D. in Earth and Planetary Science from <a href="https://eps.berkeley.edu/">UC Berkeley</a>, which continued a path that began in Electrical Engineering at the <a href="https://uchile.cl/">Universidad de Chile</a>. My research revolves around seismology, in particular the seismic sources of earthquakes, explosions, and collapses, as well as complex sources related to forensic seismology. I also have previous experience working on Earth’s core dynamics and core waves, using signal processing and data-driven techniques to study them and model the outer core. I’m always happy to discuss research and potential collaborations.',
+    bio:'Hello, I’m Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). I am a Seismo-Acoustic Officer at the <a href="https://www.ctbto.org/">Comprehensive Nuclear-Test-Ban Treaty Organization (CTBTO)</a> in Vienna, Austria. I hold a Ph.D. in Earth and Planetary Science from <a href="https://eps.berkeley.edu/">UC Berkeley</a> and trained in Electrical Engineering at the <a href="https://uchile.cl/">Universidad de Chile</a>. My research focuses on seismic sources, forensic seismology and outer core dynamics. I’m always happy to discuss research and potential collaborations.',
     interests:"Interests",i1:"Geodynamics",i2:"Earthquakes",i3:"Seismic Sources",i4:"Geomagnetism",i5:"Data Science",i6:"Explosion Monitoring",
     education:"Education",e1:"Ph.D. in Earth and Planetary Science",e2:"BSc. in Electrical Engineering",
     seis:"Real vertical-component record of the sixth North Korean declared nuclear test, about 370 km from the site: the event behind my 2021 and 2024 papers. Bandpass 0.8–6 Hz, amplitude compressed for display. The P arrival was picked automatically with an STA/LTA detector. Hover to read the time after origin. Data: EarthScope / IRIS.",
-    "research.sub":"Seismic sources first: it is what I work on now.",nowTag:"now","now.lbl":"Now","now.go":"Seismic sources →","now.p":'Seismic monitoring for the verification of the <b>Comprehensive Nuclear-Test-Ban Treaty</b> at the CTBTO.',
+nowTag:"now","now.lbl":"Now","now.go":"Seismic sources →","now.p":'Seismic monitoring for the verification of the <b>Comprehensive Nuclear-Test-Ban Treaty</b> at the CTBTO.',
     "nav.teaching":"Teaching","t.lect":"Lecturer","t.ta":"Teaching assistant",
     "t.c1":"Earth Data Science in Python","t.c1d":"Interdisciplinary module","t.c1w":"Spring 2020, 2021, 2022",
     "t.c2":"Project I: Project Development","t.c2w":"Spring 2017, Fall 2018",
@@ -694,20 +664,21 @@ const T = {
     "projects.sub":"Teaching material and family history.",
     "z.k":"Family history · ongoing","z.h":"The Xu / Chi family tree","z.p":"Genealogy of the Xu (Chi) family: 916 people over 30 generations, from Changle and Wuhua in China to Heshan and Chile. An interactive tree with maps and articles.","z.go":"Enter →",
     copy:"copy",copied:"copied",foot:"Press / to search",ph:"Search papers, topics, sections…",gPapers:"Papers",gPages:"Sections",none:"No results",
+    review:"In review",pubsCount:(n,r)=>`${n} papers · ${r} in review`,clearTag:"Clear filter",
     all:"All",abstract:"Abstract",cite:"Cite",copyBib:"Copy BibTeX",sel:"selected",papersN:n=>`${n} paper${n===1?"":"s"} →`,after:"after origin",
-    topics:{geo:["Geomagnetism and the core","Waves at the top of the Earth's core, seen in satellite-era models of the geomagnetic field, and what they tell us about a stratified layer there."],
-            src:["Seismic sources","Detecting, locating and characterizing seismic sources, with a focus on explosions. At the CTBTO I work with the seismic data used to verify the Comprehensive Nuclear-Test-Ban Treaty. In research, I combine regional waveforms, first-motion polarities and InSAR surface displacement in a single moment tensor inversion, applied to the declared North Korean nuclear tests."],
+    topics:{geo:["Geomagnetism and the core","Earlier work on Earth’s core dynamics: waves at the top of the core seen in satellite-era geomagnetic field models, studied with signal processing and data-driven techniques to model the outer core and the stratified layer at its top."],
+            src:["Seismic sources and forensic seismology",""],
             sig:["Signal processing and data-driven methods","Automatic detection of P- and S-wave arrivals, and the decomposition methods (DMD, CEOF) used across the rest of the work."]}
   },
   es:{
-    "nav.more":"Más","nav.background":"Trayectoria",skip:"Saltar al contenido","email.me":"Escríbeme","email.copy":"Copiar correo","scholar.profile":"Ver perfil en Google Scholar",close:"Cerrar búsqueda",themeLabel:"Tema de color",themeNames:{auto:"sistema",light:"claro",dark:"oscuro"},tabs:{src:"Fuentes sísmicas",geo:"Geomagnetismo",sig:"Señales y datos"},intro:{src:"Un registro sísmico revela cuándo llegan las ondas. Estas llegadas ayudan a localizar un evento y comprender su fuente.",geo:"Los cambios del campo magnético permiten explorar el movimiento en la parte superior del núcleo terrestre. Observa cómo evolucionan sus patrones en el tiempo.",sig:"Seguir los patrones magnéticos en longitud y tiempo revela estructuras que se desplazan. Los métodos de descomposición ayudan a separar estas señales en ondas."},
+    "nav.more":"Más","nav.background":"Trayectoria",skip:"Saltar al contenido","email.me":"Escríbeme","email.copy":"Copiar correo","scholar.profile":"Ver perfil en Google Scholar",close:"Cerrar búsqueda",themeLabel:"Tema de color",themeNames:{auto:"sistema",light:"claro",dark:"oscuro"},tabs:{src:"Fuentes y forense",geo:"Geomagnetismo",sig:"Señales y datos"},intro:{src:"Mi investigación se centra en las fuentes sísmicas de terremotos, explosiones y colapsos. En la CTBTO trabajo en el monitoreo sísmico que permite verificar el Tratado de Prohibición Completa de los Ensayos Nucleares, mejorando los métodos de caracterización de eventos y apoyando el proceso de análisis de datos.",geo:"Los cambios del campo magnético permiten explorar el movimiento en la parte superior del núcleo terrestre. Observa cómo evolucionan sus patrones en el tiempo.",sig:"Seguir los patrones magnéticos en longitud y tiempo revela estructuras que se desplazan. Los métodos de descomposición ayudan a separar estas señales en ondas."},
     "nav.about":"Sobre mí","nav.research":"Investigación","nav.pubs":"Publicaciones","nav.projects":"Proyectos","nav.contact":"Contacto",search:"Buscar",
     role:"Seismo-Acoustic Officer",city:"· Viena, Austria",
-    bio:'Hola, soy Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). Trabajo como <i lang="en">Seismo-Acoustic Officer</i> en la <a href="https://www.ctbto.org/">Organización del Tratado de Prohibición Completa de los Ensayos Nucleares (CTBTO)</a>, en Viena, Austria, donde me dedico al monitoreo sísmico que permite verificar el cumplimiento del Tratado. Mi trabajo se centra en mejorar los métodos de caracterización de eventos y en apoyar el proceso de análisis de datos. Me doctoré en <i lang="en">Earth and Planetary Science</i> en <a href="https://eps.berkeley.edu/">UC Berkeley</a>, un camino que empezó en Ingeniería Eléctrica en la <a href="https://uchile.cl/">Universidad de Chile</a>. Mi investigación está en la sismología, sobre todo en las fuentes sísmicas de terremotos, explosiones y colapsos, y en las fuentes complejas que estudia la <i lang="en">forensic seismology</i>. Antes trabajé en la dinámica del núcleo terrestre y sus ondas geomagnéticas (<i lang="en">core waves</i>), usando <i lang="en">signal processing</i> y métodos <i lang="en">data-driven</i> para estudiarlas y modelar el núcleo externo. Si quieres conversar sobre investigación o colaborar, escríbeme.',
+    bio:'Hola, soy Rodrigo Chi Durán (<span class="zh" lang="zh-Hant">徐慶賢</span>/<span class="zh" lang="zh-Hans">徐庆贤</span>). Soy <i lang="en">Seismo-Acoustic Officer</i> en la <a href="https://www.ctbto.org/">Organización del Tratado de Prohibición Completa de los Ensayos Nucleares (CTBTO)</a>, en Viena, Austria. Me doctoré en <i lang="en">Earth and Planetary Science</i> en <a href="https://eps.berkeley.edu/">UC Berkeley</a> y me formé en Ingeniería Eléctrica en la <a href="https://uchile.cl/">Universidad de Chile</a>. Mi investigación se centra en las fuentes sísmicas, la <i lang="en">forensic seismology</i> y la dinámica del núcleo externo. Si quieres conversar sobre investigación o colaborar, escríbeme.',
     interests:"Intereses",i1:"Geodinámica",i2:"Terremotos",i3:"Fuentes sísmicas",i4:"Geomagnetismo",i5:"Ciencia de datos",i6:"Monitoreo de explosiones",
     education:"Formación",e1:"Ph.D. en Ciencias de la Tierra y Planetarias",e2:"Licenciatura en Ciencias de la Ingeniería, mención Eléctrica",
     seis:"Registro real, componente vertical, del sexto ensayo nuclear declarado de Corea del Norte, a unos 370 km del sitio: el evento detrás de mis papers de 2021 y 2024. Filtro pasabanda 0,8–6 Hz, amplitud comprimida para visualizar. La llegada P se detectó automáticamente con un detector STA/LTA. Toca el registro para leer el tiempo desde el origen. Datos: EarthScope / IRIS.",
-    "research.sub":"Primero las fuentes sísmicas: es en lo que trabajo hoy.",nowTag:"ahora","now.lbl":"Ahora","now.go":"Fuentes sísmicas →","now.p":'Monitoreo sísmico para la verificación del <b>Tratado de Prohibición Completa de los Ensayos Nucleares</b> en la CTBTO.',
+nowTag:"ahora","now.lbl":"Ahora","now.go":"Fuentes sísmicas →","now.p":'Monitoreo sísmico para la verificación del <b>Tratado de Prohibición Completa de los Ensayos Nucleares</b> en la CTBTO.',
     "nav.teaching":"Docencia","t.lect":"Profesor","t.ta":"Profesor auxiliar",
     "t.c1":"Ciencia de Datos de la Tierra en Python","t.c1d":"Módulo interdisciplinario","t.c1w":"Primavera 2020, 2021, 2022",
     "t.c2":"Proyecto I: Desarrollo de Proyectos","t.c2w":"Primavera 2017, Otoño 2018",
@@ -717,9 +688,10 @@ const T = {
     "projects.sub":"Material docente e historia familiar.",
     "z.k":"Historia familiar · en curso","z.h":"El árbol de la familia Xu / Chi","z.p":"Genealogía de la familia Xu (Chi): 916 personas en 30 generaciones, desde Changle y Wuhua en China hasta Heshan y Chile. Un árbol interactivo con mapas y artículos.","z.go":"Entrar →",
     copy:"copiar",copied:"copiado",foot:"Presiona / para buscar",ph:"Busca papers, temas, secciones…",gPapers:"Papers",gPages:"Secciones",none:"Sin resultados",
+    review:"En revisión",pubsCount:(n,r)=>`${n} artículos · ${r} en revisión`,clearTag:"Quitar filtro",
     all:"Todos",abstract:"Abstract",cite:"Citar",copyBib:"Copiar BibTeX",sel:"destacado",papersN:n=>`${n} paper${n===1?"":"s"} →`,after:"desde el origen",
-    topics:{geo:["Geomagnetismo y núcleo","Ondas en el tope del núcleo terrestre, observadas en modelos del campo geomagnético de la era satelital, y lo que dicen sobre una capa estratificada."],
-            src:["Fuentes sísmicas","Detectar, localizar y caracterizar fuentes sísmicas, en especial explosiones. En la CTBTO trabajo con los datos sísmicos que se usan para verificar el Tratado de Prohibición Completa de los Ensayos Nucleares. En investigación, combino formas de onda regionales, polaridades de primer arribo y desplazamiento superficial InSAR en una sola inversión de tensor de momento, aplicada a los ensayos nucleares declarados de Corea del Norte."],
+    topics:{geo:["Geomagnetismo y núcleo","Trabajo anterior sobre la dinámica del núcleo terrestre: ondas geomagnéticas en el tope del núcleo, observadas en modelos del campo de la era satelital y estudiadas con procesamiento de señales y métodos basados en datos para modelar el núcleo externo y su capa estratificada."],
+            src:["Fuentes sísmicas y sismología forense",""],
             sig:["Procesamiento de señales y métodos basados en datos","Detección automática de llegadas de ondas P y S, y los métodos de descomposición (DMD, CEOF) que uso en el resto del trabajo."]}
   }
 };
@@ -734,31 +706,31 @@ function bib(p){
 }
 function renderFilters(){
   const t = T[lang];
-  const opts = [["all",t.all,PAPERS.length], ...Object.entries(t.topics).map(([k,[h]])=>[k,t.tabs[k],PAPERS.filter(x=>x.topics.includes(k)).length])];
+  if(topic==="all"){ $("#filters").innerHTML = ""; return; }
   const tg = topic.startsWith("tag:") ? topic.slice(4) : null;
-  $("#filters").innerHTML = opts.map(([k,l,n])=>`<button type="button" data-topic="${k}" aria-pressed="${k===topic}">${l} <span class="n">${n}</span></button>`).join("")
-    + (tg ? `<button type="button" class="tag-on" data-topic="all" aria-label="${lang==="es"?"Quitar filtro":"Clear filter"}">${TAGS[lang][tg]||tg} <span aria-hidden="true">×</span></button>` : "");
+  const label = tg ? (TAGS[lang][tg]||tg) : t.tabs[topic], cls = tg ? (TOPIC_OF[tg]||"all") : topic;
+  $("#filters").innerHTML = `<button type="button" class="tag-on t-${cls}" data-topic="all" aria-label="${t.clearTag}: ${esc(label)}">${esc(label)} <span aria-hidden="true">×</span></button>`;
 }
 function renderPapers(){
   const t = T[lang];
   const tagOn = topic.startsWith("tag:") ? topic.slice(4) : null;
   const list = PAPERS.map((p,i)=>[p,i]).filter(([p])=>topic==="all" || (tagOn ? p.tags.includes(tagOn) : p.topics.includes(topic)));
-  $("#papers").innerHTML = list.length ? list.map(([p,i])=>`
-    <li class="paper" id="paper-${i}">
-      <div class="pmeta"><span class="yr">${p.year}</span><span class="venue">${esc(p.venue)}</span></div>
-      <h3 lang="en"><a href="https://doi.org/${p.doi}">${esc(p.title)}</a></h3>
+  const pub = PAPERS.filter(p=>p.status!=="review").length;
+  $("#pubs-count").textContent = t.pubsCount(pub, PAPERS.length-pub);
+  let inReview = false;
+  $("#papers").innerHTML = list.length ? list.map(([p,i])=>{
+    const rev = p.status==="review";
+    const divider = rev && !inReview ? `<li class="p-group" aria-hidden="true">${t.review}</li>` : "";
+    if(rev) inReview = true;
+    const title = p.doi ? `<a href="https://doi.org/${p.doi}">${esc(p.title)}</a>` : esc(p.title);
+    return divider + `
+    <li class="paper t-${p.topics[0]||"src"}${rev?" is-review":""}" id="paper-${i}">
+      <p class="pmeta">${rev ? `<span class="pill">${t.review}</span>` : `<span class="yr">${p.year}</span><span class="venue">${esc(p.venue)}</span>`}</p>
+      <h3 lang="en">${title}</h3>
       <p class="authors">${p.authors.map(a=>a===ME?`<span class="me">${a}</span>`:esc(a)).join(", ")}</p>
-      <p class="summary" lang="${lang}">${esc(p[lang])}</p>
-      <div class="ptags">${p.tags.map(g=>`<button type="button" class="ptag" data-tag="${g}" aria-pressed="${g===tagOn}">${TAGS[lang][g]||g}</button>`).join("")}</div>
-      <div class="pact">
-        ${p.pdf?`<a href="${p.pdf}">PDF</a>`:""}
-        <a href="https://doi.org/${p.doi}">DOI</a>
-        ${p.abstract?`<button type="button" data-panel="abs-${i}" aria-controls="abs-${i}" aria-expanded="${!!open["abs-"+i]}">${t.abstract}</button>`:""}
-        <button type="button" data-panel="bib-${i}" aria-controls="bib-${i}" aria-expanded="${!!open["bib-"+i]}">${t.cite}</button>
-      </div>
-      ${p.abstract?`<div class="panel" id="abs-${i}" lang="en" ${open["abs-"+i]?"":"hidden"}>${esc(p.abstract)}</div>`:""}
-      <div class="panel" id="bib-${i}" ${open["bib-"+i]?"":"hidden"}><pre>${esc(bib(p))}</pre><div class="pact" style="margin-top:10px"><button type="button" data-copy="${i}">${t.copyBib}</button><span class="ok" id="ok-${i}" aria-live="polite"></span></div></div>
-    </li>`).join("") : `<li class="empty">${t.none}</li>`;
+      ${p[lang] ? `<p class="summary" lang="${lang}">${esc(p[lang])}</p>` : ""}
+      <div class="ptags">${p.tags.map(g=>`<button type="button" class="ptag t-${TOPIC_OF[g]||"src"}" data-tag="${g}" aria-pressed="${g===tagOn}">${TAGS[lang][g]||g}</button>`).join("")}</div>
+    </li>`; }).join("") : `<li class="empty">${t.none}</li>`;
 }
 function render(){
   const t = T[lang];
@@ -819,12 +791,12 @@ function hi(text,q){
 }
 function runSearch(){
   const t = T[lang], q = norm($("#pal-q").value.trim()), ws = q.split(/\s+/).filter(Boolean);
-  const ps = PAPERS.map((p,i)=>({p,i,hay:norm([p.title,p.authors.join(" "),p.venue,p.year,p[lang],p.abstract||"",(p.tags||[]).join(" ")].join(" "))})).filter(x=>ws.every(w=>x.hay.includes(w)));
+  const ps = PAPERS.map((p,i)=>({p,i,hay:norm([p.title,p.authors.join(" "),p.venue||"",p.year||"",p.status==="review"?t.review:"",p.abstract||"",(p.tags||[]).map(g=>TAGS[lang][g]||g).join(" ")].join(" "))})).filter(x=>ws.every(w=>x.hay.includes(w)));
   const pg = pages().filter(x=>ws.every(w=>norm(x.label).includes(w)));
   items = [...ps.map(x=>({kind:"paper",i:x.i})), ...pg];
   cursor = Math.min(cursor, Math.max(items.length-1,0));
   let html = "", k = 0;
-  if(ps.length){ html += `<li class="grp" role="presentation">${t.gPapers}</li>`; ps.forEach(x=>{ html += `<li role="option" id="result-${k}" data-k="${k}" aria-selected="${k===cursor}"><span class="t" lang="en">${hi(x.p.title,q)}</span><span class="s">${x.p.year} · ${esc(x.p.venue)}</span></li>`; k++; }); }
+  if(ps.length){ html += `<li class="grp" role="presentation">${t.gPapers}</li>`; ps.forEach(x=>{ html += `<li role="option" id="result-${k}" data-k="${k}" aria-selected="${k===cursor}"><span class="t" lang="en">${hi(x.p.title,q)}</span><span class="s">${x.p.status==="review" ? t.review : x.p.year+" · "+esc(x.p.venue)}</span></li>`; k++; }); }
   if(pg.length){ html += `<li class="grp" role="presentation">${t.gPages}</li>`; pg.forEach(x=>{ html += `<li role="option" id="result-${k}" data-k="${k}" aria-selected="${k===cursor}"><span class="t">${esc(x.label)}</span></li>`; k++; }); }
   $("#pal-list").innerHTML = html || `<li class="grp">${t.none}</li>`;
   if(items.length) $("#pal-q").setAttribute("aria-activedescendant","result-"+cursor); else $("#pal-q").removeAttribute("aria-activedescendant");
@@ -907,7 +879,7 @@ function renderLab(){
   $("#lab-panel").setAttribute("aria-labelledby", "tab-"+tab);
   $("#lab-intro").textContent = t.intro[tab];
   $("#lab-h").textContent = t.topics[tab][0];
-  $("#lab-p").textContent = t.topics[tab][1];
+  $("#lab-p").textContent = t.topics[tab][1]; $("#lab-p").hidden = !t.topics[tab][1];
   $("#lab-cap").innerHTML = L[tab].cap;
   const n = PAPERS.filter(x=>x.topics.includes(tab)).length;
   $("#lab-go").textContent = t.papersN(n); $("#lab-go").dataset.goto = tab;

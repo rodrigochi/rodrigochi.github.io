@@ -25,4 +25,4 @@ html = html.replace(/(<p class="bio" data-th="bio">)[\s\S]*?(<\/p>)/, (_, a, b) 
 html = html.replace(/(<p data-th="now.p">)[\s\S]*?(<\/p>)/, (_, a, b) => a + result.now + b);
 html = html.replace(/(<ol class="papers" id="papers">)[\s\S]*?(<\/ol>)/, (_, a, b) => a + result.papers + b);
 writeFileSync(file, html);
-console.log('Static biography, research introduction and six publications refreshed.');
+console.log('Static biography, research introduction and publications refreshed.');
